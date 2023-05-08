@@ -1,20 +1,28 @@
 @use '../../sass/variables' as v;
 
 .navbar-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  font-family: v.$font-family;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 2;
+  transition: top 0.3s;
+  border-bottom: 1px solid v.$main-black;
 
   .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
     .navlinks-container {
-      width: fit-content;
       display: flex;
       gap: 3rem;
 
       .navlink {
-        font-family: v.$font-family;
         font-weight: v.$font-weight-700;
         font-size: 25px;
         list-style: none;
@@ -44,5 +52,15 @@
         }
       }
     }
+  }
+}
+
+//keyframes
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

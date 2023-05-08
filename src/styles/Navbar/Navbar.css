@@ -1,17 +1,25 @@
 .navbar-wrapper {
+  font-family: "Charm", cursive;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 2;
+  transition: top 0.3s;
+  border-bottom: 1px solid #000;
+}
+.navbar-wrapper .navbar-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 10rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
 .navbar-wrapper .navbar-container .navlinks-container {
-  width: fit-content;
   display: flex;
   gap: 3rem;
 }
 .navbar-wrapper .navbar-container .navlinks-container .navlink {
-  font-family: "Charm", cursive;
   font-weight: 700;
   font-size: 25px;
   list-style: none;
@@ -35,4 +43,13 @@
 }
 .navbar-wrapper .navbar-container .navlinks-container a:is(:hover, :focus-visible) .skull {
   display: block;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=Navbar.css.map */

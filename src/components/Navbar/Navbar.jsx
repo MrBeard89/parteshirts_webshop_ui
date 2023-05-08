@@ -6,16 +6,26 @@ import { Logo } from '../../components/Logo/Logo'
 import { GiBurningSkull } from 'react-icons/gi'
 
 export const Navbar = () => {
+  var prevScrollpos = window.pageYOffset
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset
+    if (prevScrollpos > currentScrollPos) {
+      document.querySelector('.navbar-wrapper').style.top = '0'
+    } else {
+      document.querySelector('.navbar-wrapper').style.top = '-70px'
+    }
+    prevScrollpos = currentScrollPos
+  }
   return (
     <>
       <div className='navbar-wrapper'>
-        <div className='navbar-logo'>
-          <Link to='/'>
-            <Logo />
-          </Link>
-        </div>
-
         <div className='navbar-container'>
+          <div className='navbar-logo'>
+            <Link to='/'>
+              <Logo />
+            </Link>
+          </div>
+
           <ul className='navlinks-container'>
             <Link to='/'>
               <GiBurningSkull className='skull' />
