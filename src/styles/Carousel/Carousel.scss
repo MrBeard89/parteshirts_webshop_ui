@@ -1,6 +1,9 @@
+@use '../../sass/variables' as v;
+
 .carousel-wrapper {
   display: flex;
   width: 100vw;
+  margin-bottom: v.$components-gap;
 
   .carousel-container {
     display: flex;

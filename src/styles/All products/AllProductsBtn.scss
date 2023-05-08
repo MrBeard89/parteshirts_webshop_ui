@@ -1,0 +1,26 @@
+@use '../../sass/variables' as v;
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+
+  .btn-container {
+    button {
+      font-family: v.$font-family;
+      font-weight: v.$font-weight-700;
+      font-size: 22px;
+      padding: 2px 45px 2px 45px;
+      background-color: v.$main-soft-yellow;
+      border: 1px solid v.$main-black;
+      border-radius: 5px;
+
+      &:is(:hover, :focus-visible) {
+        background-color: v.$main-black;
+        color: v.$main-soft-yellow;
+        border: 2px solid v.$main-soft-yellow;
+        cursor: pointer;
+      }
+    }
+  }
+}
