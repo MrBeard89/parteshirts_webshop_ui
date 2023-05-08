@@ -1,0 +1,44 @@
+.carousel-wrapper {
+  display: flex;
+  width: 100vw;
+
+  .carousel-container {
+    display: flex;
+    height: fit-content;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    .image-container {
+      &:is(:hover, :focus-visible) {
+        cursor: pointer;
+        animation: none;
+      }
+
+      .img {
+        animation: slidemove 25s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        height: 450px;
+
+        &:is(:hover, :focus-visible) {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+//Animations
+@keyframes slidemove {
+  0% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(-200%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}

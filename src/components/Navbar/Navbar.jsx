@@ -12,7 +12,7 @@ export const Navbar = () => {
     if (prevScrollpos > currentScrollPos) {
       document.querySelector('.navbar-wrapper').style.top = '0'
     } else {
-      document.querySelector('.navbar-wrapper').style.top = '-70px'
+      document.querySelector('.navbar-wrapper').style.top = '-180px'
     }
     prevScrollpos = currentScrollPos
   }
