@@ -1,0 +1,73 @@
+@use '../../sass/variables' as v;
+
+.about-wrapper {
+  font-family: v.$font-family;
+  width: 100vw;
+
+  .introduction-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .title-bar {
+      position: relative;
+
+      .introduction-title {
+        background-color: v.$main-soft-yellow;
+        border-radius: 5px;
+        padding-left: 5px;
+        margin-bottom: 1rem;
+
+        &:is(:hover, :focus-visible) {
+          cursor: pointer;
+        }
+      }
+
+      .down-arrow {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        font-size: 25px;
+
+        &:is(:hover, :focus-visible) {
+          cursor: pointer;
+        }
+      }
+
+      .up-arrow {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        font-size: 25px;
+
+        &:is(:hover, :focus-visible) {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .introduction-text {
+      display: none;
+    }
+  }
+}
+
+.show {
+  display: block;
+  padding: 8px;
+  padding-bottom: 15px;
+  background-image: linear-gradient(v.$main-white, v.$main-soft-yellow);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  animation: fadeText 1s ease-in-out;
+}
+
+//keyframes
+@keyframes fadeText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

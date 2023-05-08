@@ -1,4 +1,5 @@
 import '../../styles/Home/Home.scss'
+import { About } from '../About/About'
 import { AllProductsBtn } from '../All Products/AllProductsBtn'
 
 import { Carousel } from '../Carousel/Carousel'
@@ -8,6 +9,7 @@ export const Home = () => {
     <div className='home-wrapper'>
       <Carousel />
       <AllProductsBtn />
+      <About />
     </div>
   )
 }
