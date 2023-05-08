@@ -17,12 +17,13 @@
     justify-content: space-between;
 
     height: 10rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 
     .navlinks-container {
       display: flex;
-      gap: 3rem;
+      gap: 4rem;
+      margin-right: 2rem;
 
       .navlink {
         font-weight: v.$font-weight-700;
@@ -40,7 +41,15 @@
 
         .skull {
           position: absolute;
-          left: -22px;
+          left: -25px;
+          font-size: 22px;
+          display: none;
+        }
+
+        .skull-back {
+          position: absolute;
+          right: -25px;
+          font-size: 22px;
           display: none;
         }
 
@@ -48,21 +57,12 @@
           color: v.$main-vivid-orange;
           cursor: pointer;
 
-          .skull {
+          .skull,
+          .skull-back {
             display: block;
           }
         }
       }
     }
-  }
-}
-
-//keyframes
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }

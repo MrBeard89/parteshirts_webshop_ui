@@ -30,36 +30,43 @@ export const Navbar = () => {
             <Link to='/'>
               <GiBurningSkull className='skull' />
               <li className='navlink'>Home</li>
+              <GiBurningSkull className='skull-back' />
             </Link>
 
             <Link to='/'>
               <GiBurningSkull className='skull' />
               <li className='navlink'>Search</li>
+              <GiBurningSkull className='skull-back' />
             </Link>
 
             <Link to='/'>
               <GiBurningSkull className='skull' />
               <li className='navlink'>T-shirts</li>
+              <GiBurningSkull className='skull-back' />
             </Link>
 
             <Link to='/'>
               <GiBurningSkull className='skull' />
               <li className='navlink'>Hoodies</li>
+              <GiBurningSkull className='skull-back' />
             </Link>
 
             <Link to='/'>
               <GiBurningSkull className='skull' />
               <li className='navlink'>FAQ's</li>
+              <GiBurningSkull className='skull-back' />
             </Link>
 
             <Link to='/'>
               <GiBurningSkull className='skull' />
               <li className='navlink'>Reviews</li>
+              <GiBurningSkull className='skull-back' />
             </Link>
 
             <Link to='/'>
               <GiBurningSkull className='skull' />
               <li className='navlink'>Cart</li>
+              <GiBurningSkull className='skull-back' />
             </Link>
           </ul>
         </div>

@@ -9,6 +9,7 @@
     padding-right: 2rem;
 
     .title-bar {
+      z-index: 2;
       position: relative;
 
       .introduction-title {
@@ -46,6 +47,7 @@
     }
 
     .introduction-text {
+      z-index: 1;
       display: none;
     }
   }
@@ -55,7 +57,7 @@
   display: block;
   padding: 8px;
   padding-bottom: 15px;
-  background-image: linear-gradient(v.$main-white, v.$main-soft-yellow);
+  background-image: linear-gradient(v.$main-white, v.$main-soft-yellow 195%);
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 
@@ -65,9 +67,11 @@
 //keyframes
 @keyframes fadeText {
   0% {
+    transform: translateY(-60px);
     opacity: 0;
   }
   100% {
+    transform: translateY(0px);
     opacity: 1;
   }
 }
