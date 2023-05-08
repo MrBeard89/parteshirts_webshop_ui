@@ -1,0 +1,18 @@
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.navbar-wrapper .navbar-container .navlinks-container {
+  width: fit-content;
+  display: flex;
+  gap: 2rem;
+}
+.navbar-wrapper .navbar-container .navlinks-container .navlink {
+  font-family: "Charm", cursive;
+  font-weight: 700;
+  font-size: 22px;
+  list-style: none;
+}/*# sourceMappingURL=Navbar.css.map */
