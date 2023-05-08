@@ -21,13 +21,13 @@ export const Navbar = () => {
       <div className='navbar-wrapper'>
         <div className='navbar-container'>
           <div className='navbar-logo'>
-            <Link to='/'>
+            <Link to='/home'>
               <Logo />
             </Link>
           </div>
 
           <ul className='navlinks-container'>
-            <Link to='/'>
+            <Link to='/home'>
               <GiBurningSkull className='skull' />
               <li className='navlink'>Home</li>
               <GiBurningSkull className='skull-back' />
