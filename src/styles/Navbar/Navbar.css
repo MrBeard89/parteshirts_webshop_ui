@@ -6,6 +6,7 @@
   z-index: 2;
   transition: top 0.3s;
   border-bottom: 1px solid #000;
+  margin-bottom: 5rem;
 }
 .navbar-wrapper .navbar-container {
   display: flex;

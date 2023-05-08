@@ -8,6 +8,7 @@
   z-index: 2;
   transition: top 0.3s;
   border-bottom: 1px solid v.$main-black;
+  margin-bottom: v.$components-gap;
 
   .navbar-container {
     display: flex;
