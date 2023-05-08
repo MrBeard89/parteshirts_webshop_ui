@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding-left: 2rem;
   padding-right: 2rem;
 
@@ -12,13 +11,37 @@
     .navlinks-container {
       width: fit-content;
       display: flex;
-      gap: 2rem;
+      gap: 3rem;
 
       .navlink {
         font-family: v.$font-family;
         font-weight: v.$font-weight-700;
-        font-size: 22px;
+        font-size: 25px;
         list-style: none;
+      }
+
+      a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-decoration: none;
+        color: v.$main-black;
+
+        .skull {
+          position: absolute;
+          left: -22px;
+          display: none;
+        }
+
+        &:is(:hover, :focus-visible) {
+          color: v.$main-vivid-orange;
+          cursor: pointer;
+
+          .skull {
+            display: block;
+          }
+        }
       }
     }
   }

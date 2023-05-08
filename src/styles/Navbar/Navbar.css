@@ -8,11 +8,31 @@
 .navbar-wrapper .navbar-container .navlinks-container {
   width: fit-content;
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 }
 .navbar-wrapper .navbar-container .navlinks-container .navlink {
   font-family: "Charm", cursive;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 25px;
   list-style: none;
+}
+.navbar-wrapper .navbar-container .navlinks-container a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: #000;
+}
+.navbar-wrapper .navbar-container .navlinks-container a .skull {
+  position: absolute;
+  left: -22px;
+  display: none;
+}
+.navbar-wrapper .navbar-container .navlinks-container a:is(:hover, :focus-visible) {
+  color: #fe5a0b;
+  cursor: pointer;
+}
+.navbar-wrapper .navbar-container .navlinks-container a:is(:hover, :focus-visible) .skull {
+  display: block;
 }/*# sourceMappingURL=Navbar.css.map */
