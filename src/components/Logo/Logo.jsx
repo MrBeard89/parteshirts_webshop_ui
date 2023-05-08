@@ -1,5 +1,7 @@
 import Sitelogo from '../../assets/logo/parteeshirts.jpg'
 
+import '../../styles/Logo/Logo.scss'
+
 export const Logo = () => {
   return (
     <div className='logo-container'>
