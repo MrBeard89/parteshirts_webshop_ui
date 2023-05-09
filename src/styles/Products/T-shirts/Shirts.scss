@@ -1,0 +1,10 @@
+@use '../../../sass/variables' as v;
+
+.shirts-wrapper {
+  width: 100%;
+
+  .shirts-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}

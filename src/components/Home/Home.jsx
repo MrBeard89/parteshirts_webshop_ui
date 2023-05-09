@@ -3,6 +3,7 @@ import { About } from '../About/About'
 import { AllProductsBtn } from '../All Products/AllProductsBtn'
 
 import { Carousel } from '../Carousel/Carousel'
+import { Shirts } from '../Products/T-shirts/Shirts'
 
 export const Home = () => {
   return (
@@ -10,6 +11,7 @@ export const Home = () => {
       <Carousel />
       <AllProductsBtn />
       <About />
+      <Shirts />
     </div>
   )
 }
