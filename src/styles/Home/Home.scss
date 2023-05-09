@@ -1,5 +1,103 @@
 @use '../../sass/variables' as v;
+@forward '../../sass/templates';
 
 .home-wrapper {
   margin-top: v.$margin-top-home;
+
+  .products-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    width: 100%;
+
+    .shirts-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 360px;
+      height: 300px;
+      border: 2px solid v.$main-black;
+
+      .shirts-thumbnail {
+        width: 220px;
+      }
+
+      @extend %productsBtnStyle;
+    }
+
+    .hoodies-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 360px;
+      height: 300px;
+      border: 2px solid v.$main-black;
+
+      .hoodies-thumbnail {
+        width: 220px;
+      }
+
+      @extend %productsBtnStyle;
+    }
+
+    .accessories-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 360px;
+      height: 300px;
+      border: 2px solid v.$main-black;
+
+      .accessories-img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 250px;
+      }
+
+      .accessories-thumbnail {
+        width: 180px;
+      }
+
+      @extend %productsBtnStyle;
+    }
+
+    .party-package-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      width: 360px;
+      height: 300px;
+      border: 2px solid v.$main-black;
+
+      .party-packge-img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -2rem;
+
+        .inner-img-container {
+          display: flex;
+          flex-direction: column;
+
+          .party-package-thumbnail {
+            width: 130px;
+          }
+        }
+      }
+
+      .music-and-peace-thumbnail {
+        width: 190px;
+      }
+
+      @extend %productsBtnStyle;
+    }
+  }
 }

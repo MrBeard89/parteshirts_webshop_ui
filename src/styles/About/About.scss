@@ -16,7 +16,7 @@
         background-color: v.$main-soft-yellow;
         border-radius: 5px;
         padding-left: 5px;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
 
         &:is(:hover, :focus-visible) {
           cursor: pointer;
@@ -60,6 +60,7 @@
   background-image: linear-gradient(v.$main-white, v.$main-soft-yellow 195%);
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  margin-bottom: 3rem;
 
   animation: fadeText 1s ease-in-out;
 }

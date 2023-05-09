@@ -14,7 +14,7 @@
   background-color: #f5de5d;
   border-radius: 5px;
   padding-left: 5px;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 .about-wrapper .introduction-container .title-bar .introduction-title:is(:hover, :focus-visible) {
   cursor: pointer;
@@ -49,6 +49,7 @@
   background-image: linear-gradient(#fff, #f5de5d 195%);
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  margin-bottom: 3rem;
   animation: fadeText 1s ease-in-out;
 }
 

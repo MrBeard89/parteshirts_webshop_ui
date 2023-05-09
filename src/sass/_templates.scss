@@ -1,0 +1,25 @@
+@use '../sass/variables' as v;
+
+//Templates
+
+////Home - Products - Button style
+%productsBtnStyle {
+  button {
+    position: absolute;
+    bottom: 0;
+    font-family: v.$font-family;
+    font-weight: v.$font-weight-700;
+    font-size: 26px;
+    background-color: v.$main-soft-yellow;
+    border: none;
+
+    padding: 5px 25px 5px 25px;
+    width: 360px;
+
+    &:is(:hover, :focus-visible) {
+      background-color: v.$main-black;
+      color: v.$main-soft-yellow;
+      cursor: pointer;
+    }
+  }
+}
