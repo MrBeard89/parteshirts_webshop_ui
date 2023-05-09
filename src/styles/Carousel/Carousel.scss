@@ -1,34 +1,67 @@
 @use '../../sass/variables' as v;
 
 .carousel-wrapper {
+  position: relative;
   display: flex;
-  width: 100vw;
+  justify-content: center;
+  width: 100%;
   margin-bottom: v.$components-gap;
 
   .carousel-container {
+    position: inherit;
     display: flex;
     height: fit-content;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    margin-left: 1rem;
-    margin-right: 1rem;
-
+    width: 900px;
     .image-container {
+      .img {
+        height: 600px;
+      }
+    }
+
+    .back-arrow {
+      position: absolute;
+      left: calc(10rem / 2);
+      bottom: calc(100% / 2);
+      color: v.$main-white;
+      font-size: 25px;
+
       &:is(:hover, :focus-visible) {
         cursor: pointer;
-        animation: none;
       }
+    }
 
-      .img {
-        animation: slidemove 25s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        height: 450px;
+    .forward-arrow {
+      position: absolute;
+      right: calc(10rem / 2);
+      bottom: calc(100% / 2);
+      color: v.$main-white;
+      font-size: 25px;
 
-        &:is(:hover, :focus-visible) {
-          cursor: pointer;
-        }
+      &:is(:hover, :focus-visible) {
+        cursor: pointer;
       }
     }
   }
+
+  .dots-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    position: absolute;
+    bottom: -2rem;
+
+    .dot {
+      font-size: 23px;
+    }
+
+    .actual-dot {
+      color: v.$main-soft-yellow;
+    }
+  }
+}
+
+.show {
+  z-index: 3;
 }
 
 //Animations

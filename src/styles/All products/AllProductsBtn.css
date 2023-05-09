@@ -1,8 +1,8 @@
 .btn-wrapper {
   display: flex;
   justify-content: center;
-  width: 100vw;
-  margin-bottom: 5rem;
+  width: 100%;
+  margin-bottom: 6rem;
 }
 .btn-wrapper .btn-container button {
   font-family: "Charm", cursive;
