@@ -14,24 +14,46 @@
 .carousel-wrapper .carousel-container .image-container .img {
   height: 600px;
 }
-.carousel-wrapper .carousel-container .back-arrow {
+.carousel-wrapper .carousel-container .prev-container {
   position: absolute;
-  left: 5rem;
-  bottom: 50%;
-  color: #fff;
-  font-size: 25px;
+  left: 0;
+  width: 5rem;
+  height: 600px;
+  background-color: transparent;
 }
-.carousel-wrapper .carousel-container .back-arrow:is(:hover, :focus-visible) {
+.carousel-wrapper .carousel-container .prev-container:is(:hover, :focus-visible) {
+  background-image: linear-gradient(90deg, rgba(245, 222, 93, 0.4588235294), transparent);
   cursor: pointer;
 }
-.carousel-wrapper .carousel-container .forward-arrow {
+.carousel-wrapper .carousel-container .prev-container .back-arrow {
   position: absolute;
-  right: 5rem;
+  left: 1.75rem;
   bottom: 50%;
   color: #fff;
   font-size: 25px;
 }
-.carousel-wrapper .carousel-container .forward-arrow:is(:hover, :focus-visible) {
+.carousel-wrapper .carousel-container .prev-container .back-arrow:is(:hover, :focus-visible) {
+  cursor: pointer;
+}
+.carousel-wrapper .carousel-container .next-container {
+  position: absolute;
+  right: 0;
+  width: 5rem;
+  height: 600px;
+  background-color: transparent;
+}
+.carousel-wrapper .carousel-container .next-container:is(:hover, :focus-visible) {
+  background-image: linear-gradient(90deg, transparent, rgba(245, 222, 93, 0.4588235294));
+  cursor: pointer;
+}
+.carousel-wrapper .carousel-container .next-container .forward-arrow {
+  position: absolute;
+  right: 1.75rem;
+  bottom: 50%;
+  color: #fff;
+  font-size: 25px;
+}
+.carousel-wrapper .carousel-container .next-container .forward-arrow:is(:hover, :focus-visible) {
   cursor: pointer;
 }
 .carousel-wrapper .dots-container {

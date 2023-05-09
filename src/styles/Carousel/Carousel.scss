@@ -12,33 +12,60 @@
     display: flex;
     height: fit-content;
     width: 900px;
+
     .image-container {
       .img {
         height: 600px;
       }
     }
 
-    .back-arrow {
+    .prev-container {
       position: absolute;
-      left: calc(10rem / 2);
-      bottom: calc(100% / 2);
-      color: v.$main-white;
-      font-size: 25px;
+      left: 0;
+      width: 5rem;
+      height: 600px;
+      background-color: transparent;
 
       &:is(:hover, :focus-visible) {
+        background-image: linear-gradient(90deg, v.$main-transparent-yellow, transparent);
         cursor: pointer;
+      }
+
+      .back-arrow {
+        position: absolute;
+        left: calc(3.5rem / 2);
+        bottom: calc(100% / 2);
+        color: v.$main-white;
+        font-size: 25px;
+
+        &:is(:hover, :focus-visible) {
+          cursor: pointer;
+        }
       }
     }
 
-    .forward-arrow {
+    .next-container {
       position: absolute;
-      right: calc(10rem / 2);
-      bottom: calc(100% / 2);
-      color: v.$main-white;
-      font-size: 25px;
+      right: 0;
+      width: 5rem;
+      height: 600px;
+      background-color: transparent;
 
       &:is(:hover, :focus-visible) {
+        background-image: linear-gradient(90deg, transparent, v.$main-transparent-yellow);
         cursor: pointer;
+      }
+
+      .forward-arrow {
+        position: absolute;
+        right: calc(3.5rem / 2);
+        bottom: calc(100% / 2);
+        color: v.$main-white;
+        font-size: 25px;
+
+        &:is(:hover, :focus-visible) {
+          cursor: pointer;
+        }
       }
     }
   }

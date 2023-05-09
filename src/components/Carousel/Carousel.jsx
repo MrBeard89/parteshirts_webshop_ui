@@ -92,8 +92,13 @@ export const Carousel = () => {
           <img className='img' src={require(`../../assets/${path[currentIndex]}`)} alt='' />
         </div>
 
-        <IoIosArrowBack className='back-arrow' onClick={Prev} />
-        <IoIosArrowForward className='forward-arrow' onClick={Next} />
+        <div className='prev-container' onClick={Prev}>
+          <IoIosArrowBack className='back-arrow' />
+        </div>
+
+        <div className='next-container' onClick={Next}>
+          <IoIosArrowForward className='forward-arrow' />
+        </div>
       </div>
 
       <div className='dots-container'>
