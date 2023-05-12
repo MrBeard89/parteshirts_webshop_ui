@@ -12,6 +12,7 @@ import Parteebag from '../../assets/designs/partee bag/partee bag.jpg'
 import Parteefan from '../../assets/designs/partee fan/partee fan.jpg'
 import MusicPeace from '../../assets/designs/music and peace/music and peace black main pic.jpg'
 import { FAQ } from '../FAQ/FAQ'
+import { Contact } from '../Contact/Contact'
 
 export const Home = () => {
   return (
@@ -60,6 +61,7 @@ export const Home = () => {
 
       <Bestsellers />
       <FAQ />
+      <Contact />
     </div>
   )
 }
