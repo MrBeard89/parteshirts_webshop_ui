@@ -23,3 +23,14 @@
     }
   }
 }
+
+//Title bars
+%titleBars {
+  font-family: v.$font-family-headers;
+  background-color: v.$main-soft-yellow;
+  border-radius: 5px;
+  padding: 5px 5px 5px 15px;
+
+  margin-bottom: 3rem;
+  font-size: 22px;
+}

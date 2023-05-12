@@ -1,5 +1,13 @@
+.about-wrapper .introduction-container .title-bar .introduction-title {
+  font-family: "Luckiest Guy", cursive;
+  background-color: #f5de5d;
+  border-radius: 5px;
+  padding: 5px 5px 5px 15px;
+  margin-bottom: 3rem;
+  font-size: 22px;
+}
+
 .about-wrapper {
-  font-family: "Charm", cursive;
   width: 100%;
 }
 .about-wrapper .introduction-container {
@@ -7,14 +15,7 @@
   padding-right: 2rem;
 }
 .about-wrapper .introduction-container .title-bar {
-  z-index: 2;
   position: relative;
-}
-.about-wrapper .introduction-container .title-bar .introduction-title {
-  background-color: #f5de5d;
-  border-radius: 5px;
-  padding-left: 5px;
-  margin-bottom: 3rem;
 }
 .about-wrapper .introduction-container .title-bar .introduction-title:is(:hover, :focus-visible) {
   cursor: pointer;
@@ -22,7 +23,7 @@
 .about-wrapper .introduction-container .title-bar .down-arrow {
   position: absolute;
   right: 5px;
-  top: 5px;
+  top: 8px;
   font-size: 25px;
 }
 .about-wrapper .introduction-container .title-bar .down-arrow:is(:hover, :focus-visible) {
@@ -31,7 +32,7 @@
 .about-wrapper .introduction-container .title-bar .up-arrow {
   position: absolute;
   right: 5px;
-  top: 5px;
+  top: 8px;
   font-size: 25px;
 }
 .about-wrapper .introduction-container .title-bar .up-arrow:is(:hover, :focus-visible) {
@@ -43,6 +44,9 @@
 }
 
 .show {
+  font-family: "Charm", cursive;
+  font-weight: 600;
+  font-size: 20px;
   display: block;
   padding: 8px;
   padding-bottom: 15px;

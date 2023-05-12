@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap");
 .home-wrapper .products-wrapper .shirts-container button, .home-wrapper .products-wrapper .hoodies-container button, .home-wrapper .products-wrapper .accessories-container button, .home-wrapper .products-wrapper .party-package-container button {
   position: absolute;
   bottom: 0;
@@ -24,6 +26,7 @@
   flex-wrap: wrap;
   gap: 4rem;
   width: 100%;
+  margin-bottom: 6rem;
 }
 .home-wrapper .products-wrapper .shirts-container {
   position: relative;

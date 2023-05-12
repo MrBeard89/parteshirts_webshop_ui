@@ -3,6 +3,7 @@ import '../../styles/Home/Home.scss'
 import { About } from '../About/About'
 import { AllProductsBtn } from '../All Products/AllProductsBtn'
 import { Carousel } from '../Carousel/Carousel'
+import { Bestsellers } from '../Bestsellers/Bestsellers'
 
 //Import images for Thumbnails
 import Teeshirts from '../../assets/designs/connection/connection main pic.jpg'
@@ -55,6 +56,8 @@ export const Home = () => {
           <button>Partee package</button>
         </div>
       </div>
+
+      <Bestsellers />
     </div>
   )
 }

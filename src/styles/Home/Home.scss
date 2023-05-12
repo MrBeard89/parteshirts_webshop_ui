@@ -1,6 +1,9 @@
 @use '../../sass/variables' as v;
 @forward '../../sass/templates';
 
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+
 .home-wrapper {
   margin-top: v.$margin-top-home;
 
@@ -10,6 +13,7 @@
     flex-wrap: wrap;
     gap: 4rem;
     width: 100%;
+    margin-bottom: v.$components-gap;
 
     .shirts-container {
       position: relative;

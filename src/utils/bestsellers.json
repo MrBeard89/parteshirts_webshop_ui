@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Mushroomhead man hoodie",
+    "price": "50",
+    "img_src": "designs/mushroom head/mushroom head man hoodie.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Perfectly imperfect woman tee",
+    "price": "25",
+    "img_src": "designs/perfectly imperfect/perfectly imperfect woman tee.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Techno music just saved my life woman hoodie",
+    "price": "50",
+    "img_src": "designs/techno music just saved my life/techno music just saved my life woman hoodie.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Connection man hoodie",
+    "price": "25",
+    "img_src": "designs/connection/connection man hoodie.jpg"
+  }
+]
