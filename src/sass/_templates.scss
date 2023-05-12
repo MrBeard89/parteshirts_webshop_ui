@@ -43,7 +43,8 @@
   }
 }
 
-%moreBtnStyle {
+%moreBtnStyle,
+%sendEmailBtnStyle {
   button {
     font-family: v.$font-family-headers;
     font-weight: v.$font-weight-500;

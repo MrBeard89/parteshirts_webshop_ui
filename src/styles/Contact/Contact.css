@@ -1,1 +1,81 @@
-/*# sourceMappingURL=Contact.css.map */
+.contact-wrapper .contact-container .text-container button {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 500;
+  font-size: 26px;
+  background-color: #f5de5d;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 20px 5px 20px;
+}
+.contact-wrapper .contact-container .text-container button:is(:hover, :focus-visible) {
+  background-color: #000;
+  color: #f5de5d;
+  cursor: pointer;
+}
+
+.contact-wrapper .contact-container .contact-title-bar .title-bar {
+  font-family: "Luckiest Guy", cursive;
+  background-color: #f5de5d;
+  border-radius: 5px;
+  padding: 5px 5px 5px 15px;
+  margin-bottom: 1rem;
+  font-size: 22px;
+}
+
+.contact-wrapper {
+  width: 100%;
+}
+.contact-wrapper .contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.contact-wrapper .contact-container .contact-title-bar {
+  width: 100%;
+}
+.contact-wrapper .contact-container .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.contact-wrapper .contact-container .text-container .contact-text {
+  font-family: "Charm", cursive;
+  font-weight: 600;
+  font-size: 20px;
+  width: 1000px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.contact-wrapper .contact-container .text-container .down-arrow {
+  font-size: 25px;
+  animation: moveXBtn 1s infinite;
+  margin-bottom: 2rem;
+}
+.contact-wrapper .contact-container .reviews {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 500;
+  font-size: 32px;
+  background-color: #000;
+  color: #f5de5d;
+  border: none;
+  padding: 10px 50px 10px 50px;
+}
+.contact-wrapper .contact-container .reviews:is(:hover, :focus-visible) {
+  background-color: #f5de5d;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease-in;
+}
+
+@keyframes moveXBtn {
+  100% {
+    transform: translateY(0);
+  }
+  0% {
+    transform: translateY(-25px);
+  }
+}/*# sourceMappingURL=Contact.css.map */
