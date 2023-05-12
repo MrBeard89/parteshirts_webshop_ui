@@ -1,4 +1,5 @@
 @use '../../sass/variables' as v;
+@forward '../../sass/templates';
 
 .btn-wrapper {
   display: flex;
@@ -7,21 +8,6 @@
   margin-bottom: v.$components-gap;
 
   .btn-container {
-    button {
-      font-family: v.$font-family;
-      font-weight: v.$font-weight-700;
-      font-size: 22px;
-      padding: 2px 45px 2px 45px;
-      background-color: v.$main-soft-yellow;
-      border: 2px solid v.$main-black;
-      border-radius: 5px;
-
-      &:is(:hover, :focus-visible) {
-        background-color: v.$main-black;
-        color: v.$main-soft-yellow;
-        border: 2px solid v.$main-soft-yellow;
-        cursor: pointer;
-      }
-    }
+    @extend %AllProductsBtnStyle;
   }
 }

@@ -1,0 +1,75 @@
+@use '../../sass/variables' as v;
+@forward '../../sass/templates';
+
+.faq-wrapper {
+  font-family: v.$font-family;
+  width: 100%;
+
+  .faq-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .faq-title-bar {
+      position: relative;
+
+      .title-bar {
+        @extend %titleBars;
+      }
+    }
+
+    .questions-container {
+      .question {
+        .question-title {
+          z-index: 2;
+          text-align: left;
+          padding-left: 1rem;
+
+          &:is(:hover, :focus-visible) {
+            background-color: v.$main-black;
+            color: v.$main-soft-yellow;
+            cursor: pointer;
+            border-radius: 5px;
+            padding-left: 1.5rem;
+            transition: 0.3s ease-in;
+          }
+        }
+        .answer {
+          z-index: 1;
+          display: none;
+        }
+      }
+
+      .Btnmore-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: v.$components-gap;
+        @extend %moreBtnStyle;
+      }
+    }
+  }
+}
+
+.show {
+  @extend %show-text;
+  animation: answerAnimate 1s ease-in-out;
+}
+
+.current {
+  background-color: v.$main-black;
+  color: v.$main-soft-yellow;
+  border-radius: 5px;
+}
+
+//keyframes
+@keyframes answerAnimate {
+  0% {
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

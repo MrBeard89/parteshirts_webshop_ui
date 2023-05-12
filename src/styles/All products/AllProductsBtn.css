@@ -1,9 +1,3 @@
-.btn-wrapper {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 6rem;
-}
 .btn-wrapper .btn-container button {
   font-family: "Charm", cursive;
   font-weight: 700;
@@ -18,4 +12,11 @@
   color: #f5de5d;
   border: 2px solid #f5de5d;
   cursor: pointer;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 6rem;
 }/*# sourceMappingURL=AllProductsBtn.css.map */

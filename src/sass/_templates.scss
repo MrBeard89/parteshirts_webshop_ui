@@ -2,7 +2,26 @@
 
 //Templates
 
-////Home - Products - Button style
+////Button styles
+%AllProductsBtnStyle {
+  button {
+    font-family: v.$font-family;
+    font-weight: v.$font-weight-700;
+    font-size: 22px;
+    padding: 2px 45px 2px 45px;
+    background-color: v.$main-soft-yellow;
+    border: 2px solid v.$main-black;
+    border-radius: 5px;
+
+    &:is(:hover, :focus-visible) {
+      background-color: v.$main-black;
+      color: v.$main-soft-yellow;
+      border: 2px solid v.$main-soft-yellow;
+      cursor: pointer;
+    }
+  }
+}
+
 %productsBtnStyle {
   button {
     position: absolute;
@@ -24,6 +43,24 @@
   }
 }
 
+%moreBtnStyle {
+  button {
+    font-family: v.$font-family-headers;
+    font-weight: v.$font-weight-500;
+    font-size: 26px;
+    background-color: v.$main-soft-yellow;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px 5px 20px;
+
+    &:is(:hover, :focus-visible) {
+      background-color: v.$main-black;
+      color: v.$main-soft-yellow;
+      cursor: pointer;
+    }
+  }
+}
+
 //Title bars
 %titleBars {
   font-family: v.$font-family-headers;
@@ -31,6 +68,22 @@
   border-radius: 5px;
   padding: 5px 5px 5px 15px;
 
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   font-size: 22px;
+}
+
+//Show-text at title bars
+%show-text {
+  font-family: v.$font-family;
+  font-weight: v.$font-weight-600;
+  font-size: 20px;
+  display: block;
+  padding: 8px;
+  padding-bottom: 15px;
+  background-image: linear-gradient(transparent, v.$main-soft-yellow 195%);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin-bottom: 3rem;
+
+  animation: fadeText 1s ease-in-out;
 }

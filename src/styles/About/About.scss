@@ -9,6 +9,7 @@
     padding-right: 2rem;
 
     .title-bar {
+      z-index: 2;
       position: relative;
 
       .introduction-title {
@@ -50,18 +51,7 @@
 }
 
 .show {
-  font-family: v.$font-family;
-  font-weight: v.$font-weight-600;
-  font-size: 20px;
-  display: block;
-  padding: 8px;
-  padding-bottom: 15px;
-  background-image: linear-gradient(v.$main-white, v.$main-soft-yellow 195%);
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  margin-bottom: 3rem;
-
-  animation: fadeText 1s ease-in-out;
+  @extend %show-text;
 }
 
 //keyframes

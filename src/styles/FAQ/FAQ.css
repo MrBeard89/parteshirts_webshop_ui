@@ -1,0 +1,94 @@
+.faq-wrapper .faq-container .questions-container .Btnmore-container button {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 500;
+  font-size: 26px;
+  background-color: #f5de5d;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 20px 5px 20px;
+}
+.faq-wrapper .faq-container .questions-container .Btnmore-container button:is(:hover, :focus-visible) {
+  background-color: #000;
+  color: #f5de5d;
+  cursor: pointer;
+}
+
+.faq-wrapper .faq-container .faq-title-bar .title-bar {
+  font-family: "Luckiest Guy", cursive;
+  background-color: #f5de5d;
+  border-radius: 5px;
+  padding: 5px 5px 5px 15px;
+  margin-bottom: 1rem;
+  font-size: 22px;
+}
+
+.show {
+  font-family: "Charm", cursive;
+  font-weight: 600;
+  font-size: 20px;
+  display: block;
+  padding: 8px;
+  padding-bottom: 15px;
+  background-image: linear-gradient(transparent, #f5de5d 195%);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin-bottom: 3rem;
+  animation: fadeText 1s ease-in-out;
+}
+
+.faq-wrapper {
+  font-family: "Charm", cursive;
+  width: 100%;
+}
+.faq-wrapper .faq-container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.faq-wrapper .faq-container .faq-title-bar {
+  position: relative;
+}
+.faq-wrapper .faq-container .questions-container .question .question-title {
+  z-index: 2;
+  text-align: left;
+  padding-left: 1rem;
+}
+.faq-wrapper .faq-container .questions-container .question .question-title:is(:hover, :focus-visible) {
+  background-color: #000;
+  color: #f5de5d;
+  cursor: pointer;
+  border-radius: 5px;
+  padding-left: 1.5rem;
+  transition: 0.3s ease-in;
+}
+.faq-wrapper .faq-container .questions-container .question .answer {
+  z-index: 1;
+  display: none;
+}
+.faq-wrapper .faq-container .questions-container .Btnmore-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+.show {
+  animation: answerAnimate 1s ease-in-out;
+}
+
+.current {
+  background-color: #000;
+  color: #f5de5d;
+  border-radius: 5px;
+}
+
+@keyframes answerAnimate {
+  0% {
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=FAQ.css.map */
