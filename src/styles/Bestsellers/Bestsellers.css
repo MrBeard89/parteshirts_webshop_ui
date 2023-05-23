@@ -31,7 +31,6 @@
   width: 325px;
 }
 .bestsellers-wrapper .bestsellers-container .bestsellers-actual-wrapper .bestsellers-actual:is(:hover, :focus-visible) {
-  z-index: 2;
   box-shadow: 0px 0px 35px 5px #051d35;
   cursor: pointer;
   border-radius: 1rem;

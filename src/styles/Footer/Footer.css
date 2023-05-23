@@ -1,0 +1,171 @@
+.footer-wrapper {
+  font-family: "Luckiest Guy", cursive;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+}
+.footer-wrapper .decor-line {
+  height: 2rem;
+  width: 100%;
+  background-color: #000;
+}
+.footer-wrapper .footer-container {
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+  padding: 15px 2rem 15px 2rem;
+}
+.footer-wrapper .footer-container .newsletter-container {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  gap: 2rem;
+}
+.footer-wrapper .footer-container .newsletter-container .newsletter-title {
+  margin-bottom: 2rem;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.footer-wrapper .footer-container .newsletter-container .newsletter-text {
+  font-family: "Charm", cursive;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.footer-wrapper .footer-container .newsletter-container .input-container input {
+  font-family: "Charm", cursive;
+  height: 3rem;
+  width: 340px;
+  outline: none;
+  background-color: #000;
+  color: #a5a5a5;
+  padding-left: 1rem;
+  border: 2px solid #f5de5d;
+  border-right: none;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.footer-wrapper .footer-container .newsletter-container .input-container input:focus {
+  color: #fff;
+}
+.footer-wrapper .footer-container .newsletter-container .input-container button {
+  font-family: "Charm", cursive;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+  text-transform: uppercase;
+  height: 3.25rem;
+  width: 60px;
+  border: 2px solid #f5de5d;
+  border-left: none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #f5de5d;
+  color: #000;
+}
+.footer-wrapper .footer-container .newsletter-container .input-container button:is(:hover, :focus-visible, :active) {
+  cursor: pointer;
+}
+.footer-wrapper .footer-container .newsletter-container .input-footer {
+  font-family: "Charm", cursive;
+  font-size: 14px;
+  color: #a5a5a5;
+  letter-spacing: 2px;
+}
+.footer-wrapper .footer-container .newsletter-container .input-footer a {
+  text-decoration: none;
+  color: #a5a5a5;
+}
+.footer-wrapper .footer-container .newsletter-container .input-footer a:is(:hover, :focus-visible) {
+  text-decoration: underline;
+  color: #f5de5d;
+}
+.footer-wrapper .footer-container .footer-links {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  width: 65%;
+}
+.footer-wrapper .footer-container .footer-links .general {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1.2rem;
+}
+.footer-wrapper .footer-container .footer-links .general .links-title {
+  margin-bottom: 2rem;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.footer-wrapper .footer-container .footer-links .general .footer-link {
+  font-family: "Charm", cursive;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+.footer-wrapper .footer-container .footer-links .general .footer-link:is(:hover, :focus-visible) {
+  text-decoration: underline;
+  color: #f5de5d;
+}
+.footer-wrapper .footer-container .footer-links .info-order {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1.2rem;
+}
+.footer-wrapper .footer-container .footer-links .info-order .links-title {
+  margin-bottom: 2rem;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.footer-wrapper .footer-container .footer-links .info-order .footer-link {
+  font-family: "Charm", cursive;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+.footer-wrapper .footer-container .footer-links .info-order .footer-link:is(:hover, :focus-visible) {
+  text-decoration: underline;
+  color: #f5de5d;
+}
+.footer-wrapper .footer-container .footer-links .legal-info {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1.2rem;
+}
+.footer-wrapper .footer-container .footer-links .legal-info .links-title {
+  margin-bottom: 2rem;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.footer-wrapper .footer-container .footer-links .legal-info .footer-link {
+  font-family: "Charm", cursive;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+.footer-wrapper .footer-container .footer-links .legal-info .footer-link:is(:hover, :focus-visible) {
+  text-decoration: underline;
+  color: #f5de5d;
+}
+.footer-wrapper .copyright-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.footer-wrapper .copyright-container .copyright {
+  letter-spacing: 2px;
+}/*# sourceMappingURL=Footer.css.map */

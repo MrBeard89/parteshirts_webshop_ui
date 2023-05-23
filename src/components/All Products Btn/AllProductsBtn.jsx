@@ -1,4 +1,4 @@
-import '../../styles/All products/AllProductsBtn.scss'
+import '../../styles/All products Btn/AllProductsBtn.scss'
 
 export const AllProductsBtn = () => {
   return (

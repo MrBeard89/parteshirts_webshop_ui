@@ -1,7 +1,7 @@
 import '../../styles/Home/Home.scss'
 
 import { About } from '../About/About'
-import { AllProductsBtn } from '../All Products/AllProductsBtn'
+import { AllProductsBtn } from '../All Products Btn/AllProductsBtn'
 import { Carousel } from '../Carousel/Carousel'
 import { Bestsellers } from '../Bestsellers/Bestsellers'
 import { FAQ } from '../FAQ/FAQ'
