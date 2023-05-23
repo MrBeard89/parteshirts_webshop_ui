@@ -1,0 +1,93 @@
+.products-wrapper .shirts-container button, .products-wrapper .hoodies-container button, .products-wrapper .accessories-container button, .products-wrapper .party-package-container button {
+  position: absolute;
+  bottom: 0;
+  font-family: "Charm", cursive;
+  font-weight: 700;
+  font-size: 26px;
+  background-color: #f5de5d;
+  border: none;
+  padding: 5px 25px 5px 25px;
+  width: 360px;
+}
+.products-wrapper .shirts-container button:is(:hover, :focus-visible), .products-wrapper .hoodies-container button:is(:hover, :focus-visible), .products-wrapper .accessories-container button:is(:hover, :focus-visible), .products-wrapper .party-package-container button:is(:hover, :focus-visible) {
+  background-color: #000;
+  color: #f5de5d;
+  cursor: pointer;
+}
+
+.products-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  width: 100%;
+  margin-bottom: 6rem;
+}
+.products-wrapper .shirts-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  height: 300px;
+  border: 2px solid #000;
+}
+.products-wrapper .shirts-container .shirts-thumbnail {
+  width: 220px;
+}
+.products-wrapper .hoodies-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  height: 300px;
+  border: 2px solid #000;
+}
+.products-wrapper .hoodies-container .hoodies-thumbnail {
+  width: 220px;
+}
+.products-wrapper .accessories-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  height: 300px;
+  border: 2px solid #000;
+}
+.products-wrapper .accessories-container .accessories-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+.products-wrapper .accessories-container .accessories-thumbnail {
+  width: 180px;
+}
+.products-wrapper .party-package-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  height: 300px;
+  border: 2px solid #000;
+}
+.products-wrapper .party-package-container .party-packge-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2rem;
+}
+.products-wrapper .party-package-container .party-packge-img-container .inner-img-container {
+  display: flex;
+  flex-direction: column;
+}
+.products-wrapper .party-package-container .party-packge-img-container .inner-img-container .party-package-thumbnail {
+  width: 130px;
+}
+.products-wrapper .party-package-container .music-and-peace-thumbnail {
+  width: 190px;
+}/*# sourceMappingURL=Products.css.map */
