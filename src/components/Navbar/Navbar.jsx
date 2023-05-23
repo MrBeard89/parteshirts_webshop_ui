@@ -16,6 +16,7 @@ export const Navbar = () => {
     }
     prevScrollpos = currentScrollPos
   }
+
   return (
     <>
       <div className='navbar-wrapper'>
