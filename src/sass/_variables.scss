@@ -1,10 +1,9 @@
-//Variables
+///////////////////* Font family *///////////////////
 
 $font-family: 'Charm', cursive;
 $font-family-headers: 'Luckiest Guy', cursive;
-$margin-top-home: 12rem;
-$components-gap: 6rem;
-////Main-Colors
+
+///////////////////* Main-Colors *///////////////////
 
 $main-black: #000;
 $main-white: #fff;
@@ -17,9 +16,52 @@ $main-transparent-yellow: #f5de5d75;
 $main-lime-green: #7fd1a1;
 $main-dark-blue: #051d35;
 
-////Font-Weights
+///////////////////* Font-Weights *///////////////////
 
 $font-weight-400: 400;
 $font-weight-500: 500;
 $font-weight-600: 600;
 $font-weight-700: 700;
+
+///////////////////* Font sizes *///////////////////
+
+$fs-xs: 12px;
+$fs-s: 14px;
+$fs-m: 16px;
+$fs-l: 20px;
+$fs-xl: 24px;
+$fs-xxl: 28px;
+$fs-xxxl: 34px;
+
+////Headers
+
+$fs-h1: 38px;
+$fs-h2: 30px;
+$fs-h3: 22px;
+
+///////////////////* Breakpoints *///////////////////
+
+$breakpoint-s: 320px;
+$breakpoint-sm: 410px;
+$breakpoint-m: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+///////////////////* Variables *///////////////////
+
+$first-top-gap: 4rem;
+
+$margin-top-home: 12rem;
+$components-gap: 6rem;
+
+///////////////////* Inner widths *///////////////////
+
+$mobile-s-width: 300px;
+$mobile-sm-width: 390px;
+$mobile-m-width: 540px;
+$tablet-width: 730px;
+$desktop-m-width: 940px;
+$desktop-l-width: 1150px;
+$desktop-xl-width: 1380px;
