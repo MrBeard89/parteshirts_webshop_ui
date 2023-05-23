@@ -88,7 +88,7 @@
       background-color: rgba(0, 0, 0, 0.822);
       backdrop-filter: blur(50px);
 
-      animation: 0.5s slideMenu cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      animation: 0.3s slideMenu cubic-bezier(0.895, 0.03, 0.685, 0.22);
 
       .navlinks {
         display: flex;
@@ -150,7 +150,7 @@
       background-color: rgba(0, 0, 0, 0.822);
       backdrop-filter: blur(50px);
 
-      animation: 0.5s slideCart cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      animation: 0.3s slideCart cubic-bezier(0.895, 0.03, 0.685, 0.22);
 
       .cart-wrapper {
         position: relative;
