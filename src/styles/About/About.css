@@ -29,7 +29,6 @@
   padding-right: 2rem;
 }
 .about-wrapper .introduction-container .title-bar {
-  z-index: 2;
   position: relative;
 }
 .about-wrapper .introduction-container .title-bar .introduction-title:is(:hover, :focus-visible) {
