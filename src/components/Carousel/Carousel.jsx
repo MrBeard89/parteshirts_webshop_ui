@@ -1,111 +1,79 @@
 import '../../styles/Carousel/Carousel.scss'
+import images from '../../utils/sliderpath.json'
 
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { GoPrimitiveDot } from 'react-icons/go'
 import { useState, useEffect } from 'react'
 
 export const Carousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [dotIndex, setDotIndex] = useState(0)
-
-  const path = [
-    'carousel-images/carousel-1.jpg',
-    'carousel-images/carousel-2.jpg',
-    'carousel-images/carousel-3.jpg',
-    'carousel-images/carousel-4.jpg',
-  ]
+  const [current, setCurrent] = useState(0)
+  const [autoPlay, setAutoPlay] = useState(true)
+  let timeOut = null
 
   useEffect(() => {
-    const addFirst = () => {
-      let dotsContainer = document.querySelector('.dots-container')
-      dotsContainer.childNodes[dotIndex].classList.add('actual-dot')
-    }
-    addFirst()
-  }, [])
+    timeOut =
+      autoPlay &&
+      setTimeout(() => {
+        slideRight()
+      }, 2500)
+  })
 
-  // setInterval(() => {
-  //   Next() //call the function
-  // }, 5000)
-
-  const Next = () => {
-    let dotsContainer = document.querySelector('.dots-container')
-    currentIndex >= 3 ? setCurrentIndex(0) : setCurrentIndex(currentIndex + 1)
-    dotIndex >= 3 ? setDotIndex(0) : setDotIndex(dotIndex + 1)
-
-    const removePrev = () => {
-      dotsContainer.childNodes[dotIndex - 1].classList.remove('actual-dot')
-      dotsContainer.childNodes[dotIndex].classList.add('actual-dot')
-    }
-
-    const removeLast = () => {
-      dotsContainer.childNodes[dotIndex].classList.remove('actual-dot')
-      setDotIndex(0)
-    }
-
-    const add = () => {
-      dotsContainer.childNodes[dotIndex].classList.add('actual-dot')
-      setDotIndex(dotIndex + 1)
-    }
-
-    dotIndex >= 1 ? removePrev() : add()
-
-    dotIndex < 3 ? add() : removeLast()
-
-    dotIndex === 3
-      ? dotsContainer.childNodes[dotIndex].classList.add('actual-dot')
-      : dotsContainer.childNodes[3].classList.remove('actual-dot')
+  const slideRight = () => {
+    setCurrent(current === images.length - 1 ? 0 : current + 1)
   }
 
-  const Prev = () => {
-    let dotsContainer = document.querySelector('.dots-container')
-    currentIndex <= 0 ? setCurrentIndex(3) : setCurrentIndex(currentIndex - 1)
-    dotIndex <= 0 ? setDotIndex(3) : setDotIndex(dotIndex - 1)
-
-    const removePrev = () => {
-      dotsContainer.childNodes[dotIndex - 1].classList.remove('actual-dot')
-      dotsContainer.childNodes[dotIndex].classList.add('actual-dot')
-    }
-
-    const removeLast = () => {
-      dotsContainer.childNodes[dotIndex].classList.remove('actual-dot')
-      setDotIndex(0)
-    }
-
-    const add = () => {
-      dotsContainer.childNodes[dotIndex].classList.add('actual-dot')
-      setDotIndex(dotIndex + 1)
-    }
-
-    dotIndex >= 1 ? removePrev() : add()
-
-    dotIndex < 3 ? add() : removeLast()
-
-    dotIndex === 3
-      ? dotsContainer.childNodes[dotIndex].classList.add('actual-dot')
-      : dotsContainer.childNodes[3].classList.remove('actual-dot')
+  const slideLeft = () => {
+    setCurrent(current === 0 ? images.length - 1 : current - 1)
   }
 
   return (
-    <div className='carousel-wrapper'>
-      <div className='carousel-container'>
-        <div className='image-container'>
-          <img className='img' src={require(`../../assets/${path[currentIndex]}`)} alt='' />
+    <div className='carousel_wrapper'>
+      <div className='carousel'>
+        {images.map((image, index) => {
+          return (
+            /* (condition) ? true : false */
+
+            <div
+              key={index}
+              className={index == current ? 'carousel_card carousel_card-active' : 'carousel_card'}
+            >
+              <img
+                className='card_image'
+                src={require(`../../assets/${image.image}`)}
+                alt='carousel-background-img'
+                onMouseEnter={() => {
+                  setAutoPlay(false)
+                  clearTimeout(timeOut)
+                }}
+                onMouseLeave={() => {
+                  setAutoPlay(true)
+                }}
+              />
+            </div>
+          )
+        })}
+
+        <div className='carousel_arrow_left' onClick={slideLeft}>
+          <IoIosArrowBack />
         </div>
 
-        <div className='prev-container' onClick={Prev}>
-          <IoIosArrowBack className='back-arrow' />
+        <div className='carousel_arrow_right' onClick={slideRight}>
+          <IoIosArrowForward />
         </div>
 
-        <div className='next-container' onClick={Next}>
-          <IoIosArrowForward className='forward-arrow' />
+        <div className='carousel_pagination'>
+          {images.map((_, index) => {
+            return (
+              <div
+                key={index}
+                className={
+                  index == current ? 'pagination_dot pagination_dot-active' : 'pagination_dot'
+                }
+                onClick={() => setCurrent(index)}
+              ></div>
+            )
+          })}
         </div>
-      </div>
-
-      <div className='dots-container'>
-        <GoPrimitiveDot className='dot' />
-        <GoPrimitiveDot className='dot' />
-        <GoPrimitiveDot className='dot' />
-        <GoPrimitiveDot className='dot' />
       </div>
     </div>
   )
