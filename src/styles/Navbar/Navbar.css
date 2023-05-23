@@ -1,57 +1,199 @@
 .navbar-wrapper {
+  display: flex;
+  justify-content: center;
   font-family: "Luckiest Guy", cursive;
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   transition: top 0.3s;
   border-bottom: 1px solid #000;
-  margin-bottom: 6rem;
   background-color: #fff;
 }
 .navbar-wrapper .navbar-container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 10rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  height: 5rem;
+  width: 300px;
 }
 .navbar-wrapper .navbar-container .navlinks-container {
+  display: none;
+}
+.navbar-wrapper .navbar-container .mobile-icon-container {
+  z-index: 3;
+}
+.navbar-wrapper .navbar-container .mobile-icon-container .menu-close {
+  font-size: 24px;
+  color: #fff;
+}
+.navbar-wrapper .navbar-container .mobile-icon-container .menu-close:is(:hover, :focus-visible, :active) {
+  cursor: pointer;
+}
+.navbar-wrapper .navbar-container .mobile-icon-container .hamburger {
+  font-size: 24px;
+}
+.navbar-wrapper .navbar-container .mobile-icon-container .hamburger:is(:hover, :focus-visible, :active) {
+  cursor: pointer;
+  animation: menuShake 0.4s infinite;
+}
+.navbar-wrapper .navbar-container .cart-icon-container {
+  z-index: 4;
+}
+.navbar-wrapper .navbar-container .cart-icon-container .cart-close {
+  font-size: 24px;
+  color: #fff;
+}
+.navbar-wrapper .navbar-container .cart-icon-container .cart-close:is(:hover, :focus-visible, :active) {
+  cursor: pointer;
+}
+.navbar-wrapper .navbar-container .cart-icon-container .cart {
+  font-size: 24px;
+}
+.navbar-wrapper .navbar-container .cart-icon-container .cart:is(:hover, :focus-visible, :active) {
+  cursor: pointer;
+  animation: menuShake 0.4s infinite;
+}
+.navbar-wrapper .navbar-container .navbar-mobile {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: -1rem;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   gap: 4rem;
-  margin-right: 2rem;
+  padding-top: 8rem;
+  background-color: rgba(0, 0, 0, 0.822);
+  backdrop-filter: blur(50px);
+  animation: 0.5s slideMenu cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-.navbar-wrapper .navbar-container .navlinks-container .navlink {
-  font-weight: 700;
-  font-size: 25px;
-  list-style: none;
+.navbar-wrapper .navbar-container .navbar-mobile .navlinks {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 1rem;
 }
-.navbar-wrapper .navbar-container .navlinks-container a {
+.navbar-wrapper .navbar-container .navbar-mobile .navlinks a {
   position: relative;
   display: flex;
   align-items: center;
   gap: 5px;
   text-decoration: none;
-  color: #000;
+  color: #f5de5d;
 }
-.navbar-wrapper .navbar-container .navlinks-container a .skull {
+.navbar-wrapper .navbar-container .navbar-mobile .navlinks a .navlink {
+  font-weight: 700;
+  font-size: 25px;
+  list-style: none;
+}
+.navbar-wrapper .navbar-container .navbar-mobile .navlinks a .skull-back {
   position: absolute;
-  left: -25px;
+  right: 15px;
   font-size: 22px;
   display: none;
 }
-.navbar-wrapper .navbar-container .navlinks-container a .skull-back {
-  position: absolute;
-  right: -25px;
-  font-size: 22px;
-  display: none;
-}
-.navbar-wrapper .navbar-container .navlinks-container a:is(:hover, :focus-visible) {
-  color: #fe5a0b;
+.navbar-wrapper .navbar-container .navbar-mobile .navlinks a:is(:hover, :focus-visible, :active) {
+  color: #fff;
   cursor: pointer;
 }
-.navbar-wrapper .navbar-container .navlinks-container a:is(:hover, :focus-visible) .skull,
-.navbar-wrapper .navbar-container .navlinks-container a:is(:hover, :focus-visible) .skull-back {
+.navbar-wrapper .navbar-container .navbar-mobile .navlinks a:is(:hover, :focus-visible, :active) .skull,
+.navbar-wrapper .navbar-container .navbar-mobile .navlinks a:is(:hover, :focus-visible, :active) .skull-back {
   display: block;
+}
+.navbar-wrapper .navbar-container .cartlinks-container {
+  display: none;
+}
+.navbar-wrapper .navbar-container .cart-mobile {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: -0.6rem;
+  width: 107%;
+  height: 105vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+  background-color: rgba(0, 0, 0, 0.822);
+  backdrop-filter: blur(50px);
+  animation: 0.5s slideCart cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.navbar-wrapper .navbar-container .cart-mobile .cart-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.navbar-wrapper .navbar-container .cart-mobile .cart-wrapper .title {
+  position: inherit;
+  top: -2.5rem;
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.navbar-wrapper .navbar-container .cart-mobile .cart-wrapper .cart-message {
+  position: inherit;
+  top: 10.5rem;
+  margin-bottom: 2rem;
+  font-size: 20px;
+  color: #f5de5d;
+}
+.navbar-wrapper .navbar-container .cart-mobile .cart-wrapper .goshoppingBtn {
+  position: inherit;
+  top: 10.5rem;
+  font-family: "Charm", cursive;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 180px;
+  height: 55px;
+  border: 2px solid #f5de5d;
+  background-color: #000;
+  color: #f5de5d;
+  outline: none;
+  border-radius: 1rem;
+}
+.navbar-wrapper .navbar-container .cart-mobile .cart-wrapper .goshoppingBtn:is(:hover, :focus-visible, :active) {
+  background-color: #f5de5d;
+  color: #000;
+  cursor: pointer;
+}
+
+@keyframes slideCart {
+  0% {
+    transform: translateX(320px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes slideMenu {
+  0% {
+    transform: translateX(-320px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes menuShake {
+  0% {
+    transform: rotate(0deg);
+    transition: 0.2s ease-in;
+  }
+  20% {
+    transform: rotate(15deg);
+    transition: 0.2s ease-in;
+  }
+  50% {
+    transform: rotate(-15deg);
+    transition: 0.2s ease-in;
+  }
+  100% {
+    transform: rotate(0);
+    transition: 0.2s ease-in;
+  }
 }/*# sourceMappingURL=Navbar.css.map */

@@ -1,68 +1,244 @@
 @use '../../sass/variables' as v;
 
 .navbar-wrapper {
+  display: flex;
+  justify-content: center;
   font-family: v.$font-family-headers;
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   transition: top 0.3s;
   border-bottom: 1px solid v.$main-black;
-  margin-bottom: v.$components-gap;
   background-color: v.$main-white;
 
   .navbar-container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 5rem;
+    width: v.$mobile-s-width;
 
-    height: 10rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    //Disable desktop menu
 
     .navlinks-container {
-      display: flex;
-      gap: 4rem;
-      margin-right: 2rem;
+      display: none;
+    }
 
-      .navlink {
-        font-weight: v.$font-weight-700;
-        font-size: 25px;
-        list-style: none;
+    //Mobile icon container
+
+    .mobile-icon-container {
+      z-index: 3;
+      .menu-close {
+        font-size: v.$fs-xl;
+        color: v.$main-white;
+
+        &:is(:hover, :focus-visible, :active) {
+          cursor: pointer;
+        }
       }
 
-      a {
-        position: relative;
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        text-decoration: none;
-        color: v.$main-black;
+      .hamburger {
+        font-size: v.$fs-xl;
 
-        .skull {
-          position: absolute;
-          left: -25px;
-          font-size: 22px;
-          display: none;
-        }
-
-        .skull-back {
-          position: absolute;
-          right: -25px;
-          font-size: 22px;
-          display: none;
-        }
-
-        &:is(:hover, :focus-visible) {
-          color: v.$main-vivid-orange;
+        &:is(:hover, :focus-visible, :active) {
           cursor: pointer;
+          animation: menuShake 0.4s infinite;
+        }
+      }
+    }
 
-          .skull,
+    //Cart icon container
+
+    .cart-icon-container {
+      z-index: 4;
+
+      .cart-close {
+        font-size: v.$fs-xl;
+        color: v.$main-white;
+
+        &:is(:hover, :focus-visible, :active) {
+          cursor: pointer;
+        }
+      }
+
+      .cart {
+        font-size: v.$fs-xl;
+
+        &:is(:hover, :focus-visible, :active) {
+          cursor: pointer;
+          animation: menuShake 0.4s infinite;
+        }
+      }
+    }
+
+    //Mobile menu
+
+    .navbar-mobile {
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      left: -1rem;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      padding-top: 8rem;
+      background-color: rgba(0, 0, 0, 0.822);
+      backdrop-filter: blur(50px);
+
+      animation: 0.5s slideMenu cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+      .navlinks {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-left: 1rem;
+
+        a {
+          position: relative;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          text-decoration: none;
+          color: v.$main-soft-yellow;
+
+          .navlink {
+            font-weight: v.$font-weight-700;
+            font-size: 25px;
+            list-style: none;
+          }
+
           .skull-back {
-            display: block;
+            position: absolute;
+            right: 15px;
+            font-size: 22px;
+            display: none;
+          }
+
+          &:is(:hover, :focus-visible, :active) {
+            color: v.$main-white;
+            cursor: pointer;
+
+            .skull,
+            .skull-back {
+              display: block;
+            }
           }
         }
       }
     }
+
+    //Disable desktop cart menu
+    .cartlinks-container {
+      display: none;
+    }
+
+    //Mobile cart menu
+
+    .cart-mobile {
+      z-index: 3;
+      position: absolute;
+      top: 0;
+      right: -0.6rem;
+      width: 107%;
+      height: 105vh;
+      display: flex;
+      flex-direction: column;
+      padding-top: 4rem;
+      background-color: rgba(0, 0, 0, 0.822);
+      backdrop-filter: blur(50px);
+
+      animation: 0.5s slideCart cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+      .cart-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        .title {
+          position: inherit;
+          top: -2.5rem;
+          font-size: v.$fs-h3;
+          font-weight: v.$font-weight-400;
+          color: v.$main-white;
+          letter-spacing: 1px;
+        }
+
+        .cart-message {
+          position: inherit;
+          top: 10.5rem;
+          margin-bottom: 2rem;
+          font-size: v.$fs-l;
+          color: v.$main-soft-yellow;
+        }
+
+        .goshoppingBtn {
+          position: inherit;
+          top: 10.5rem;
+          font-family: v.$font-family;
+          font-size: v.$fs-xl;
+          font-weight: v.$font-weight-600;
+          text-transform: uppercase;
+          width: 180px;
+          height: 55px;
+          border: 2px solid v.$main-soft-yellow;
+          background-color: v.$main-black;
+          color: v.$main-soft-yellow;
+          outline: none;
+          border-radius: 1rem;
+
+          &:is(:hover, :focus-visible, :active) {
+            background-color: v.$main-soft-yellow;
+            color: v.$main-black;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Keyframes
+@keyframes slideCart {
+  0% {
+    transform: translateX(320px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slideMenu {
+  0% {
+    transform: translateX(-320px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes menuShake {
+  0% {
+    transform: rotate(0deg);
+    transition: 0.2s ease-in;
+  }
+  20% {
+    transform: rotate(15deg);
+    transition: 0.2s ease-in;
+  }
+  50% {
+    transform: rotate(-15deg);
+    transition: 0.2s ease-in;
+  }
+  100% {
+    transform: rotate(0);
+    transition: 0.2s ease-in;
   }
 }
