@@ -7,7 +7,7 @@
   background-color: #f5de5d;
   border: none;
   padding: 5px 25px 5px 25px;
-  width: 360px;
+  width: 300px;
 }
 .products-wrapper .shirts-container button:is(:hover, :focus-visible), .products-wrapper .hoodies-container button:is(:hover, :focus-visible), .products-wrapper .accessories-container button:is(:hover, :focus-visible), .products-wrapper .party-package-container button:is(:hover, :focus-visible) {
   background-color: #000;
@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 360px;
+  width: 300px;
   height: 300px;
   border: 2px solid #000;
 }
@@ -40,7 +40,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 360px;
+  width: 300px;
   height: 300px;
   border: 2px solid #000;
 }
@@ -52,7 +52,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 360px;
+  width: 300px;
   height: 300px;
   border: 2px solid #000;
 }
@@ -63,7 +63,7 @@
   height: 250px;
 }
 .products-wrapper .accessories-container .accessories-thumbnail {
-  width: 180px;
+  width: 140px;
 }
 .products-wrapper .party-package-container {
   position: relative;
@@ -71,7 +71,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 360px;
+  width: 300px;
   height: 300px;
   border: 2px solid #000;
 }
@@ -86,8 +86,8 @@
   flex-direction: column;
 }
 .products-wrapper .party-package-container .party-packge-img-container .inner-img-container .party-package-thumbnail {
-  width: 130px;
+  width: 110px;
 }
 .products-wrapper .party-package-container .music-and-peace-thumbnail {
-  width: 190px;
+  width: 170px;
 }/*# sourceMappingURL=Products.css.map */

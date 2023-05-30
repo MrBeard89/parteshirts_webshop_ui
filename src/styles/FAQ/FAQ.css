@@ -36,12 +36,14 @@
 }
 
 .faq-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "Charm", cursive;
   width: 100%;
 }
 .faq-wrapper .faq-container {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  width: 300px;
 }
 .faq-wrapper .faq-container .faq-title-bar {
   position: relative;
@@ -50,6 +52,7 @@
   z-index: 2;
   text-align: left;
   padding-left: 1rem;
+  font-size: 20px;
 }
 .faq-wrapper .faq-container .questions-container .question .question-title:is(:hover, :focus-visible) {
   background-color: #000;

@@ -2,6 +2,7 @@
   font-family: "Luckiest Guy", cursive;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   background-color: #000;
   color: #fff;
@@ -13,15 +14,19 @@
 }
 .footer-wrapper .footer-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  height: 400px;
-  padding: 15px 2rem 15px 2rem;
+  align-items: center;
+  height: fit-content;
+  width: 300px;
 }
 .footer-wrapper .footer-container .newsletter-container {
   display: flex;
   flex-direction: column;
-  width: 35%;
-  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
 }
 .footer-wrapper .footer-container .newsletter-container .newsletter-title {
   margin-bottom: 2rem;
@@ -34,11 +39,16 @@
   color: #fff;
   letter-spacing: 1px;
   font-size: 20px;
+  width: 300px;
+}
+.footer-wrapper .footer-container .newsletter-container .input-container {
+  display: flex;
+  justify-content: flex-start;
 }
 .footer-wrapper .footer-container .newsletter-container .input-container input {
   font-family: "Charm", cursive;
   height: 3rem;
-  width: 340px;
+  width: 185px;
   outline: none;
   background-color: #000;
   color: #a5a5a5;
@@ -87,18 +97,21 @@
 }
 .footer-wrapper .footer-container .footer-links {
   display: flex;
-  justify-content: space-evenly;
-  gap: 1rem;
-  width: 65%;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
 }
 .footer-wrapper .footer-container .footer-links .general {
   display: flex;
   flex-direction: column;
   list-style: none;
-  gap: 1.2rem;
+  gap: 0.5rem;
+  width: 100%;
 }
 .footer-wrapper .footer-container .footer-links .general .links-title {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 2px;
@@ -118,10 +131,11 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  gap: 1.2rem;
+  gap: 0.5rem;
+  width: 100%;
 }
 .footer-wrapper .footer-container .footer-links .info-order .links-title {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 2px;
@@ -141,10 +155,12 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  gap: 1.2rem;
+  gap: 0.5rem;
+  width: 100%;
+  margin-bottom: 3rem;
 }
 .footer-wrapper .footer-container .footer-links .legal-info .links-title {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 2px;
@@ -164,7 +180,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  margin-bottom: 1rem;
 }
 .footer-wrapper .copyright-container .copyright {
   letter-spacing: 2px;

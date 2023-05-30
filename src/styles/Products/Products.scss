@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 360px;
+    width: v.$mobile-s-width;
     height: 300px;
     border: 2px solid v.$main-black;
 
@@ -30,7 +30,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 360px;
+    width: v.$mobile-s-width;
     height: 300px;
     border: 2px solid v.$main-black;
 
@@ -46,7 +46,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 360px;
+    width: v.$mobile-s-width;
     height: 300px;
     border: 2px solid v.$main-black;
 
@@ -58,7 +58,7 @@
     }
 
     .accessories-thumbnail {
-      width: 180px;
+      width: 140px;
     }
 
     @extend %productsBtnStyle;
@@ -70,8 +70,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    width: 360px;
+    width: v.$mobile-s-width;
     height: 300px;
     border: 2px solid v.$main-black;
 
@@ -86,13 +85,13 @@
         flex-direction: column;
 
         .party-package-thumbnail {
-          width: 130px;
+          width: 110px;
         }
       }
     }
 
     .music-and-peace-thumbnail {
-      width: 190px;
+      width: 170px;
     }
 
     @extend %productsBtnStyle;

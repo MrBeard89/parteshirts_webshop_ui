@@ -23,6 +23,9 @@
 }
 
 .contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   margin-bottom: 6rem;
 }
@@ -30,8 +33,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  width: 300px;
 }
 .contact-wrapper .contact-container .contact-title-bar {
   width: 100%;
@@ -46,7 +48,7 @@
   font-family: "Charm", cursive;
   font-weight: 600;
   font-size: 20px;
-  width: 1000px;
+  width: 300px;
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
