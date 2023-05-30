@@ -19,7 +19,7 @@
   border-radius: 5px;
   padding: 5px 5px 5px 15px;
   margin-bottom: 1rem;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .show {
@@ -29,7 +29,6 @@
   display: block;
   padding: 8px;
   padding-bottom: 15px;
-  background-image: linear-gradient(transparent, #f5de5d 195%);
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   margin-bottom: 3rem;
