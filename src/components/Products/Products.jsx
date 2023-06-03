@@ -1,5 +1,8 @@
 import '../../styles/Products/Products.scss'
 
+//Import Link from router
+import { Link } from 'react-router-dom'
+
 //Import images for Thumbnails
 import Teeshirts from '../../assets/designs/connection/connection main pic.jpg'
 import Hoodies from '../../assets/designs/don_t panic it_s legal/don_t panic it_s legal man hoodie.jpg'
@@ -10,10 +13,12 @@ import MusicPeace from '../../assets/designs/music and peace/music and peace mai
 export const Products = () => {
   return (
     <div className='products-wrapper'>
-      <div className='shirts-container'>
-        <img className='shirts-thumbnail' src={Teeshirts} alt='Connection shirts thumbnail' />
-        <button>Tee shirts</button>
-      </div>
+      <Link to='/teeshirts'>
+        <div className='shirts-container'>
+          <img className='shirts-thumbnail' src={Teeshirts} alt='Connection shirts thumbnail' />
+          <button>Tee shirts</button>
+        </div>
+      </Link>
 
       <div className='hoodies-container'>
         <img className='hoodies-thumbnail' src={Hoodies} alt="Don't panic hoodies thumbnail" />
