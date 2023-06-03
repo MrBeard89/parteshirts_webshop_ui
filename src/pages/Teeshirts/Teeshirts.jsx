@@ -43,7 +43,7 @@ export const Teeshirts = () => {
       padding: '5px',
       border: 'none',
       boxShadow: 'none',
-      borderRadius: '1rem',
+      borderRadius: '8px',
     }),
     singleValue: (defaultStyles) => ({ ...defaultStyles, color: '#d69811' }),
   }
@@ -54,7 +54,8 @@ export const Teeshirts = () => {
   }
 
   //If selected contains the selected value , return the filtered array 😃
-  const filtered = selected
+  let filtered
+  filtered = selected
     ? Products.teeshirts.filter((shirt) => shirt.genre.includes(selected))
     : Products.teeshirts
 
@@ -91,12 +92,13 @@ export const Teeshirts = () => {
         {/* Select input */}
         <Select
           autoFocus={true}
-          className='filter-input'
-          placeholder='Filter By'
+          className='filter-input-genre'
+          placeholder='Filter By Genre'
           options={options}
           onChange={handleChange}
           styles={customStyles}
         />
+
         <div className='teeshirts-container'>
           {/* Returned array */}
           <FilteredTeeshirts />
