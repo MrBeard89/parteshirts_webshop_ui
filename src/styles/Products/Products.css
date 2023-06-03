@@ -1,7 +1,7 @@
 .products-wrapper .shirts-container button, .products-wrapper .hoodies-container button, .products-wrapper .accessories-container button, .products-wrapper .party-package-container button {
   position: absolute;
   bottom: 0;
-  font-family: "Charm", cursive;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 700;
   font-size: 26px;
   background-color: #f5de5d;

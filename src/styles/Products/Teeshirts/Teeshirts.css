@@ -1,0 +1,77 @@
+.teeshirts-wrapper {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Noto Sans", sans-serif;
+  width: 100%;
+}
+.teeshirts-wrapper .filter-input {
+  width: 300px;
+  margin-bottom: 2rem;
+}
+.teeshirts-wrapper .teeshirts-title {
+  font-size: 38px;
+  margin-bottom: 1rem;
+}
+.teeshirts-wrapper .teeshirts-decor-line {
+  content: "";
+  width: 300px;
+  height: 2px;
+  background-color: #a5a5a5;
+  border-radius: 2px;
+  margin-bottom: 2rem;
+}
+.teeshirts-wrapper .teeshirts-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 300px;
+  margin-bottom: 6rem;
+}
+.teeshirts-wrapper .teeshirts-container .teeshirts-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 8px;
+  background-image: url("../../../assets/background-png/card-wave-black.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+.teeshirts-wrapper .teeshirts-container .teeshirts-card:is(:hover, :focus-visible) {
+  cursor: pointer;
+  border: 2px solid #f5de5d;
+  background-image: url("../../../assets/background-png/card-wave.png");
+}
+.teeshirts-wrapper .teeshirts-container .teeshirts-card:is(:hover, :focus-visible) .teeshirts-card-title {
+  background-color: #f5de5d;
+  color: #000;
+}
+.teeshirts-wrapper .teeshirts-container .teeshirts-card:is(:hover, :focus-visible) .teeshirts-actual-price {
+  color: #000;
+}
+.teeshirts-wrapper .teeshirts-container .teeshirts-card .teeshirts-card-title {
+  position: absolute;
+  top: 0;
+  font-size: 12px;
+  background-color: #000;
+  color: #f5de5d;
+  height: 2.2rem;
+  overflow: hidden;
+  text-align: center;
+}
+.teeshirts-wrapper .teeshirts-container .teeshirts-card .teeshirts-card-img {
+  height: 120px;
+  width: 100px;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+}
+.teeshirts-wrapper .teeshirts-container .teeshirts-price-container .teeshirts-actual-price {
+  display: flex;
+  align-items: center;
+  color: #f5de5d;
+}/*# sourceMappingURL=Teeshirts.css.map */

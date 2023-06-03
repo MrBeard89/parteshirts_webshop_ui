@@ -1,7 +1,6 @@
 ///////////////////* Font family *///////////////////
 
-$font-family: 'Charm', cursive;
-$font-family-headers: 'Luckiest Guy', cursive;
+$font-family: 'Noto Sans', sans-serif;
 
 ///////////////////* Main-Colors *///////////////////
 
@@ -18,10 +17,14 @@ $main-dark-blue: #051d35;
 
 ///////////////////* Font-Weights *///////////////////
 
+$font-weight-400: 200;
+$font-weight-400: 300;
 $font-weight-400: 400;
 $font-weight-500: 500;
 $font-weight-600: 600;
 $font-weight-700: 700;
+$font-weight-400: 800;
+$font-weight-400: 900;
 
 ///////////////////* Font sizes *///////////////////
 
@@ -51,7 +54,7 @@ $breakpoint-xxl: 1400px;
 
 ///////////////////* Variables *///////////////////
 
-$first-top-gap: 4rem;
+$first-top-gap: 6rem;
 
 $margin-top-home: 5rem;
 $components-gap: 6rem;

@@ -1,5 +1,5 @@
 .about-wrapper .introduction-container .title-bar .introduction-title {
-  font-family: "Luckiest Guy", cursive;
+  font-family: "Noto Sans", sans-serif;
   background-color: #f5de5d;
   border-radius: 5px;
   padding: 5px 5px 5px 15px;
@@ -8,7 +8,7 @@
 }
 
 .show {
-  font-family: "Charm", cursive;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 600;
   font-size: 20px;
   display: block;

@@ -5,7 +5,7 @@ import Teeshirts from '../../assets/designs/connection/connection main pic.jpg'
 import Hoodies from '../../assets/designs/don_t panic it_s legal/don_t panic it_s legal man hoodie.jpg'
 import Parteebag from '../../assets/designs/partee bag/partee bag.jpg'
 import Parteefan from '../../assets/designs/partee fan/partee fan.jpg'
-import MusicPeace from '../../assets/designs/music and peace/music and peace black main pic.jpg'
+import MusicPeace from '../../assets/designs/music and peace/music and peace main pic.jpg'
 
 export const Products = () => {
   return (

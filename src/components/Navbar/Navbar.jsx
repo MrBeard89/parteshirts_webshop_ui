@@ -67,8 +67,8 @@ export const Navbar = () => {
                 <GiBurningSkull className='skull-back' />
               </Link>
 
-              <Link to='/'>
-                <li className='navlink'>T-shirts</li>
+              <Link to='/teeshirts'>
+                <li className='navlink'>Teeshirts</li>
                 <GiBurningSkull className='skull-back' />
               </Link>
 

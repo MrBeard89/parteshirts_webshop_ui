@@ -46,7 +46,7 @@
 %moreBtnStyle,
 %sendEmailBtnStyle {
   button {
-    font-family: v.$font-family-headers;
+    font-family: v.$font-family;
     font-weight: v.$font-weight-500;
     font-size: 26px;
     background-color: v.$main-soft-yellow;
@@ -64,7 +64,7 @@
 
 //Title bars
 %titleBars {
-  font-family: v.$font-family-headers;
+  font-family: v.$font-family;
   background-color: v.$main-soft-yellow;
   border-radius: 5px;
   padding: 5px 5px 5px 15px;

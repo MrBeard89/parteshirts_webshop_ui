@@ -1,5 +1,5 @@
 .contact-wrapper .contact-container .text-container button {
-  font-family: "Luckiest Guy", cursive;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 500;
   font-size: 26px;
   background-color: #f5de5d;
@@ -14,7 +14,7 @@
 }
 
 .contact-wrapper .contact-container .contact-title-bar .title-bar {
-  font-family: "Luckiest Guy", cursive;
+  font-family: "Noto Sans", sans-serif;
   background-color: #f5de5d;
   border-radius: 5px;
   padding: 5px 5px 5px 15px;
@@ -45,7 +45,7 @@
   gap: 3rem;
 }
 .contact-wrapper .contact-container .text-container .contact-text {
-  font-family: "Charm", cursive;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 600;
   font-size: 20px;
   width: 300px;
@@ -58,7 +58,7 @@
   margin-bottom: 2rem;
 }
 .contact-wrapper .contact-container .reviews {
-  font-family: "Luckiest Guy", cursive;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 500;
   font-size: 32px;
   background-color: #000;
