@@ -13,15 +13,17 @@ import Decor from '../../components/Decor - Slogen/Decor'
 export const Home = () => {
   return (
     <div className='home-wrapper'>
-      <Decor />
-      <Carousel />
-      <About />
-      <Products />
-      <Bestsellers />
-      <FAQ />
-      <Contact />
-      <Decor />
-      <Footer />
+      <div className='home-container'>
+        <Decor />
+        <Carousel />
+        <About />
+        <Products />
+        <Bestsellers />
+        <FAQ />
+        <Contact />
+        <Decor />
+        <Footer />
+      </div>
     </div>
   )
 }
