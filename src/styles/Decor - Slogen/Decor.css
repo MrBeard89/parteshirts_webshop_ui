@@ -1,0 +1,22 @@
+.decor-container {
+  font-family: "Noto Sans", sans-serif;
+  overflow-x: hidden;
+  padding-bottom: 8px;
+}
+.decor-container .decor-text {
+  color: #fe4e8c;
+  font-size: 38px;
+  font-weight: 800;
+  height: 3rem;
+  width: 200%;
+  animation: decor-slide 10s infinite cubic-bezier(0.35, 0.85, 0.85, 0.35);
+}
+
+@keyframes decor-slide {
+  0% {
+    transform: translateX(350px);
+  }
+  100% {
+    transform: translateX(-550px);
+  }
+}/*# sourceMappingURL=Decor.css.map */
