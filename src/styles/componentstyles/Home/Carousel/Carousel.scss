@@ -4,9 +4,14 @@
 .carousel_wrapper {
   display: flex;
   justify-content: center;
-  height: 600px;
+  height: 85vh;
   width: 100%;
-  margin-bottom: v.$components-gap;
+  background-color: v.$main-light-pink;
+  background-image: url('../../../../assets/background-png/hero\ section\ bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
 
   .carousel {
     position: relative;
@@ -23,7 +28,7 @@
       justify-content: center;
       align-items: center;
       width: 60px;
-      height: 480px;
+      height: 80%;
       color: v.$main-white;
     }
 
@@ -82,7 +87,7 @@
 
 .carousel_pagination {
   position: absolute;
-  bottom: 5px;
+  bottom: 25px;
   left: 50%;
   transform: translate(-50%, 0);
 }
@@ -90,7 +95,7 @@
 .pagination_dot {
   height: 10px;
   width: 10px;
-  background-color: v.$main-gray;
+  background-color: v.$main-vivid-orange;
   border-radius: 50%;
   display: inline-block;
   margin-left: 10px;
@@ -102,5 +107,5 @@
 }
 
 .pagination_dot-active {
-  background-color: v.$main-black;
+  background-color: v.$main-soft-yellow;
 }

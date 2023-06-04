@@ -26,12 +26,17 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  background-color: #fe4e8c;
 }
 .about-wrapper .introduction-container {
   width: 300px;
 }
 .about-wrapper .introduction-container .title-bar {
   position: relative;
+}
+.about-wrapper .introduction-container .title-bar .introduction-title {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 .about-wrapper .introduction-container .title-bar .introduction-title:is(:hover, :focus-visible) {
   cursor: pointer;
@@ -41,6 +46,7 @@
   right: 5px;
   top: 8px;
   font-size: 25px;
+  color: #f5de5d;
 }
 .about-wrapper .introduction-container .title-bar .down-arrow:is(:hover, :focus-visible) {
   cursor: pointer;
@@ -50,6 +56,7 @@
   right: 5px;
   top: 8px;
   font-size: 25px;
+  color: #f5de5d;
 }
 .about-wrapper .introduction-container .title-bar .up-arrow:is(:hover, :focus-visible) {
   cursor: pointer;

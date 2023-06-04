@@ -28,7 +28,9 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-bottom: 6rem;
+  padding-bottom: 6rem;
+  background-image: url("../../../../assets/background-png/bg-component-down.svg");
+  background-size: cover;
 }
 .contact-wrapper .contact-container {
   display: flex;

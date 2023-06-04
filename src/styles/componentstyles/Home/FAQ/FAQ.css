@@ -42,6 +42,7 @@
   align-items: center;
   font-family: "Noto Sans", sans-serif;
   width: 100%;
+  background-color: #fff;
 }
 .faq-wrapper .faq-container {
   width: 300px;

@@ -1,4 +1,4 @@
-import Sitelogo from '../../assets/logo/parteeshirts.jpg'
+import Sitelogo from '../../assets/logo/parteeshirts.png'
 
 import '../../styles/componentstyles/Home/Logo/Logo.scss'
 

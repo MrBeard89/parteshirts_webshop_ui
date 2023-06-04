@@ -9,9 +9,12 @@
   width: 100%;
   top: 0;
   z-index: 3;
+  background-color: transparent;
   transition: top 0.3s;
-  border-bottom: 1px solid v.$main-black;
-  background-color: v.$main-white;
+  background-image: url('../../../../assets/background-png/bg-navbar.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: top -8px;
 
   .navbar-container {
     position: relative;
@@ -86,8 +89,13 @@
       flex-direction: column;
       gap: 4rem;
       padding-top: 6rem;
-      background-color: rgba(0, 0, 0, 0.822);
+      background-color: v.$main-black;
       backdrop-filter: blur(50px);
+      background-image: url('../../../../assets/background-png/bg-navbar.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-y: top;
+      background-position-x: left -425px;
 
       animation: 0.3s slideMenu cubic-bezier(0.895, 0.03, 0.685, 0.22);
 

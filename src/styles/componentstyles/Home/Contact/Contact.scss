@@ -6,7 +6,9 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-bottom: v.$components-gap;
+  padding-bottom: v.$components-gap;
+  background-image: url('../../../../assets/background-png/bg-component-down.svg');
+  background-size: cover;
 
   .contact-container {
     display: flex;
