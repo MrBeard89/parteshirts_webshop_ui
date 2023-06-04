@@ -245,12 +245,20 @@
   ],
   "hoodies": [
     {
-      "id": 1,
-      "title": "Connection Man Teeshirt",
-      "img_path": "connection/connection man tee",
+      "id": 101,
+      "title": "Connection Man Hoodie",
+      "img_path": "connection/connection man hoodie",
       "genre": "Man",
       "design": "connection",
-      "price": 25
+      "price": 50
+    },
+    {
+      "id": 102,
+      "title": "Connection Woman Hoodie",
+      "img_path": "connection/connection woman hoodie",
+      "genre": "Woman",
+      "design": "connection",
+      "price": 50
     }
   ]
 }

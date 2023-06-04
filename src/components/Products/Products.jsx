@@ -4,11 +4,11 @@ import '../../styles/Products/Products.scss'
 import { Link } from 'react-router-dom'
 
 //Import images for Thumbnails
-import Teeshirts from '../../assets/designs/connection/connection main pic.jpg'
-import Hoodies from '../../assets/designs/don_t panic it_s legal/don_t panic it_s legal man hoodie.jpg'
+import Teeshirts from '../../assets/designs/teeshirts/connection/connection main pic.jpg'
+import Hoodies from '../../assets/designs/hoodies/don_t panic it_s legal/don_t panic it_s legal man hoodie.jpg'
 import Parteebag from '../../assets/designs/partee bag/partee bag.jpg'
 import Parteefan from '../../assets/designs/partee fan/partee fan.jpg'
-import MusicPeace from '../../assets/designs/music and peace/music and peace main pic.jpg'
+import MusicPeace from '../../assets/designs/teeshirts/music and peace/music and peace main pic.jpg'
 
 export const Products = () => {
   return (
