@@ -67,13 +67,18 @@ export const Navbar = () => {
                 <GiBurningSkull className='skull-back' />
               </Link>
 
-              <Link to='/'>
+              <Link to='/hoodies'>
                 <li className='navlink'>Hoodies</li>
                 <GiBurningSkull className='skull-back' />
               </Link>
 
               <Link to='/'>
                 <li className='navlink'>Accessories</li>
+                <GiBurningSkull className='skull-back' />
+              </Link>
+
+              <Link to='/'>
+                <li className='navlink'>Party Package</li>
                 <GiBurningSkull className='skull-back' />
               </Link>
 
