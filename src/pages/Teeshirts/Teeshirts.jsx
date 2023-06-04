@@ -17,16 +17,16 @@ import Select from 'react-select'
 import { useState } from 'react'
 
 export const Teeshirts = () => {
-  const [selected, setSelected] = useState('')
+  const [selectedShirt, setSelectedShirt] = useState('')
 
   //Select input Options 📀
-  const options = [
+  const shirtsOptions = [
     { value: 'Man', label: 'Man' },
     { value: 'Woman', label: 'Woman' },
   ]
 
   //Custom styles for Select ✨
-  const customStyles = {
+  const customStylesShirts = {
     option: (defaultStyles, state) => ({
       ...defaultStyles,
       color: state.isSelected ? '#000' : '#f5de5d',
@@ -49,14 +49,14 @@ export const Teeshirts = () => {
   }
 
   //Setting selected value to selected state
-  const handleChange = (selectedOption) => {
-    setSelected(selectedOption.value)
+  const handleChangeShirts = (selectedOption) => {
+    setSelectedShirt(selectedOption.value)
   }
 
   //If selected contains the selected value , return the filtered array 😃
   let filtered
-  filtered = selected
-    ? Products.teeshirts.filter((shirt) => shirt.genre.includes(selected))
+  filtered = selectedShirt
+    ? Products.teeshirts.filter((shirt) => shirt.genre.includes(selectedShirt))
     : Products.teeshirts
 
   //FilteredTeeshirts Component 🍕
@@ -94,9 +94,9 @@ export const Teeshirts = () => {
           autoFocus={true}
           className='filter-input-genre'
           placeholder='Filter By Genre'
-          options={options}
-          onChange={handleChange}
-          styles={customStyles}
+          options={shirtsOptions}
+          onChange={handleChangeShirts}
+          styles={customStylesShirts}
         />
 
         <div className='teeshirts-container'>

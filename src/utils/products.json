@@ -242,5 +242,15 @@
       "design": "techno music just saved my life",
       "price": 25
     }
+  ],
+  "hoodies": [
+    {
+      "id": 1,
+      "title": "Connection Man Teeshirt",
+      "img_path": "connection/connection man tee",
+      "genre": "Man",
+      "design": "connection",
+      "price": 25
+    }
   ]
 }
