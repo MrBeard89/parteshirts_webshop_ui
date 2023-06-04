@@ -1,5 +1,6 @@
 import '../../styles/componentstyles/Home/Navbar/Navbar.scss'
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
 import { Logo } from '../../components/Logo/Logo'
 import MobileVector from '../../assets/logo/emoji-vector.png'
@@ -41,9 +42,9 @@ export const Navbar = () => {
           </span>
 
           <div className='navbar-logo'>
-            <Link to='/home'>
+            <HashLink to='#home'>
               <Logo />
-            </Link>
+            </HashLink>
           </div>
 
           {/* Mobile icon container - cart*/}

@@ -14,7 +14,7 @@ import { Slogen } from '../../components/Decor - Slogen/Slogen'
 export const Home = () => {
   return (
     <>
-      <div className='home-wrapper'>
+      <div className='home-wrapper' id='home'>
         <Decor />
         <Carousel />
         <Slogen />
