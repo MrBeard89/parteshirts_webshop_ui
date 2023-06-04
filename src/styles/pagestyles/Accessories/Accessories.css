@@ -5,6 +5,7 @@
   align-items: center;
   font-family: "Noto Sans", sans-serif;
   width: 100%;
+  background-color: #fff;
 }
 .accessories-wrapper .filter-input-genre {
   width: 300px;
@@ -41,6 +42,7 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
+  background-color: #fff;
 }
 .accessories-wrapper .accessories-container .accessories-card:is(:hover, :focus-visible) {
   cursor: pointer;
