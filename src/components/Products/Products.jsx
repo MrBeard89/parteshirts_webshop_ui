@@ -27,14 +27,16 @@ export const Products = () => {
         </div>
       </Link>
 
-      <div className='accessories-container'>
-        <div className='accessories-img-container'>
-          <img className='accessories-thumbnail' src={Parteebag} alt='Parteebag thumbnail' />
-          <img className='accessories-thumbnail' src={Parteefan} alt='Parteefan thumbnail' />
-        </div>
+      <Link to='/accessories'>
+        <div className='accessories-container'>
+          <div className='accessories-img-container'>
+            <img className='accessories-thumbnail' src={Parteebag} alt='Parteebag thumbnail' />
+            <img className='accessories-thumbnail' src={Parteefan} alt='Parteefan thumbnail' />
+          </div>
 
-        <button>Accessories</button>
-      </div>
+          <button>Accessories</button>
+        </div>
+      </Link>
 
       <div className='party-package-container'>
         <div className='party-packge-img-container'>
