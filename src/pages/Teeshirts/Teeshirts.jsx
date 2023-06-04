@@ -67,7 +67,7 @@ export const Teeshirts = () => {
           <h3 className='teeshirts-card-title'>{shirt.title}</h3>
           <img
             className='teeshirts-card-img'
-            src={require(`../../assets/designs/${shirt.img_path}.jpg`)}
+            src={require(`../../assets/designs/teeshirts/${shirt.img_path}.jpg`)}
             alt='Card image'
           />
           <div className='teeshirts-price-container'>
