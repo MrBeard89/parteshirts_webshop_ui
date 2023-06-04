@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom'
 //Import images for Thumbnails
 import Teeshirts from '../../assets/designs/teeshirts/connection/connection main pic.jpg'
 import Hoodies from '../../assets/designs/hoodies/don_t panic it_s legal/don_t panic it_s legal man hoodie.jpg'
-import Parteebag from '../../assets/designs/partee bag/partee bag.jpg'
-import Parteefan from '../../assets/designs/partee fan/partee fan.jpg'
+import Parteebag from '../../assets/designs/accessories/partee bag/partee bag.jpg'
+import Parteefan from '../../assets/designs/accessories/partee fan/partee fan.jpg'
 import MusicPeace from '../../assets/designs/teeshirts/music and peace/music and peace main pic.jpg'
 
 export const Products = () => {

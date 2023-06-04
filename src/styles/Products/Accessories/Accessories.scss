@@ -1,0 +1,98 @@
+@use '../../../sass/variables' as v;
+@forward '../../../sass/templates';
+
+.accessories-wrapper {
+  padding-top: v.$first-top-gap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: v.$font-family;
+  width: 100%;
+
+  .filter-input-genre {
+    width: v.$mobile-s-width;
+    margin-bottom: 2rem;
+  }
+
+  .accessories-title {
+    font-size: v.$fs-h1;
+    margin-bottom: 1rem;
+  }
+
+  .accessories-decor-line {
+    content: '';
+    width: v.$mobile-s-width;
+    height: 2px;
+    background-color: v.$main-gray;
+    border-radius: 2px;
+    margin-bottom: 2rem;
+  }
+
+  .accessories-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: v.$mobile-s-width;
+    margin-bottom: v.$components-gap;
+
+    .accessories-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 2px solid v.$main-black;
+      border-radius: 8px;
+      background-image: url('../../../assets/background-png/card-wave-black.png');
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
+
+      &:is(:hover, :focus-visible) {
+        cursor: pointer;
+        border: 2px solid v.$main-soft-yellow;
+        background-image: url('../../../assets/background-png/card-wave.png');
+
+        .accessories-card-title {
+          background-color: v.$main-soft-yellow;
+          color: v.$main-black;
+        }
+
+        .accessories-actual-price {
+          color: v.$main-black;
+        }
+      }
+
+      .accessories-card-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        font-size: v.$fs-xs;
+        background-color: v.$main-black;
+        color: v.$main-soft-yellow;
+        height: 2.2rem;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .accessories-card-img {
+        height: 100px;
+        width: 100px;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+      }
+    }
+
+    .accessories-price-container {
+      .accessories-lowered-price {
+      }
+      .accessories-actual-price {
+        display: flex;
+        align-items: center;
+        color: v.$main-soft-yellow;
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.accessories-wrapper {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Noto Sans", sans-serif;
+  width: 100%;
+}
+.accessories-wrapper .filter-input-genre {
+  width: 300px;
+  margin-bottom: 2rem;
+}
+.accessories-wrapper .accessories-title {
+  font-size: 38px;
+  margin-bottom: 1rem;
+}
+.accessories-wrapper .accessories-decor-line {
+  content: "";
+  width: 300px;
+  height: 2px;
+  background-color: #a5a5a5;
+  border-radius: 2px;
+  margin-bottom: 2rem;
+}
+.accessories-wrapper .accessories-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 300px;
+  margin-bottom: 6rem;
+}
+.accessories-wrapper .accessories-container .accessories-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 8px;
+  background-image: url("../../../assets/background-png/card-wave-black.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+.accessories-wrapper .accessories-container .accessories-card:is(:hover, :focus-visible) {
+  cursor: pointer;
+  border: 2px solid #f5de5d;
+  background-image: url("../../../assets/background-png/card-wave.png");
+}
+.accessories-wrapper .accessories-container .accessories-card:is(:hover, :focus-visible) .accessories-card-title {
+  background-color: #f5de5d;
+  color: #000;
+}
+.accessories-wrapper .accessories-container .accessories-card:is(:hover, :focus-visible) .accessories-actual-price {
+  color: #000;
+}
+.accessories-wrapper .accessories-container .accessories-card .accessories-card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  font-size: 12px;
+  background-color: #000;
+  color: #f5de5d;
+  height: 2.2rem;
+  overflow: hidden;
+  width: 100%;
+}
+.accessories-wrapper .accessories-container .accessories-card .accessories-card-img {
+  height: 100px;
+  width: 100px;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+.accessories-wrapper .accessories-container .accessories-price-container .accessories-actual-price {
+  display: flex;
+  align-items: center;
+  color: #f5de5d;
+}/*# sourceMappingURL=Accessories.css.map */

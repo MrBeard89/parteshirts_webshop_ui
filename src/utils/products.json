@@ -340,5 +340,25 @@
       "design": "techno music just saved my life",
       "price": 50
     }
+  ],
+  "accessories": [
+    {
+      "id": 201,
+      "title": "Partee Bag",
+      "img_path": "accessories/partee bag/partee bag",
+      "genre": "Unisex",
+      "design": "skull",
+      "type": "bag",
+      "price": 25
+    },
+    {
+      "id": 202,
+      "title": "Partee Fan",
+      "img_path": "accessories/partee fan/partee fan",
+      "genre": "Unisex",
+      "design": "abstract",
+      "type": "fan",
+      "price": 15
+    }
   ]
 }
