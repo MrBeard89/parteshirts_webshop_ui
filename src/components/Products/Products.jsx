@@ -20,10 +20,12 @@ export const Products = () => {
         </div>
       </Link>
 
-      <div className='hoodies-container'>
-        <img className='hoodies-thumbnail' src={Hoodies} alt="Don't panic hoodies thumbnail" />
-        <button>Hoodies</button>
-      </div>
+      <Link to='/hoodies'>
+        <div className='hoodies-container'>
+          <img className='hoodies-thumbnail' src={Hoodies} alt="Don't panic hoodies thumbnail" />
+          <button>Hoodies</button>
+        </div>
+      </Link>
 
       <div className='accessories-container'>
         <div className='accessories-img-container'>
