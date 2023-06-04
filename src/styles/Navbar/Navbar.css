@@ -64,7 +64,7 @@
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  padding-top: 8rem;
+  padding-top: 5rem;
   background-color: rgba(0, 0, 0, 0.822);
   backdrop-filter: blur(50px);
   animation: 0.3s slideMenu cubic-bezier(0.895, 0.03, 0.685, 0.22);
@@ -72,8 +72,6 @@
 .navbar-wrapper .navbar-container .navbar-mobile .navlinks {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding-left: 1rem;
 }
 .navbar-wrapper .navbar-container .navbar-mobile .navlinks a {
   position: relative;
@@ -82,6 +80,8 @@
   gap: 5px;
   text-decoration: none;
   color: #f5de5d;
+  height: 5rem;
+  padding-left: 1rem;
 }
 .navbar-wrapper .navbar-container .navbar-mobile .navlinks a .navlink {
   font-weight: 700;
@@ -95,7 +95,8 @@
   display: none;
 }
 .navbar-wrapper .navbar-container .navbar-mobile .navlinks a:is(:hover, :focus-visible, :active) {
-  color: #fff;
+  color: #000;
+  background-color: #f5de5d;
   cursor: pointer;
 }
 .navbar-wrapper .navbar-container .navbar-mobile .navlinks a:is(:hover, :focus-visible, :active) .skull,

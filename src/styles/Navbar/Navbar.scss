@@ -84,7 +84,7 @@
       display: flex;
       flex-direction: column;
       gap: 4rem;
-      padding-top: 8rem;
+      padding-top: 5rem;
       background-color: rgba(0, 0, 0, 0.822);
       backdrop-filter: blur(50px);
 
@@ -93,8 +93,6 @@
       .navlinks {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
-        padding-left: 1rem;
 
         a {
           position: relative;
@@ -103,6 +101,8 @@
           gap: 5px;
           text-decoration: none;
           color: v.$main-soft-yellow;
+          height: 5rem;
+          padding-left: 1rem;
 
           .navlink {
             font-weight: v.$font-weight-700;
@@ -118,7 +118,8 @@
           }
 
           &:is(:hover, :focus-visible, :active) {
-            color: v.$main-white;
+            color: v.$main-black;
+            background-color: v.$main-soft-yellow;
             cursor: pointer;
 
             .skull,
