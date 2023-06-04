@@ -2,7 +2,7 @@
 import Products from '../../utils/products.json'
 
 //Import Scss file
-import '../../styles/Products/Teeshirts/Teeshirts.scss'
+import '../../styles/Products/Hoodies/Hoodies.scss'
 
 //Import Currency Svg from react-icons 📝
 import { BiEuro as Euro } from 'react-icons/bi'
@@ -63,16 +63,16 @@ export const Hoodies = () => {
   const FilteredHoodies = () =>
     filtered.map((hoodie) => {
       return (
-        <div className='teeshirts-card' key={hoodie.id}>
-          <h3 className='teeshirts-card-title'>{hoodie.title}</h3>
+        <div className='hoodies-card' key={hoodie.id}>
+          <h3 className='hoodies-card-title'>{hoodie.title}</h3>
           <img
-            className='teeshirts-card-img'
-            src={require(`../../assets/designs/hoodies${hoodie.img_path}.jpg`)}
+            className='hoodies-card-img'
+            src={require(`../../assets/designs/hoodies/${hoodie.img_path}.jpg`)}
             alt='Card image'
           />
-          <div className='teeshirts-price-container'>
-            <p className='teeshirts-lowered-price'></p>
-            <p className='teeshirts-actual-price'>
+          <div className='hoodies-price-container'>
+            <p className='hoodies-lowered-price'></p>
+            <p className='hoodies-actual-price'>
               {hoodie.price}
               <Euro />
             </p>
@@ -84,11 +84,11 @@ export const Hoodies = () => {
   return (
     <>
       {/* Main wrapper */}
-      <div className='teeshirts-wrapper'>
+      <div className='hoodies-wrapper'>
         {/* Title */}
-        <h1 className='teeshirts-title'>Hoodies</h1>
+        <h1 className='hoodies-title'>Hoodies</h1>
         {/* Decor line below title */}
-        <div className='teeshirts-decor-line'></div>
+        <div className='hoodies-decor-line'></div>
         {/* Select input */}
         <Select
           autoFocus={true}
@@ -99,7 +99,7 @@ export const Hoodies = () => {
           styles={customStylesHoodies}
         />
 
-        <div className='teeshirts-container'>
+        <div className='hoodies-container'>
           {/* Returned array */}
           <FilteredHoodies />
         </div>

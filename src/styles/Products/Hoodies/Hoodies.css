@@ -1,0 +1,77 @@
+.hoodies-wrapper {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Noto Sans", sans-serif;
+  width: 100%;
+}
+.hoodies-wrapper .filter-input-genre {
+  width: 300px;
+  margin-bottom: 2rem;
+}
+.hoodies-wrapper .hoodies-title {
+  font-size: 38px;
+  margin-bottom: 1rem;
+}
+.hoodies-wrapper .hoodies-decor-line {
+  content: "";
+  width: 300px;
+  height: 2px;
+  background-color: #a5a5a5;
+  border-radius: 2px;
+  margin-bottom: 2rem;
+}
+.hoodies-wrapper .hoodies-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 300px;
+  margin-bottom: 6rem;
+}
+.hoodies-wrapper .hoodies-container .hoodies-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 8px;
+  background-image: url("../../../assets/background-png/card-wave-black.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+.hoodies-wrapper .hoodies-container .hoodies-card:is(:hover, :focus-visible) {
+  cursor: pointer;
+  border: 2px solid #f5de5d;
+  background-image: url("../../../assets/background-png/card-wave.png");
+}
+.hoodies-wrapper .hoodies-container .hoodies-card:is(:hover, :focus-visible) .hoodies-card-title {
+  background-color: #f5de5d;
+  color: #000;
+}
+.hoodies-wrapper .hoodies-container .hoodies-card:is(:hover, :focus-visible) .hoodies-actual-price {
+  color: #000;
+}
+.hoodies-wrapper .hoodies-container .hoodies-card .hoodies-card-title {
+  position: absolute;
+  top: 0;
+  font-size: 12px;
+  background-color: #000;
+  color: #f5de5d;
+  height: 2.2rem;
+  overflow: hidden;
+  text-align: center;
+}
+.hoodies-wrapper .hoodies-container .hoodies-card .hoodies-card-img {
+  height: 120px;
+  width: 100px;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+}
+.hoodies-wrapper .hoodies-container .hoodies-price-container .hoodies-actual-price {
+  display: flex;
+  align-items: center;
+  color: #f5de5d;
+}/*# sourceMappingURL=Hoodies.css.map */
