@@ -3,18 +3,19 @@
   bottom: 0;
   font-family: "Noto Sans", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  background-color: #f5de5d;
+  font-size: 20px;
+  background-color: transparent;
+  color: #f5de5d;
+  background-image: url("../assets/background-png/card-wave-black.png");
+  background-size: cover;
+  background-position: 100% 98%;
+  background-repeat: no-repeat;
   border: none;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   padding: 5px 25px 5px 25px;
+  padding-top: 2rem;
   width: 300px;
-}
-.products-wrapper .shirts-container button:is(:hover, :focus-visible), .products-wrapper .hoodies-container button:is(:hover, :focus-visible), .products-wrapper .accessories-container button:is(:hover, :focus-visible), .products-wrapper .party-package-container button:is(:hover, :focus-visible) {
-  background-color: #000;
-  color: #f5de5d;
-  cursor: pointer;
 }
 
 .products-wrapper {
@@ -35,6 +36,14 @@
   border: 2px solid #000;
   border-radius: 8px;
 }
+.products-wrapper .shirts-container:is(:hover, :focus-visible) {
+  border: 2px solid #f5de5d;
+}
+.products-wrapper .shirts-container:is(:hover, :focus-visible) button {
+  background-image: url("../../assets/background-png/card-wave.png");
+  color: #000;
+  cursor: pointer;
+}
 .products-wrapper .shirts-container .shirts-thumbnail {
   width: 220px;
 }
@@ -48,6 +57,14 @@
   border: 2px solid #000;
   border-radius: 8px;
 }
+.products-wrapper .hoodies-container:is(:hover, :focus-visible) {
+  border: 2px solid #f5de5d;
+}
+.products-wrapper .hoodies-container:is(:hover, :focus-visible) button {
+  background-image: url("../../assets/background-png/card-wave.png");
+  color: #000;
+  cursor: pointer;
+}
 .products-wrapper .hoodies-container .hoodies-thumbnail {
   width: 220px;
 }
@@ -60,6 +77,14 @@
   height: 300px;
   border: 2px solid #000;
   border-radius: 8px;
+}
+.products-wrapper .accessories-container:is(:hover, :focus-visible) {
+  border: 2px solid #f5de5d;
+}
+.products-wrapper .accessories-container:is(:hover, :focus-visible) button {
+  background-image: url("../../assets/background-png/card-wave.png");
+  color: #000;
+  cursor: pointer;
 }
 .products-wrapper .accessories-container .accessories-img-container {
   display: flex;
@@ -80,6 +105,14 @@
   height: 300px;
   border: 2px solid #000;
   border-radius: 8px;
+}
+.products-wrapper .party-package-container:is(:hover, :focus-visible) {
+  border: 2px solid #f5de5d;
+}
+.products-wrapper .party-package-container:is(:hover, :focus-visible) button {
+  background-image: url("../../assets/background-png/card-wave.png");
+  color: #000;
+  cursor: pointer;
 }
 .products-wrapper .party-package-container .party-packge-img-container {
   display: flex;

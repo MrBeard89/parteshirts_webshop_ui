@@ -28,20 +28,19 @@
     bottom: 0;
     font-family: v.$font-family;
     font-weight: v.$font-weight-700;
-    font-size: 26px;
-    background-color: v.$main-soft-yellow;
+    font-size: v.$fs-l;
+    background-color: transparent;
+    color: v.$main-soft-yellow;
+    background-image: url('../assets/background-png/card-wave-black.png');
+    background-size: cover;
+    background-position: 100% 98%;
+    background-repeat: no-repeat;
     border: none;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-
     padding: 5px 25px 5px 25px;
+    padding-top: 2rem;
     width: v.$mobile-s-width;
-
-    &:is(:hover, :focus-visible) {
-      background-color: v.$main-black;
-      color: v.$main-soft-yellow;
-      cursor: pointer;
-    }
   }
 }
 

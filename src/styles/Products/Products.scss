@@ -19,6 +19,15 @@
     border: 2px solid v.$main-black;
     border-radius: 8px;
 
+    &:is(:hover, :focus-visible) {
+      border: 2px solid v.$main-soft-yellow;
+
+      button {
+        background-image: url('../../assets/background-png/card-wave.png');
+        color: v.$main-black;
+        cursor: pointer;
+      }
+    }
     .shirts-thumbnail {
       width: 220px;
     }
@@ -36,6 +45,16 @@
     border: 2px solid v.$main-black;
     border-radius: 8px;
 
+    &:is(:hover, :focus-visible) {
+      border: 2px solid v.$main-soft-yellow;
+
+      button {
+        background-image: url('../../assets/background-png/card-wave.png');
+        color: v.$main-black;
+        cursor: pointer;
+      }
+    }
+
     .hoodies-thumbnail {
       width: 220px;
     }
@@ -52,6 +71,16 @@
     height: 300px;
     border: 2px solid v.$main-black;
     border-radius: 8px;
+
+    &:is(:hover, :focus-visible) {
+      border: 2px solid v.$main-soft-yellow;
+
+      button {
+        background-image: url('../../assets/background-png/card-wave.png');
+        color: v.$main-black;
+        cursor: pointer;
+      }
+    }
 
     .accessories-img-container {
       display: flex;
@@ -77,6 +106,16 @@
     height: 300px;
     border: 2px solid v.$main-black;
     border-radius: 8px;
+
+    &:is(:hover, :focus-visible) {
+      border: 2px solid v.$main-soft-yellow;
+
+      button {
+        background-image: url('../../assets/background-png/card-wave.png');
+        color: v.$main-black;
+        cursor: pointer;
+      }
+    }
 
     .party-packge-img-container {
       display: flex;
