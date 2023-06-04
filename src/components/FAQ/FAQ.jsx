@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../../styles/FAQ/FAQ.scss'
+import '../../styles/componentstyles/Home/FAQ/FAQ.scss'
 
 export const FAQ = () => {
   const [showAnswerFirst, setshowAnswerFirst] = useState(false)

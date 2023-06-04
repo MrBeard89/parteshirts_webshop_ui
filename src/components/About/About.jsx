@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../../styles/About/About.scss'
+import '../../styles/componentstyles/Home/About/About.scss'
 
 import { IoIosArrowDown } from 'react-icons/io'
 import { IoIosArrowUp } from 'react-icons/io'

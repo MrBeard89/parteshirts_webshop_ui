@@ -1,4 +1,4 @@
-import '../../styles/Navbar/Navbar.scss'
+import '../../styles/componentstyles/Home/Navbar/Navbar.scss'
 import { Link } from 'react-router-dom'
 
 import { Logo } from '../../components/Logo/Logo'

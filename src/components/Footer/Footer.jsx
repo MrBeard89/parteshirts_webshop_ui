@@ -1,4 +1,4 @@
-import '../../styles/Footer/Footer.scss'
+import '../../styles/componentstyles/Home/Footer/Footer.scss'
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 import { GiBurningSkull } from 'react-icons/gi'

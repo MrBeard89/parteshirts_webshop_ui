@@ -1,4 +1,4 @@
-import '../../styles/Contact/Contact.scss'
+import '../../styles/componentstyles/Home/Contact/Contact.scss'
 
 import { RxDoubleArrowDown } from 'react-icons/rx'
 

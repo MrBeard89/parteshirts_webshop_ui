@@ -1,4 +1,4 @@
-import '../../styles/Home/Home.scss'
+import '../../styles/pagestyles/Home/Home.scss'
 
 import { About } from '../../components/About/About'
 
@@ -13,17 +13,15 @@ import Decor from '../../components/Decor - Slogen/Decor'
 export const Home = () => {
   return (
     <div className='home-wrapper'>
-      <div className='home-container'>
-        <Decor />
-        <Carousel />
-        <About />
-        <Products />
-        <Bestsellers />
-        <FAQ />
-        <Contact />
-        <Decor />
-        <Footer />
-      </div>
+      <Decor />
+      <Carousel />
+      <About />
+      <Products />
+      <Bestsellers />
+      <FAQ />
+      <Contact />
+      <Decor />
+      <Footer />
     </div>
   )
 }

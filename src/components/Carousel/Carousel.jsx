@@ -1,4 +1,4 @@
-import '../../styles/Carousel/Carousel.scss'
+import '../../styles/componentstyles/Home/Carousel/Carousel.scss'
 import images from '../../utils/sliderpath.json'
 
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'

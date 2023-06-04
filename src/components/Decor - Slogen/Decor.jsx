@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/Decor - Slogen/Decor.scss'
+import '../../styles/componentstyles/Home/Decor - Slogen/Decor.scss'
 
 const Decor = () => {
   return (

@@ -1,4 +1,4 @@
-import '../../styles/Bestsellers/Bestsellers.scss'
+import '../../styles/componentstyles/Home/Bestsellers/Bestsellers.scss'
 import BestsellerData from '../../utils/bestsellers.json'
 
 import { BiEuro as Euro } from 'react-icons/bi'

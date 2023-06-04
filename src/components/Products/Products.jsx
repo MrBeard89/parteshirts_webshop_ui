@@ -1,4 +1,4 @@
-import '../../styles/Products/Products.scss'
+import '../../styles/componentstyles/Home/Products/Products.scss'
 
 //Import Link from router
 import { Link } from 'react-router-dom'

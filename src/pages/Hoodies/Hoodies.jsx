@@ -2,7 +2,7 @@
 import Products from '../../utils/products.json'
 
 //Import Scss file
-import '../../styles/Products/Hoodies/Hoodies.scss'
+import '../../styles/pagestyles/Hoodies/Hoodies.scss'
 
 //Import Currency Svg from react-icons 📝
 import { BiEuro as Euro } from 'react-icons/bi'
