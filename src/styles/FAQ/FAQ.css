@@ -15,7 +15,8 @@
 
 .faq-wrapper .faq-container .faq-title-bar .title-bar {
   font-family: "Noto Sans", sans-serif;
-  background-color: #f5de5d;
+  background-color: #000;
+  color: #f5de5d;
   border-radius: 5px;
   padding: 5px 5px 5px 15px;
   margin-bottom: 1rem;
