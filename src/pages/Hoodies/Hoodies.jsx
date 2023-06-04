@@ -9,6 +9,7 @@ import { BiEuro as Euro } from 'react-icons/bi'
 
 //Import fixed components (Footer)
 import { Footer } from '../../components/Footer/Footer'
+import { Decor } from '../../components/Decor - Slogen/Decor'
 
 //Import React Select
 import Select from 'react-select'
@@ -105,6 +106,7 @@ export const Hoodies = () => {
         </div>
       </div>
       {/* Footer component */}
+      <Decor />
       <Footer />
     </>
   )
