@@ -7,7 +7,7 @@ import { IoIosArrowUp } from 'react-icons/io'
 export const About = () => {
   const [textReveal, setTextReveal] = useState(false)
   return (
-    <div className='about-wrapper'>
+    <div className='about-wrapper' id='about'>
       <section className='introduction-container'>
         <div className='title-bar' onClick={() => setTextReveal((prev) => !prev)}>
           <h1 className='introduction-title'>What is Parteeshirts?</h1>

@@ -8,7 +8,7 @@ export const FAQ = () => {
   const [showAnswerFourth, setshowAnswerFourth] = useState(false)
 
   return (
-    <div className='faq-wrapper'>
+    <div className='faq-wrapper' id='faq'>
       <div className='faq-container'>
         <div className='faq-title-bar'>
           <h1 className='title-bar'>Frequently asked questions</h1>
