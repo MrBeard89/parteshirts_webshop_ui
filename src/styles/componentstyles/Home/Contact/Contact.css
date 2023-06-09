@@ -1,26 +1,13 @@
-.contact-wrapper .contact-container .text-container button {
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 500;
-  font-size: 26px;
-  background-color: #f5de5d;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 20px 5px 20px;
-}
-.contact-wrapper .contact-container .text-container button:is(:hover, :focus-visible) {
-  background-color: #000;
-  color: #f5de5d;
-  cursor: pointer;
-}
-
-.contact-wrapper .contact-container .contact-title-bar .title-bar {
+@charset "UTF-8";
+.contact-wrapper .contact-container .contact-title {
   font-family: "Noto Sans", sans-serif;
   background-color: #000;
   color: #f5de5d;
   border-radius: 5px;
-  padding: 5px 5px 5px 15px;
+  padding: 5px 5px 5px 5px;
   margin-bottom: 1rem;
   font-size: 20px;
+  width: 95%;
 }
 
 .contact-wrapper {
@@ -28,6 +15,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  font-family: "Noto Sans", sans-serif;
   padding-bottom: 6rem;
   background-image: url("../../../../assets/background-png/bg-component-down.svg");
   background-size: cover;
@@ -35,53 +23,324 @@
 .contact-wrapper .contact-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 2rem;
   width: 300px;
+  padding-top: 5rem;
 }
-.contact-wrapper .contact-container .contact-title-bar {
-  width: 100%;
+.contact-wrapper .contact-container .contact-text {
+  text-align: center;
+  width: 280px;
 }
-.contact-wrapper .contact-container .text-container {
+.contact-wrapper .contact-container .contact-form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  width: 280px;
+  background-color: #fff;
+  border-radius: 1rem;
 }
-.contact-wrapper .contact-container .text-container .contact-text {
+.contact-wrapper .contact-container .contact-form-container .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 240px;
+  padding: 15px 0px 15px 0px;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-label {
+  font-size: 16px;
   font-family: "Noto Sans", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  width: 300px;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
 }
-.contact-wrapper .contact-container .text-container .down-arrow {
-  font-size: 25px;
-  animation: moveXBtn 1s infinite;
-  margin-bottom: 2rem;
-}
-.contact-wrapper .contact-container .reviews {
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input {
   font-family: "Noto Sans", sans-serif;
-  font-weight: 500;
-  font-size: 32px;
-  background-color: #000;
-  color: #f5de5d;
-  border: none;
-  padding: 10px 50px 10px 50px;
-}
-.contact-wrapper .contact-container .reviews:is(:hover, :focus-visible) {
-  background-color: #f5de5d;
+  padding: 5px;
+  padding-left: 10px;
   color: #000;
-  cursor: pointer;
+  background-color: #e7e7e7;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  outline: none;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input:not(:focus) + .hu::after {
+  position: absolute;
+  left: 10px;
+  content: "Kérem irjon egy érvényes nevet";
+  font-size: 12px;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input:valid + .hu::after {
+  position: absolute;
+  left: 10px;
+  content: "Érvényes név";
+  font-size: 12px;
+  color: green;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input:not(:focus) + .en::after {
+  position: absolute;
+  left: 10px;
+  content: "Please write a valid name";
+  font-size: 12px;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input:valid + .en::after {
+  position: absolute;
+  left: 10px;
+  content: "Valid name";
+  font-size: 12px;
+  color: green;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input:valid {
+  border: 2px solid green;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input:invalid {
+  border: 2px solid red;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input:is(:placeholder-shown) {
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-input::placeholder {
+  font-family: "Noto Sans", sans-serif;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email {
+  font-family: "Noto Sans", sans-serif;
+  padding: 5px;
+  padding-left: 10px;
+  color: #000;
+  background-color: #e7e7e7;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  outline: none;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email:not(:focus) + .hu::after {
+  position: absolute;
+  left: 10px;
+  content: "Kérem irjon egy érvényes email cimet";
+  font-size: 12px;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email:valid + .hu::after {
+  position: absolute;
+  left: 10px;
+  content: "Érvényes email";
+  font-size: 12px;
+  color: green;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email:not(:focus) + .en::after {
+  position: absolute;
+  left: 10px;
+  content: "Please write a valid email";
+  font-size: 12px;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email:valid + .en::after {
+  position: absolute;
+  left: 10px;
+  content: "Valid email";
+  font-size: 12px;
+  color: green;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email:valid {
+  border: 2px solid green;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email:invalid {
+  border: 2px solid red;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email:is(:placeholder-shown) {
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-email::placeholder {
+  font-family: "Noto Sans", sans-serif;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea {
+  font-family: "Noto Sans", sans-serif;
+  padding-top: 10px;
+  padding-left: 10px;
+  border: none;
+  color: #000;
+  background-color: #e7e7e7;
+  border-radius: 1rem;
+  outline: none;
+  resize: none;
+  border: 2px solid transparent;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea:not(:focus) + .hu::after {
+  position: absolute;
+  left: 10px;
+  content: "Kérem irjon egy üzenetett";
+  font-size: 12px;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea:valid + .hu::after {
+  position: absolute;
+  left: 10px;
+  content: "Érvényes üzenet";
+  font-size: 12px;
+  color: green;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea:not(:focus) + .en::after {
+  position: absolute;
+  left: 10px;
+  content: "Please write a message";
+  font-size: 12px;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea:valid + .en::after {
+  position: absolute;
+  left: 10px;
+  content: "Valid message";
+  font-size: 12px;
+  color: green;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea:valid {
+  border: 2px solid green;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea:invalid {
+  border: 2px solid red;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea:is(:placeholder-shown) {
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .contact-form-field .contact-form-textarea::placeholder {
+  font-family: "Noto Sans", sans-serif;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .submit-btn-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .submit-btn-container .btn-submit {
+  font-family: "Noto Sans", sans-serif;
+  padding: 15px 55px 15px 55px;
+  border: none;
   border-radius: 5px;
+  color: #000;
+  background-color: #f5de5d;
+  font-size: 28px;
+  margin-bottom: 6rem;
+  box-shadow: 0px 0px 15px 1px #7fd1a1;
+}
+.contact-wrapper .contact-container .contact-form-container .contact-form .submit-btn-container .btn-submit:is(:hover, :focus-visible, :active) {
+  cursor: pointer;
+  transform: translateY(-3px);
   transition: 0.3s ease-in;
 }
+.contact-wrapper .contact-container .contact-form-container .contact-form .submit-btn-container .btn-submit:is(:hover, :focus-visible, :active) p {
+  color: #a5a5a5;
+  transform: translateX(-8px);
+  transition: 0.3s ease-in;
+  text-shadow: 3px 3px #000;
+}
 
-@keyframes moveXBtn {
-  100% {
-    transform: translateY(0);
+@media only screen and (min-width: 410px) {
+  .contact-container {
+    width: 390px !important;
+    transition: 1s ease-in-out;
   }
-  0% {
-    transform: translateY(-25px);
+  .contact-container .contact-form-container {
+    width: 370px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-form-container .contact-form {
+    width: 330px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-form-container .contact-form .submit-btn-container .btn-submit {
+    width: 390px !important;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .contact-container {
+    width: 540px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-text {
+    width: 390px !important;
+  }
+  .contact-container .contact-form-container {
+    width: 520px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-form-container .contact-form {
+    width: 480px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-form-container .contact-form .btn-submit {
+    width: 390px !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contact-container {
+    width: 730px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-text {
+    width: 540px !important;
+  }
+  .contact-container .contact-form-container {
+    width: 710px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-form-container .contact-form {
+    width: 670px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-form-container .contact-form .btn-submit {
+    width: 390px !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-container {
+    width: 940px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-text {
+    width: 540px !important;
+  }
+  .contact-container .contact-form-container {
+    width: 710px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-form-container .contact-form {
+    width: 670px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-form-container .contact-form .btn-submit {
+    width: 390px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contact-container {
+    width: 1150px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-text {
+    width: 730px !important;
+  }
+  .contact-container .contact-form-container {
+    width: 1000px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-form-container .contact-form {
+    width: 950px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-form-container .contact-form .btn-submit {
+    width: 390px !important;
   }
 }/*# sourceMappingURL=Contact.css.map */

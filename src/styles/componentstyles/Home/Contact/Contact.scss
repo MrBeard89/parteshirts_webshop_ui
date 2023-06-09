@@ -1,79 +1,460 @@
 @use '../../../../sass/variables' as v;
 @forward '../../../../sass/templates';
 
+//Main wrapper
+
 .contact-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  font-family: v.$font-family;
   padding-bottom: v.$components-gap;
   background-image: url('../../../../assets/background-png/bg-component-down.svg');
   background-size: cover;
 
+  //Contact container
+
   .contact-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 2rem;
     width: v.$mobile-s-width;
+    padding-top: 5rem;
 
-    .contact-title-bar {
-      width: 100%;
-      .title-bar {
-        @extend %titleBars;
-      }
+    //Title
+
+    .contact-title {
+      @extend %titleBars;
     }
 
-    .text-container {
+    //Small text at top
+
+    .contact-text {
+      text-align: center;
+      width: 280px;
+    }
+
+    //Main container for form
+
+    .contact-form-container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 3rem;
+      width: v.$contact-form-s;
+      background-color: v.$main-white;
+      border-radius: 1rem;
 
-      .contact-text {
-        font-family: v.$font-family;
-        font-weight: v.$font-weight-600;
-        font-size: 20px;
-        width: v.$mobile-s-width;
-        margin-top: 1rem;
-        margin-bottom: 3rem;
-      }
+      //Actual form
 
-      @extend %sendEmailBtnStyle;
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: v.$contact-form-s-inner;
+        padding: 15px 0px 15px 0px;
 
-      .down-arrow {
-        font-size: 25px;
-        animation: moveXBtn 1s infinite;
-        margin-bottom: 2rem;
-      }
-    }
+        //Form field for each input
 
-    .reviews {
-      font-family: v.$font-family;
-      font-weight: v.$font-weight-500;
-      font-size: 32px;
-      background-color: v.$main-black;
-      color: v.$main-soft-yellow;
-      border: none;
+        .contact-form-field {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
 
-      padding: 10px 50px 10px 50px;
+          //Label
 
-      &:is(:hover, :focus-visible) {
-        background-color: v.$main-soft-yellow;
-        color: v.$main-black;
-        cursor: pointer;
-        border-radius: 5px;
-        transition: 0.3s ease-in;
+          .contact-form-label {
+            font-size: v.$fs-m;
+            font-family: v.$font-family;
+          }
+
+          //Input - Input
+          .contact-form-input {
+            font-family: v.$font-family;
+            padding: 5px;
+            padding-left: 10px;
+            color: v.$main-black;
+            background-color: #e7e7e7;
+            border: 2px solid transparent;
+            border-radius: 1rem;
+            outline: none;
+
+            //***************** Validation - name *****************//
+
+            //- hu placeholder
+
+            &:not(:focus) + .hu::after {
+              position: absolute;
+              left: 10px;
+              content: 'Kérem irjon egy érvényes nevet';
+              font-size: v.$fs-xs;
+            }
+
+            &:valid + .hu::after {
+              position: absolute;
+              left: 10px;
+              content: 'Érvényes név';
+              font-size: v.$fs-xs;
+              color: green;
+              transition: 0.3s ease;
+            }
+
+            //- en placeholder
+
+            &:not(:focus) + .en::after {
+              position: absolute;
+              left: 10px;
+              content: 'Please write a valid name';
+              font-size: v.$fs-xs;
+            }
+
+            &:valid + .en::after {
+              position: absolute;
+              left: 10px;
+              content: 'Valid name';
+              font-size: v.$fs-xs;
+              color: green;
+              transition: 0.3s ease;
+            }
+
+            //Border - color
+
+            &:valid {
+              border: 2px solid green;
+              transition: 0.3s ease;
+            }
+
+            &:invalid {
+              border: 2px solid red;
+              transition: 0.3s ease;
+            }
+
+            &:is(:placeholder-shown) {
+              border: 2px solid transparent;
+              transition: 0.3s ease;
+            }
+
+            &::placeholder {
+              font-family: v.$font-family;
+            }
+          }
+
+          //Input - Email
+          .contact-form-email {
+            font-family: v.$font-family;
+            padding: 5px;
+            padding-left: 10px;
+            color: v.$main-black;
+            background-color: #e7e7e7;
+            border: 2px solid transparent;
+            border-radius: 1rem;
+            outline: none;
+
+            //***************** Validation - email *****************//
+
+            //- hu placeholder
+
+            &:not(:focus) + .hu::after {
+              position: absolute;
+              left: 10px;
+              content: 'Kérem irjon egy érvényes email cimet';
+              font-size: v.$fs-xs;
+            }
+
+            &:valid + .hu::after {
+              position: absolute;
+              left: 10px;
+              content: 'Érvényes email';
+              font-size: v.$fs-xs;
+              color: green;
+              transition: 0.3s ease;
+            }
+
+            //- en placeholder
+
+            &:not(:focus) + .en::after {
+              position: absolute;
+              left: 10px;
+              content: 'Please write a valid email';
+              font-size: v.$fs-xs;
+            }
+
+            &:valid + .en::after {
+              position: absolute;
+              left: 10px;
+              content: 'Valid email';
+              font-size: v.$fs-xs;
+              color: green;
+              transition: 0.3s ease;
+            }
+
+            //Border - color
+
+            &:valid {
+              border: 2px solid green;
+              transition: 0.3s ease;
+            }
+
+            &:invalid {
+              border: 2px solid red;
+              transition: 0.3s ease;
+            }
+
+            &:is(:placeholder-shown) {
+              border: 2px solid transparent;
+              transition: 0.3s ease;
+            }
+
+            &::placeholder {
+              font-family: v.$font-family;
+            }
+          }
+
+          //Input - Textarea
+          .contact-form-textarea {
+            font-family: v.$font-family;
+            padding-top: 10px;
+            padding-left: 10px;
+            border: none;
+            color: v.$main-black;
+            background-color: #e7e7e7;
+            border-radius: 1rem;
+            outline: none;
+            resize: none;
+            border: 2px solid transparent;
+
+            //***************** Validation - textarea *****************//
+
+            //- hu placeholder
+
+            &:not(:focus) + .hu::after {
+              position: absolute;
+              left: 10px;
+              content: 'Kérem irjon egy üzenetett';
+              font-size: v.$fs-xs;
+            }
+
+            &:valid + .hu::after {
+              position: absolute;
+              left: 10px;
+              content: 'Érvényes üzenet';
+              font-size: v.$fs-xs;
+              color: green;
+              transition: 0.3s ease;
+            }
+
+            //- en placeholder
+
+            &:not(:focus) + .en::after {
+              position: absolute;
+              left: 10px;
+              content: 'Please write a message';
+              font-size: v.$fs-xs;
+            }
+
+            &:valid + .en::after {
+              position: absolute;
+              left: 10px;
+              content: 'Valid message';
+              font-size: v.$fs-xs;
+              color: green;
+              transition: 0.3s ease;
+            }
+
+            //Border - color
+
+            &:valid {
+              border: 2px solid green;
+              transition: 0.3s ease;
+            }
+
+            &:invalid {
+              border: 2px solid red;
+              transition: 0.3s ease;
+            }
+
+            &:is(:placeholder-shown) {
+              border: 2px solid transparent;
+              transition: 0.3s ease;
+            }
+
+            &::placeholder {
+              font-family: v.$font-family;
+            }
+          }
+        }
+
+        //Submit button
+
+        .submit-btn-container {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+
+          .btn-submit {
+            font-family: v.$font-family;
+            padding: 15px 55px 15px 55px;
+            border: none;
+            border-radius: 5px;
+            color: v.$main-black;
+            background-color: v.$main-soft-yellow;
+            font-size: v.$fs-xxl;
+            margin-bottom: v.$components-gap;
+            box-shadow: 0px 0px 15px 1px v.$main-lime-green;
+
+            &:is(:hover, :focus-visible, :active) {
+              cursor: pointer;
+              transform: translateY(-3px);
+              transition: 0.3s ease-in;
+
+              p {
+                color: v.$main-gray;
+                transform: translateX(-8px);
+                transition: 0.3s ease-in;
+                text-shadow: 3px 3px v.$main-black;
+              }
+            }
+          }
+        }
       }
     }
   }
 }
 
-//keyframes
-@keyframes moveXBtn {
-  100% {
-    transform: translateY(0);
+//Media queries
+
+//******** Breakpoint - sm 410px ********//
+
+@media only screen and (min-width: v.$breakpoint-sm) {
+  .contact-container {
+    width: v.$mobile-sm-width !important;
+    transition: 1s ease-in-out;
+
+    .contact-form-container {
+      width: v.$contact-form-sm !important;
+      transition: 1s ease-in-out;
+
+      .contact-form {
+        width: v.$contact-form-sm-inner !important;
+        transition: 1s ease-in-out;
+
+        .submit-btn-container {
+          .btn-submit {
+            width: v.$mobile-sm-width !important;
+          }
+        }
+      }
+    }
   }
-  0% {
-    transform: translateY(-25px);
+}
+
+//******** Breakpoint - m 576px ********//
+
+@media only screen and (min-width: v.$breakpoint-m) {
+  .contact-container {
+    width: v.$mobile-m-width !important;
+    transition: 1s ease-in-out;
+
+    .contact-text {
+      width: v.$mobile-sm-width !important;
+    }
+
+    .contact-form-container {
+      width: v.$contact-form-m !important;
+      transition: 1s ease-in-out;
+
+      .contact-form {
+        width: v.$contact-form-m-inner !important;
+        transition: 1s ease-in-out;
+
+        .btn-submit {
+          width: v.$mobile-sm-width !important;
+        }
+      }
+    }
+  }
+}
+
+//******** Breakpoint - md 768px ********//
+
+@media only screen and (min-width: v.$breakpoint-md) {
+  .contact-container {
+    width: v.$tablet-width !important;
+    transition: 1s ease-in-out;
+
+    .contact-text {
+      width: v.$mobile-m-width !important;
+    }
+
+    .contact-form-container {
+      width: v.$contact-form-md !important;
+      transition: 1s ease-in-out;
+
+      .contact-form {
+        width: v.$contact-form-md-inner !important;
+        transition: 1s ease-in-out;
+
+        .btn-submit {
+          width: v.$mobile-sm-width !important;
+        }
+      }
+    }
+  }
+}
+
+//******** Breakpoint - lg 992px ********//
+
+@media only screen and (min-width: v.$breakpoint-lg) {
+  .contact-container {
+    width: v.$desktop-m-width !important;
+    transition: 1s ease-in-out;
+
+    .contact-text {
+      width: v.$mobile-m-width !important;
+    }
+
+    .contact-form-container {
+      width: v.$contact-form-md !important;
+      transition: 1s ease-in-out;
+
+      .contact-form {
+        width: v.$contact-form-md-inner !important;
+        transition: 1s ease-in-out;
+
+        .btn-submit {
+          width: v.$mobile-sm-width !important;
+        }
+      }
+    }
+  }
+}
+
+//******** Breakpoint - xl 1200px ********//
+
+@media only screen and (min-width: v.$breakpoint-xl) {
+  .contact-container {
+    width: v.$desktop-l-width !important;
+    transition: 1s ease-in-out;
+
+    .contact-text {
+      width: v.$tablet-width !important;
+    }
+
+    .contact-form-container {
+      width: v.$contact-form-xl !important;
+      transition: 1s ease-in-out;
+
+      .contact-form {
+        width: v.$contact-form-xl-inner !important;
+        transition: 1s ease-in-out;
+
+        .btn-submit {
+          width: v.$mobile-sm-width !important;
+        }
+      }
+    }
   }
 }
