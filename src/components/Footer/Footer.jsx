@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 import { GiBurningSkull } from 'react-icons/gi'
 
+//Import credit card pngs
+import Visa from '../../assets/credit-card/visa.png'
+import Mastercard from '../../assets/credit-card/mastercard.png'
+import Paypal from '../../assets/credit-card/paypal.png'
+
 export const Footer = () => {
   return (
     <div className='footer-wrapper'>
@@ -70,8 +75,12 @@ export const Footer = () => {
       </div>
 
       <div className='copyright-container'>
-        <p className='copyright'>&copy; 2023 Parteeshirts</p>
-        <div className='payment-card-container'></div>
+        <p className='copyright'>&copy; 2023 Parteeshirts | All rights reserved</p>
+        <div className='payment-card-container'>
+          <img className='visa' src={Visa} alt='Visa' />
+          <img className='mastercard' src={Mastercard} alt='Mastercard' />
+          <img className='paypal' src={Paypal} alt='Paypal' />
+        </div>
       </div>
     </div>
   )

@@ -50,6 +50,7 @@
       .input-container {
         display: flex;
         justify-content: flex-start;
+
         input {
           font-family: v.$font-family;
           height: 3rem;
@@ -119,80 +120,27 @@
       text-align: center;
       gap: 2rem;
 
-      .general {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        gap: 0.5rem;
-        width: 100%;
-
-        .links-title {
-          margin-bottom: 1.5rem;
-          font-size: 18px;
-          font-weight: v.$font-weight-400;
-          letter-spacing: 2px;
-        }
-        .footer-link {
-          font-family: v.$font-family;
-          font-weight: v.$font-weight-700;
-          font-size: 20px;
-          text-decoration: none;
-          color: v.$main-white;
-
-          &:is(:hover, :focus-visible) {
-            text-decoration: underline;
-            color: v.$main-soft-yellow;
-          }
-        }
-      }
-
-      .info-order {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        gap: 0.5rem;
-        width: 100%;
-
-        .links-title {
-          margin-bottom: 1.5rem;
-          font-size: 18px;
-          font-weight: v.$font-weight-400;
-          letter-spacing: 2px;
-        }
-        .footer-link {
-          font-family: v.$font-family;
-          font-weight: v.$font-weight-700;
-          font-size: 20px;
-          text-decoration: none;
-          color: v.$main-white;
-
-          &:is(:hover, :focus-visible) {
-            text-decoration: underline;
-            color: v.$main-soft-yellow;
-          }
-        }
-      }
-
+      .general,
+      .info-order,
       .legal-info {
         display: flex;
         flex-direction: column;
         list-style: none;
-        gap: 0.5rem;
+        gap: 0.2rem;
         width: 100%;
-        margin-bottom: 3rem;
 
         .links-title {
           margin-bottom: 1.5rem;
-          font-size: 18px;
-          font-weight: v.$font-weight-400;
+          font-size: v.$fs-xl;
+          font-weight: v.$font-weight-500;
           letter-spacing: 2px;
         }
         .footer-link {
           font-family: v.$font-family;
-          font-weight: v.$font-weight-700;
+          font-weight: v.$font-weight-300;
           font-size: 20px;
           text-decoration: none;
-          color: v.$main-white;
+          color: v.$main-gray;
 
           &:is(:hover, :focus-visible) {
             text-decoration: underline;
@@ -208,12 +156,20 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 1rem;
+    margin-top: 3rem;
 
     .copyright {
-      letter-spacing: 2px;
+      letter-spacing: 1px;
+      font-size: v.$fs-xs;
     }
 
     .payment-card-container {
+      margin-top: 0.5rem;
+      .visa,
+      .mastercard,
+      .paypal {
+        width: 100px;
+      }
     }
   }
 }
