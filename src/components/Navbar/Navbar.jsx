@@ -42,7 +42,7 @@ export const Navbar = () => {
           </span>
 
           <div className='navbar-logo'>
-            <HashLink to='#home'>
+            <HashLink to='/home#home'>
               <Logo />
             </HashLink>
           </div>
@@ -77,6 +77,11 @@ export const Navbar = () => {
                 <li className='navlink'>Accessories</li>
                 <GiBurningSkull className='skull-back' />
               </Link>
+
+              <HashLink to='/home#contact'>
+                <li className='navlink'>Contact Us</li>
+                <GiBurningSkull className='skull-back' />
+              </HashLink>
 
               <Link to='/'>
                 <li className='navlink'>Reviews</li>
