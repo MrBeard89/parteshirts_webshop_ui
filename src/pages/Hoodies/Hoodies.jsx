@@ -1,5 +1,5 @@
-//Import products json file 🎈
-import Products from '../../utils/products.json'
+//Import products js file 🎈
+import { PRODUCTS } from '../../utils/products'
 
 //Import Scss file
 import '../../styles/pagestyles/Hoodies/Hoodies.scss'
@@ -57,8 +57,8 @@ export const Hoodies = () => {
   //If selected contains the selected value , return the filtered array 😃
   let filtered
   filtered = selectedHoodies
-    ? Products.hoodies.filter((hoodie) => hoodie.genre.includes(selectedHoodies))
-    : Products.hoodies
+    ? PRODUCTS.hoodies.filter((hoodie) => hoodie.genre.includes(selectedHoodies))
+    : PRODUCTS.hoodies
 
   //FilteredTeeshirts Component 🍕
   const FilteredHoodies = () =>

@@ -1,5 +1,5 @@
-//Import products json file 🎈
-import Products from '../../utils/products.json'
+//Import products js file 🎈
+import { PRODUCTS } from '../../utils/products'
 
 //Import Scss file
 import '../../styles/pagestyles/Accessories/Accessories.scss'
@@ -57,8 +57,8 @@ export const Accessories = () => {
   //If selected contains the selected value , return the filtered array 😃
   let filtered
   filtered = selectedAccessories
-    ? Products.accessories.filter((accessorie) => accessorie.type.includes(selectedAccessories))
-    : Products.accessories
+    ? PRODUCTS.accessories.filter((accessorie) => accessorie.type.includes(selectedAccessories))
+    : PRODUCTS.accessories
 
   //FilteredTeeshirts Component 🍕
   const FilteredAccessories = () =>
