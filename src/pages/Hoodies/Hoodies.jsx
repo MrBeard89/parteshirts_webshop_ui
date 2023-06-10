@@ -57,8 +57,10 @@ export const Hoodies = () => {
   //If selected contains the selected value , return the filtered array 😃
   let filtered
   filtered = selectedHoodies
-    ? PRODUCTS.hoodies.filter((hoodie) => hoodie.genre.includes(selectedHoodies))
-    : PRODUCTS.hoodies
+    ? PRODUCTS.filter(
+        (hoodie) => hoodie.genre.includes(selectedHoodies) && hoodie.type === 'hoodies'
+      )
+    : PRODUCTS.filter((hoodie) => hoodie.type === 'hoodies')
 
   //FilteredTeeshirts Component 🍕
   const FilteredHoodies = () =>

@@ -14,9 +14,6 @@ export const Navbar = () => {
   //Usestate for navbar open,close
   const [navbarOpen, setNavbarOpen] = useState(false)
 
-  //Usestate for cart open,close
-  const [cartOpen, setCartOpen] = useState(false)
-
   var prevScrollpos = window.pageYOffset
   window.onscroll = function () {
     var currentScrollPos = window.pageYOffset
@@ -48,14 +45,11 @@ export const Navbar = () => {
           </div>
 
           {/* Mobile icon container - cart*/}
-          <span className='cart-icon-container' onClick={() => setCartOpen((prev) => !prev)}>
-            {cartOpen ? (
-              <AiOutlineClose className='cart-close' />
-            ) : (
-              <HiOutlineShoppingBag className='cart' />
-            )}
-          </span>
-
+          <Link to='/cart'>
+            <span className='cart-icon-container'>
+              <HiOutlineShoppingBag className='cart-icon' />
+            </span>
+          </Link>
           <div className={`${navbarOpen ? 'navbar-mobile' : 'navlinks-container'}`}>
             <ul className='navlinks' onClick={() => setNavbarOpen(false)}>
               <Link to='/home'>
@@ -91,16 +85,6 @@ export const Navbar = () => {
 
             <div className='img-container'>
               <img src={MobileVector} alt='Emoji-vector-img' />
-            </div>
-          </div>
-
-          <div className={`${cartOpen ? 'cart-mobile' : 'cartlinks-container'}`}>
-            <div className='cart-wrapper'>
-              <h3 className='title'>Your shopping cart</h3>
-              <p className='cart-message'>Your shopping cart is empty</p>
-              <button className='goshoppingBtn' onClick={() => setCartOpen(false)}>
-                Go Shopping
-              </button>
             </div>
           </div>
         </div>

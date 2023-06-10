@@ -24,6 +24,10 @@
     height: 5rem;
     width: v.$mobile-s-width;
 
+    a {
+      color: v.$main-black;
+    }
+
     //Disable desktop menu
 
     .navlinks-container {
@@ -58,16 +62,7 @@
     .cart-icon-container {
       z-index: 4;
 
-      .cart-close {
-        font-size: v.$fs-xl;
-        color: v.$main-white;
-
-        &:is(:hover, :focus-visible, :active) {
-          cursor: pointer;
-        }
-      }
-
-      .cart {
+      .cart-icon {
         font-size: v.$fs-xl;
 
         &:is(:hover, :focus-visible, :active) {
@@ -134,77 +129,6 @@
             .skull-back {
               display: block;
             }
-          }
-        }
-      }
-    }
-
-    //Disable desktop cart menu
-    .cartlinks-container {
-      display: none;
-    }
-
-    //Mobile cart menu
-
-    .cart-mobile {
-      z-index: 3;
-      position: absolute;
-      top: 0;
-      right: -0.6rem;
-      width: 107%;
-      height: 105vh;
-      display: flex;
-      flex-direction: column;
-      padding-top: 4rem;
-      background-color: rgba(0, 0, 0, 0.822);
-      backdrop-filter: blur(50px);
-
-      animation: 0.3s slideCart cubic-bezier(0.895, 0.03, 0.685, 0.22);
-
-      .cart-wrapper {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-
-        .title {
-          position: inherit;
-          top: -2.5rem;
-          font-size: v.$fs-h3;
-          font-weight: v.$font-weight-400;
-          color: v.$main-white;
-          letter-spacing: 1px;
-        }
-
-        .cart-message {
-          position: inherit;
-          top: 10.5rem;
-          margin-bottom: 2rem;
-          font-size: v.$fs-l;
-          color: v.$main-soft-yellow;
-        }
-
-        .goshoppingBtn {
-          position: inherit;
-          top: 10.5rem;
-          font-family: v.$font-family;
-          font-size: v.$fs-xl;
-          font-weight: v.$font-weight-600;
-          text-transform: uppercase;
-          width: 180px;
-          height: 55px;
-          border: 2px solid v.$main-soft-yellow;
-          background-color: v.$main-black;
-          color: v.$main-soft-yellow;
-          outline: none;
-          border-radius: 1rem;
-
-          &:is(:hover, :focus-visible, :active) {
-            background-color: v.$main-soft-yellow;
-            color: v.$main-black;
-            cursor: pointer;
           }
         }
       }

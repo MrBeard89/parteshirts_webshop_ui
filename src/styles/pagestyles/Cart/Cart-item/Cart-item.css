@@ -1,0 +1,31 @@
+.card {
+  position: relative;
+  display: flex;
+  border: 2px solid #000;
+  border-radius: 8px;
+  background-color: #fff;
+  width: 300px;
+}
+.card:is(:hover, :focus-visible) {
+  cursor: pointer;
+  border: 2px solid #f5de5d;
+}
+.card .card-title {
+  font-size: 12px;
+  background-color: #000;
+  color: #f5de5d;
+  height: 2.2rem;
+  overflow: hidden;
+  text-align: center;
+}
+.card .card-img {
+  height: 120px;
+  width: 100px;
+  padding: 8px;
+}
+
+.price-container .actual-price {
+  display: flex;
+  align-items: center;
+  color: #f5de5d;
+}/*# sourceMappingURL=Cart-item.css.map */

@@ -82,6 +82,35 @@
         padding-top: 2.5rem;
         padding-bottom: 1rem;
       }
+
+      .addcart-countainer {
+        .addcart {
+          position: absolute;
+          top: 17.5%;
+          left: 0;
+          background-color: v.$main-gray;
+          font-size: v.$fs-h1;
+
+          &:is(:hover, :focus-visible) {
+            color: v.$main-white;
+            cursor: pointer;
+          }
+        }
+        .addcart-counter {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 25px;
+          left: -5px;
+          color: v.$main-black;
+          background-color: v.$main-vivid-orange;
+          border-radius: 50%;
+          width: 15px;
+          height: 15px;
+          padding: 2px;
+        }
+      }
     }
 
     .teeshirts-price-container {

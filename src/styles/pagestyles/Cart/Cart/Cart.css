@@ -1,0 +1,43 @@
+.cart-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url("../../../../assets/background-png/bg-component-down.svg");
+  background-size: cover;
+  padding-top: 6rem;
+  font-family: "Noto Sans", sans-serif;
+}
+.cart-wrapper .cart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  height: fit-content;
+  width: 300px;
+  margin-bottom: 3rem;
+}
+.cart-wrapper .cart-container .cart-title {
+  margin-bottom: 3rem;
+}
+.cart-wrapper .cart-container .emptycart-text {
+  margin-bottom: 2rem;
+}
+.cart-wrapper .cart-container .goshoppingBtn {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  border: 2px solid #f5de5d;
+  border-radius: 8px;
+  background-color: #000;
+  color: #f5de5d;
+  width: 155px;
+  height: 55px;
+}
+.cart-wrapper .cart-container .goshoppingBtn:is(:hover, :focus-visible) {
+  background-color: #f5de5d;
+  color: #000;
+  cursor: pointer;
+}/*# sourceMappingURL=Cart.css.map */

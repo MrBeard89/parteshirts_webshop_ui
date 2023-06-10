@@ -72,6 +72,31 @@
   padding-top: 2.5rem;
   padding-bottom: 1rem;
 }
+.teeshirts-wrapper .teeshirts-container .teeshirts-card .addcart-countainer .addcart {
+  position: absolute;
+  top: 17.5%;
+  left: 0;
+  background-color: #a5a5a5;
+  font-size: 38px;
+}
+.teeshirts-wrapper .teeshirts-container .teeshirts-card .addcart-countainer .addcart:is(:hover, :focus-visible) {
+  color: #fff;
+  cursor: pointer;
+}
+.teeshirts-wrapper .teeshirts-container .teeshirts-card .addcart-countainer .addcart-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25px;
+  left: -5px;
+  color: #000;
+  background-color: #fe5a0b;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+}
 .teeshirts-wrapper .teeshirts-container .teeshirts-price-container .teeshirts-actual-price {
   display: flex;
   align-items: center;

@@ -21,6 +21,9 @@
   height: 5rem;
   width: 300px;
 }
+.navbar-wrapper .navbar-container a {
+  color: #000;
+}
 .navbar-wrapper .navbar-container .navlinks-container {
   display: none;
 }
@@ -44,17 +47,10 @@
 .navbar-wrapper .navbar-container .cart-icon-container {
   z-index: 4;
 }
-.navbar-wrapper .navbar-container .cart-icon-container .cart-close {
-  font-size: 24px;
-  color: #fff;
-}
-.navbar-wrapper .navbar-container .cart-icon-container .cart-close:is(:hover, :focus-visible, :active) {
-  cursor: pointer;
-}
-.navbar-wrapper .navbar-container .cart-icon-container .cart {
+.navbar-wrapper .navbar-container .cart-icon-container .cart-icon {
   font-size: 24px;
 }
-.navbar-wrapper .navbar-container .cart-icon-container .cart:is(:hover, :focus-visible, :active) {
+.navbar-wrapper .navbar-container .cart-icon-container .cart-icon:is(:hover, :focus-visible, :active) {
   cursor: pointer;
   animation: menuShake 0.4s infinite;
 }
@@ -109,66 +105,6 @@
 }
 .navbar-wrapper .navbar-container .navbar-mobile .navlinks a:is(:hover, :focus-visible, :active) .skull-back {
   display: block;
-}
-.navbar-wrapper .navbar-container .cartlinks-container {
-  display: none;
-}
-.navbar-wrapper .navbar-container .cart-mobile {
-  z-index: 3;
-  position: absolute;
-  top: 0;
-  right: -0.6rem;
-  width: 107%;
-  height: 105vh;
-  display: flex;
-  flex-direction: column;
-  padding-top: 4rem;
-  background-color: rgba(0, 0, 0, 0.822);
-  backdrop-filter: blur(50px);
-  animation: 0.3s slideCart cubic-bezier(0.895, 0.03, 0.685, 0.22);
-}
-.navbar-wrapper .navbar-container .cart-mobile .cart-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-.navbar-wrapper .navbar-container .cart-mobile .cart-wrapper .title {
-  position: inherit;
-  top: -2.5rem;
-  font-size: 22px;
-  font-weight: 400;
-  color: #fff;
-  letter-spacing: 1px;
-}
-.navbar-wrapper .navbar-container .cart-mobile .cart-wrapper .cart-message {
-  position: inherit;
-  top: 10.5rem;
-  margin-bottom: 2rem;
-  font-size: 20px;
-  color: #f5de5d;
-}
-.navbar-wrapper .navbar-container .cart-mobile .cart-wrapper .goshoppingBtn {
-  position: inherit;
-  top: 10.5rem;
-  font-family: "Noto Sans", sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  text-transform: uppercase;
-  width: 180px;
-  height: 55px;
-  border: 2px solid #f5de5d;
-  background-color: #000;
-  color: #f5de5d;
-  outline: none;
-  border-radius: 1rem;
-}
-.navbar-wrapper .navbar-container .cart-mobile .cart-wrapper .goshoppingBtn:is(:hover, :focus-visible, :active) {
-  background-color: #f5de5d;
-  color: #000;
-  cursor: pointer;
 }
 
 @keyframes slideCart {

@@ -1,0 +1,43 @@
+@use '../../../../sass/variables' as v;
+@forward '../../../../sass/templates';
+
+.card {
+  position: relative;
+  display: flex;
+
+  border: 2px solid v.$main-black;
+  border-radius: 8px;
+
+  background-color: v.$main-white;
+  width: v.$mobile-s-width;
+
+  &:is(:hover, :focus-visible) {
+    cursor: pointer;
+    border: 2px solid v.$main-soft-yellow;
+  }
+
+  .card-title {
+    font-size: v.$fs-xs;
+    background-color: v.$main-black;
+    color: v.$main-soft-yellow;
+    height: 2.2rem;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .card-img {
+    height: 120px;
+    width: 100px;
+    padding: 8px;
+  }
+}
+
+.price-container {
+  .lowered-price {
+  }
+  .actual-price {
+    display: flex;
+    align-items: center;
+    color: v.$main-soft-yellow;
+  }
+}

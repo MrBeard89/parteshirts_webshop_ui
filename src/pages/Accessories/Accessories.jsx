@@ -57,8 +57,8 @@ export const Accessories = () => {
   //If selected contains the selected value , return the filtered array 😃
   let filtered
   filtered = selectedAccessories
-    ? PRODUCTS.accessories.filter((accessorie) => accessorie.type.includes(selectedAccessories))
-    : PRODUCTS.accessories
+    ? PRODUCTS.filter((accessorie) => accessorie.type[1].includes(selectedAccessories))
+    : PRODUCTS.filter((accessorie) => accessorie.type[0] === 'accessorie')
 
   //FilteredTeeshirts Component 🍕
   const FilteredAccessories = () =>

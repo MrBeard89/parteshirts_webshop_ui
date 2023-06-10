@@ -14,11 +14,17 @@ import { Decor } from '../../components/Decor - Slogen/Decor'
 //Import React Select
 import Select from 'react-select'
 
-//Usestate
-import { useState } from 'react'
+//Usestate,context
+import React, { useState, useContext } from 'react'
+
+//ShopContext
+import { ShopContext } from '../../context/shop-context'
+
+import { BsCartPlus } from 'react-icons/bs'
 
 export const Teeshirts = () => {
   const [selectedShirt, setSelectedShirt] = useState('')
+  const { addToCart, cartItems } = useContext(ShopContext)
 
   //Select input Options 📀
   const shirtsOptions = [
@@ -57,12 +63,14 @@ export const Teeshirts = () => {
   //If selected contains the selected value , return the filtered array 😃
   let filtered
   filtered = selectedShirt
-    ? PRODUCTS.teeshirts.filter((shirt) => shirt.genre.includes(selectedShirt))
-    : PRODUCTS.teeshirts
+    ? PRODUCTS.filter((shirt) => shirt.genre.includes(selectedShirt) && shirt.type === 'teeshirts')
+    : PRODUCTS.filter((shirt) => shirt.type === 'teeshirts')
 
   //FilteredTeeshirts Component 🍕
-  const FilteredTeeshirts = () =>
-    filtered.map((shirt) => {
+  const FilteredTeeshirts = () => {
+    return filtered.map((shirt) => {
+      const cartItemAmount = cartItems[shirt.id]
+
       return (
         <div className='teeshirts-card' key={shirt.id}>
           <h3 className='teeshirts-card-title'>{shirt.title}</h3>
@@ -78,9 +86,18 @@ export const Teeshirts = () => {
               <Euro />
             </p>
           </div>
+          <div className='addcart-countainer'>
+            <BsCartPlus className='addcart' onClick={() => addToCart(shirt.id)}></BsCartPlus>
+            {cartItemAmount > 0 ? (
+              <span className='addcart-counter'>{cartItemAmount > 0 && <>{cartItemAmount}</>}</span>
+            ) : (
+              ''
+            )}
+          </div>
         </div>
       )
     })
+  }
 
   return (
     <>

@@ -1,0 +1,50 @@
+@use '../../../../sass/variables' as v;
+@forward '../../../../sass/templates';
+
+.cart-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url('../../../../assets/background-png/bg-component-down.svg');
+  background-size: cover;
+  padding-top: v.$components-gap;
+  font-family: v.$font-family;
+
+  .cart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    height: fit-content;
+    width: v.$mobile-s-width;
+    margin-bottom: 3rem;
+
+    .cart-title {
+      margin-bottom: 3rem;
+    }
+    .emptycart-text {
+      margin-bottom: 2rem;
+    }
+
+    .goshoppingBtn {
+      font-family: v.$font-family;
+      font-size: v.$fs-l;
+      border: 2px solid v.$main-soft-yellow;
+      border-radius: 8px;
+      background-color: v.$main-black;
+      color: v.$main-soft-yellow;
+      width: 155px;
+      height: 55px;
+
+      &:is(:hover, :focus-visible) {
+        background-color: v.$main-soft-yellow;
+        color: v.$main-black;
+        cursor: pointer;
+      }
+    }
+  }
+}
