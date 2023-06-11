@@ -103,12 +103,13 @@
           position: absolute;
           top: 25px;
           left: -5px;
-          color: v.$main-black;
+          color: v.$main-white;
           background-color: v.$main-vivid-orange;
           border-radius: 50%;
           width: 15px;
           height: 15px;
-          padding: 2px;
+          padding: 3px;
+          font-size: v.$fs-xs;
         }
       }
     }

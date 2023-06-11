@@ -10,14 +10,18 @@ import { CartItem } from './Cart-item'
 import { Footer } from '../../components/Footer/Footer'
 import { Link } from 'react-router-dom'
 
+//Import Currency Svg from react-icons 📝
+import { BiEuro as Euro } from 'react-icons/bi'
+
 export const Cart = () => {
-  const { cartItems, itemInCart } = useContext(ShopContext)
+  const { cartItems, getTotalCartAmount } = useContext(ShopContext)
+  const totalAmount = getTotalCartAmount()
 
   return (
     <div className='cart-wrapper'>
       <div className='cart-container'>
         <h1 className='cart-title'>Your Cart</h1>
-        {itemInCart === false ? (
+        {totalAmount === 0 ? (
           <>
             <h3 className='emptycart-text'>Your Cart is Empty</h3>
             <Link to='/home'>
@@ -25,13 +29,25 @@ export const Cart = () => {
             </Link>
           </>
         ) : (
-          PRODUCTS.map((product) => {
-            if (cartItems[product.id] !== 0) {
-              return <CartItem data={product} />
-            }
-          })
+          <>
+            {PRODUCTS.map((product) => {
+              if (cartItems[product.id] !== 0) {
+                return <CartItem key={product.id} data={product} />
+              }
+            })}
+            <div className='checkout-container'>
+              <p>
+                Subtotal: <Euro /> {totalAmount}
+              </p>
+              <Link to='/home'>
+                <button> Continue Shopping </button>
+              </Link>
+              <button> Checkout </button>
+            </div>
+          </>
         )}
       </div>
+
       <Footer />
     </div>
   )

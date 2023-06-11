@@ -90,12 +90,13 @@
   position: absolute;
   top: 25px;
   left: -5px;
-  color: #000;
+  color: #fff;
   background-color: #fe5a0b;
   border-radius: 50%;
   width: 15px;
   height: 15px;
-  padding: 2px;
+  padding: 3px;
+  font-size: 12px;
 }
 .teeshirts-wrapper .teeshirts-container .teeshirts-price-container .teeshirts-actual-price {
   display: flex;

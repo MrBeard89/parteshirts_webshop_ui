@@ -8,9 +8,12 @@ import MobileVector from '../../assets/logo/emoji-vector.png'
 import { GiBurningSkull, GiHamburgerMenu } from 'react-icons/gi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { HiOutlineShoppingBag } from 'react-icons/hi'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import { ShopContext } from '../../context/shop-context'
 
 export const Navbar = () => {
+  const { getTotalItemCount } = useContext(ShopContext)
+  let totalCartCount = getTotalItemCount()
   //Usestate for navbar open,close
   const [navbarOpen, setNavbarOpen] = useState(false)
 
@@ -48,6 +51,7 @@ export const Navbar = () => {
           <Link to='/cart'>
             <span className='cart-icon-container'>
               <HiOutlineShoppingBag className='cart-icon' />
+              {totalCartCount === 0 ? '' : <p className='totalcartcount'>{totalCartCount}</p>}
             </span>
           </Link>
           <div className={`${navbarOpen ? 'navbar-mobile' : 'navlinks-container'}`}>

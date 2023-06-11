@@ -48,7 +48,7 @@
       }
 
       .hamburger {
-        font-size: v.$fs-xl;
+        font-size: v.$fs-xxl;
 
         &:is(:hover, :focus-visible, :active) {
           cursor: pointer;
@@ -60,10 +60,30 @@
     //Cart icon container
 
     .cart-icon-container {
+      position: relative;
       z-index: 4;
 
+      .totalcartcount {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -25px;
+        left: 3px;
+        color: v.$main-white;
+        background-color: v.$main-vivid-orange;
+        border-radius: 50%;
+        border: 2px solid v.$main-black;
+        width: 12px;
+        height: 12px;
+        padding: 3px;
+        font-size: v.$fs-xs;
+
+        animation: cartCountAnimation 3s infinite cubic-bezier(0.895, 0.03, 0.685, 0.22);
+      }
+
       .cart-icon {
-        font-size: v.$fs-xl;
+        font-size: v.$fs-xxl;
 
         &:is(:hover, :focus-visible, :active) {
           cursor: pointer;
@@ -172,6 +192,28 @@
   }
   100% {
     transform: rotate(0);
+    transition: 0.2s ease-in;
+  }
+}
+@keyframes cartCountAnimation {
+  0% {
+    transform: translateY(0px);
+    transition: 0.2s ease-in;
+  }
+  25% {
+    transform: translateY(5px);
+    transition: 0.2s ease-in;
+  }
+  50% {
+    transform: translateY(0px);
+    transition: 0.2s ease-in;
+  }
+  75% {
+    transform: translateY(5px);
+    transition: 0.2s ease-in;
+  }
+  100% {
+    transform: translateY(0px);
     transition: 0.2s ease-in;
   }
 }

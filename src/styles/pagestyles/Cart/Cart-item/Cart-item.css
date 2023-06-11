@@ -10,22 +10,61 @@
   cursor: pointer;
   border: 2px solid #f5de5d;
 }
-.card .card-title {
-  font-size: 12px;
-  background-color: #000;
-  color: #f5de5d;
-  height: 2.2rem;
-  overflow: hidden;
-  text-align: center;
-}
 .card .card-img {
   height: 120px;
   width: 100px;
   padding: 8px;
 }
-
-.price-container .actual-price {
+.card .info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .info-container .card-title {
+  font-size: 14px;
+  overflow: hidden;
+  text-align: left;
+}
+.card .info-container .price-container .actual-price {
   display: flex;
   align-items: center;
+  color: #fe5a0b;
+  font-size: 20px;
+  font-weight: 700;
+}
+.card .info-container .countHandler {
+  display: flex;
+}
+.card .info-container .countHandler button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
   color: #f5de5d;
+  outline: none;
+  border: none;
+  width: 29px;
+  height: 29px;
+  font-size: 28px;
+  padding-bottom: 3px;
+}
+.card .info-container .countHandler button:is(:hover, :focus-visible) {
+  color: #fe5a0b;
+  cursor: pointer;
+}
+.card .info-container .countHandler .removeCount {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.card .info-container .countHandler .addCount {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.card .info-container .countHandler input {
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  outline: none;
+  border: 2px solid #000;
+  font-size: 16px;
 }/*# sourceMappingURL=Cart-item.css.map */
