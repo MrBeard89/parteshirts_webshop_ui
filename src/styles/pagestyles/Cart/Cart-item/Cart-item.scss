@@ -8,6 +8,7 @@
   border-radius: 8px;
   background-color: v.$main-white;
   width: v.$mobile-s-width;
+  height: 150px;
 
   &:is(:hover, :focus-visible) {
     cursor: pointer;
@@ -21,68 +22,98 @@
   }
 
   .info-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 175px;
+
+    .size-text {
+      color: v.$main-gray;
+      text-align: left;
+      width: 100%;
+      margin-bottom: 0.3rem;
+    }
 
     .card-title {
-      font-size: v.$fs-s;
-
+      padding-top: 5px;
+      font-size: v.$fs-xs;
       overflow: hidden;
       text-align: left;
+      width: 100%;
     }
 
-    .price-container {
-      .lowered-price {
-      }
-      .actual-price {
-        display: flex;
-        align-items: center;
-        color: v.$main-vivid-orange;
-        font-size: v.$fs-l;
-        font-weight: v.$font-weight-700;
-      }
-    }
-
-    .countHandler {
+    .state-wrapper {
       display: flex;
-
-      button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: v.$main-black;
-        color: v.$main-soft-yellow;
-        outline: none;
-        border: none;
-        width: 29px;
-        height: 29px;
-        font-size: v.$fs-xxl;
-        padding-bottom: 3px;
-
-        &:is(:hover, :focus-visible) {
+      flex-direction: column;
+      width: 100%;
+      .price-container {
+        margin-bottom: 0.3rem;
+        .lowered-price {
+        }
+        .actual-price {
+          display: flex;
+          align-items: center;
           color: v.$main-vivid-orange;
-          cursor: pointer;
+          font-size: v.$fs-l;
+          font-weight: v.$font-weight-700;
         }
       }
 
-      .removeCount {
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
-      }
+      .countHandler {
+        position: absolute;
+        bottom: 8px;
+        display: flex;
+        align-items: center;
 
-      .addCount {
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-      }
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: v.$main-black;
+          color: v.$main-soft-yellow;
+          outline: none;
+          border: none;
+          width: 29px;
+          height: 29px;
+          font-size: v.$fs-xxl;
+          padding-bottom: 3px;
 
-      input {
-        width: 50px;
-        height: 25px;
-        text-align: center;
-        outline: none;
-        border: 2px solid v.$main-black;
-        font-size: v.$fs-m;
+          &:is(:hover, :focus-visible) {
+            color: v.$main-vivid-orange;
+            cursor: pointer;
+          }
+        }
+
+        .removeCount {
+          border-top-left-radius: 8px;
+          border-bottom-left-radius: 8px;
+        }
+
+        .addCount {
+          border-top-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+          margin-right: 2rem;
+        }
+
+        input {
+          width: 50px;
+          height: 25px;
+          text-align: center;
+          outline: none;
+          border: 2px solid v.$main-black;
+          font-size: v.$fs-m;
+        }
+
+        .trash {
+          font-size: v.$fs-xl;
+          color: v.$main-gray;
+
+          &:is(:hover, :focus-visible) {
+            color: v.$main-black;
+            cursor: pointer;
+          }
+        }
       }
     }
   }

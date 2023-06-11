@@ -21,26 +21,31 @@ export const CartItem = (props) => {
       <div className='info-container'>
         <h3 className='card-title'>{title}</h3>
 
-        <div className='price-container'>
-          <p className='lowered-price'></p>
-          <p className='actual-price'>
-            {price}
-            <Euro />
-          </p>
-        </div>
+        {/* Hardcoded size - no sizes yet confirmed! */}
+        <p className='size-text'>Size: M </p>
 
-        <div className='countHandler'>
-          <button className='removeCount' onClick={() => removeFromCart(id)}>
-            -
-          </button>
-          <input
-            value={cartItems[id]}
-            onChange={(e) => updateCartItemCount(Number(e.target.value), id)}
-          />
-          <button className='addCount' onClick={() => addToCart(id)}>
-            +
-          </button>
-          <Trash onClick={() => removeAllFromCart(id)} />
+        <div className='state-wrapper'>
+          <div className='price-container'>
+            <p className='lowered-price'></p>
+            <p className='actual-price'>
+              {price}
+              <Euro />
+            </p>
+          </div>
+
+          <div className='countHandler'>
+            <button className='removeCount' onClick={() => removeFromCart(id)}>
+              -
+            </button>
+            <input
+              value={cartItems[id]}
+              onChange={(e) => updateCartItemCount(Number(e.target.value), id)}
+            />
+            <button className='addCount' onClick={() => addToCart(id)}>
+              +
+            </button>
+            <Trash className='trash' onClick={() => removeAllFromCart(id)} />
+          </div>
         </div>
       </div>
     </div>

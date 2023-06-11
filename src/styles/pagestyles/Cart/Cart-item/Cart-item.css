@@ -5,6 +5,7 @@
   border-radius: 8px;
   background-color: #fff;
   width: 300px;
+  height: 150px;
 }
 .card:is(:hover, :focus-visible) {
   cursor: pointer;
@@ -16,26 +17,47 @@
   padding: 8px;
 }
 .card .info-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 175px;
+}
+.card .info-container .size-text {
+  color: #a5a5a5;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 0.3rem;
 }
 .card .info-container .card-title {
-  font-size: 14px;
+  padding-top: 5px;
+  font-size: 12px;
   overflow: hidden;
   text-align: left;
+  width: 100%;
 }
-.card .info-container .price-container .actual-price {
+.card .info-container .state-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.card .info-container .state-wrapper .price-container {
+  margin-bottom: 0.3rem;
+}
+.card .info-container .state-wrapper .price-container .actual-price {
   display: flex;
   align-items: center;
   color: #fe5a0b;
   font-size: 20px;
   font-weight: 700;
 }
-.card .info-container .countHandler {
+.card .info-container .state-wrapper .countHandler {
+  position: absolute;
+  bottom: 8px;
   display: flex;
+  align-items: center;
 }
-.card .info-container .countHandler button {
+.card .info-container .state-wrapper .countHandler button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,23 +70,32 @@
   font-size: 28px;
   padding-bottom: 3px;
 }
-.card .info-container .countHandler button:is(:hover, :focus-visible) {
+.card .info-container .state-wrapper .countHandler button:is(:hover, :focus-visible) {
   color: #fe5a0b;
   cursor: pointer;
 }
-.card .info-container .countHandler .removeCount {
+.card .info-container .state-wrapper .countHandler .removeCount {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
-.card .info-container .countHandler .addCount {
+.card .info-container .state-wrapper .countHandler .addCount {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+  margin-right: 2rem;
 }
-.card .info-container .countHandler input {
+.card .info-container .state-wrapper .countHandler input {
   width: 50px;
   height: 25px;
   text-align: center;
   outline: none;
   border: 2px solid #000;
   font-size: 16px;
+}
+.card .info-container .state-wrapper .countHandler .trash {
+  font-size: 24px;
+  color: #a5a5a5;
+}
+.card .info-container .state-wrapper .countHandler .trash:is(:hover, :focus-visible) {
+  color: #000;
+  cursor: pointer;
 }/*# sourceMappingURL=Cart-item.css.map */
