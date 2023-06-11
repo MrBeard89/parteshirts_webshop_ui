@@ -46,5 +46,40 @@
         cursor: pointer;
       }
     }
+
+    .checkout-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      @extend %cartBtns;
+
+      .subtotal-text {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-weight: v.$font-weight-700;
+
+        .amount-text {
+          display: flex;
+          align-items: center;
+          font-size: v.$fs-xl;
+          color: v.$main-vivid-orange;
+        }
+      }
+
+      .Btn-container {
+        display: flex;
+        gap: 1rem;
+
+        .continue-shop-btn {
+          font-size: v.$fs-s;
+        }
+
+        .checkout-btn {
+          font-size: v.$fs-s;
+        }
+      }
+    }
   }
 }

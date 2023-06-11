@@ -36,13 +36,18 @@ export const Cart = () => {
               }
             })}
             <div className='checkout-container'>
-              <p>
-                Subtotal: <Euro /> {totalAmount}
+              <p className='subtotal-text'>
+                Subtotal:{' '}
+                <span className='amount-text'>
+                  <Euro /> {totalAmount}
+                </span>
               </p>
-              <Link to='/home'>
-                <button> Continue Shopping </button>
-              </Link>
-              <button> Checkout </button>
+              <div className='Btn-container'>
+                <Link to='/home'>
+                  <button className='continue-shop-btn'> Continue Shopping </button>
+                </Link>
+                <button className='checkout-btn'> Checkout </button>
+              </div>
             </div>
           </>
         )}

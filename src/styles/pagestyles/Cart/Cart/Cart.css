@@ -1,3 +1,19 @@
+.cart-wrapper .cart-container .checkout-container button {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #f5de5d;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 45px;
+}
+.cart-wrapper .cart-container .checkout-container button:is(:hover, :focus-visible) {
+  background-color: #000;
+  color: #f5de5d;
+  cursor: pointer;
+}
+
 .cart-wrapper {
   position: relative;
   display: flex;
@@ -40,4 +56,32 @@
   background-color: #f5de5d;
   color: #000;
   cursor: pointer;
+}
+.cart-wrapper .cart-container .checkout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.cart-wrapper .cart-container .checkout-container .subtotal-text {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+}
+.cart-wrapper .cart-container .checkout-container .subtotal-text .amount-text {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #fe5a0b;
+}
+.cart-wrapper .cart-container .checkout-container .Btn-container {
+  display: flex;
+  gap: 1rem;
+}
+.cart-wrapper .cart-container .checkout-container .Btn-container .continue-shop-btn {
+  font-size: 14px;
+}
+.cart-wrapper .cart-container .checkout-container .Btn-container .checkout-btn {
+  font-size: 14px;
 }/*# sourceMappingURL=Cart.css.map */
