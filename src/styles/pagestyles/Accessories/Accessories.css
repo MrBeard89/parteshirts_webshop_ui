@@ -60,20 +60,47 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 0;
+  width: 138px;
   font-size: 12px;
   background-color: #000;
   color: #f5de5d;
-  height: 2.2rem;
+  height: 2.1rem;
   overflow: hidden;
-  width: 100%;
+}
+.accessories-wrapper .accessories-container .accessories-card a {
+  text-decoration: none;
 }
 .accessories-wrapper .accessories-container .accessories-card .accessories-card-img {
   height: 100px;
   width: 100px;
   padding-top: 3rem;
   padding-bottom: 1rem;
+}
+.accessories-wrapper .accessories-container .accessories-card .addcart-countainer .addcart {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  background-color: #a5a5a5;
+  font-size: 38px;
+}
+.accessories-wrapper .accessories-container .accessories-card .addcart-countainer .addcart:is(:hover, :focus-visible) {
+  color: #fff;
+  cursor: pointer;
+}
+.accessories-wrapper .accessories-container .accessories-card .addcart-countainer .addcart-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25px;
+  left: -5px;
+  color: #fff;
+  background-color: #fe5a0b;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  padding: 3px;
+  font-size: 12px;
 }
 .accessories-wrapper .accessories-container .accessories-price-container .accessories-actual-price {
   display: flex;

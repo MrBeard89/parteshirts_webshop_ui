@@ -15,11 +15,17 @@ import { Decor } from '../../components/Decor - Slogen/Decor'
 import Select from 'react-select'
 
 //Usestate
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+
+//ShopContext
+import { ShopContext } from '../../context/shop-context'
+
+import { BsCartPlus } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 export const Accessories = () => {
   const [selectedAccessories, setSelectedAccessories] = useState('')
-
+  const { addToCart, cartItems, goToProduct } = useContext(ShopContext)
   //Select input Options 📀
   const accessoriesOptions = [
     { value: 'bag', label: 'Bag' },
@@ -57,26 +63,52 @@ export const Accessories = () => {
   //If selected contains the selected value , return the filtered array 😃
   let filtered
   filtered = selectedAccessories
-    ? PRODUCTS.filter((accessorie) => accessorie.type[1].includes(selectedAccessories))
-    : PRODUCTS.filter((accessorie) => accessorie.type[0] === 'accessorie')
+    ? PRODUCTS.filter((accessorie) => accessorie.name === selectedAccessories)
+    : PRODUCTS.filter((accessorie) => accessorie.type === 'accessories')
 
   //FilteredTeeshirts Component 🍕
   const FilteredAccessories = () =>
     filtered.map((accessorie) => {
+      const cartItemAmount = cartItems[accessorie.id]
       return (
         <div className='accessories-card' key={accessorie.id}>
-          <h3 className='accessories-card-title'>{accessorie.title}</h3>
-          <img
-            className='accessories-card-img'
-            src={require(`../../assets/designs/${accessorie.img_path}.jpg`)}
-            alt='Card image'
-          />
+          <Link to='/actual-product'>
+            <h3
+              className='accessories-card-title'
+              onClick={() => {
+                goToProduct(accessorie.id)
+              }}
+            >
+              {accessorie.title}
+            </h3>
+          </Link>
+
+          <Link to='/actual-product'>
+            <img
+              className='accessories-card-img'
+              src={require(`../../assets/designs/accessories/${accessorie.img_path}.jpg`)}
+              alt='Card image'
+              onClick={() => {
+                goToProduct(accessorie.id)
+              }}
+            />
+          </Link>
+
           <div className='accessories-price-container'>
             <p className='accessories-lowered-price'></p>
             <p className='accessories-actual-price'>
               {accessorie.price}
               <Euro />
             </p>
+          </div>
+
+          <div className='addcart-countainer'>
+            <BsCartPlus className='addcart' onClick={() => addToCart(accessorie.id)}></BsCartPlus>
+            {cartItemAmount > 0 ? (
+              <span className='addcart-counter'>{cartItemAmount > 0 && <>{cartItemAmount}</>}</span>
+            ) : (
+              ''
+            )}
           </div>
         </div>
       )

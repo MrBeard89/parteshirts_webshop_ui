@@ -5,7 +5,6 @@ import { Footer } from '../../components/Footer/Footer'
 
 export const Product = () => {
   const { actualProductState } = useContext(ShopContext)
-  console.log(actualProductState)
 
   const productStyle = {
     wrapper: {
@@ -41,12 +40,22 @@ export const Product = () => {
         return (
           <div style={productStyle.wrapper} className='product-wrapper' key={product.id}>
             <div className='product-card' style={productStyle.card}>
-              <img
-                style={productStyle.img}
-                className='product-card-img'
-                src={require(`../../assets/designs/${product.type}/${product.img_path}.jpg`)}
-                alt='Card image'
-              />
+              {product.type === 'teeshirts' || 'hoodies' ? (
+                <img
+                  style={productStyle.img}
+                  className='product-card-img'
+                  src={require(`../../assets/designs/${product.type}/${product.img_path}.jpg`)}
+                  alt='Card image'
+                />
+              ) : (
+                <img
+                  style={productStyle.img}
+                  className='product-card-img'
+                  src={require(`../../assets/designs/${product.img_path}.jpg`)}
+                  alt='Card image'
+                />
+              )}
+
               <h1 className='product-title' style={productStyle.title}>
                 {product.title}
               </h1>
