@@ -57,14 +57,16 @@
   color: #000;
 }
 .teeshirts-wrapper .teeshirts-container .teeshirts-card .teeshirts-card-title {
-  position: absolute;
-  top: 0;
   font-size: 12px;
   background-color: #000;
   color: #f5de5d;
   height: 2.2rem;
   overflow: hidden;
   text-align: center;
+  width: 100%;
+}
+.teeshirts-wrapper .teeshirts-container .teeshirts-card a {
+  text-decoration: none;
 }
 .teeshirts-wrapper .teeshirts-container .teeshirts-card .teeshirts-card-img {
   height: 120px;
@@ -74,7 +76,7 @@
 }
 .teeshirts-wrapper .teeshirts-container .teeshirts-card .addcart-countainer .addcart {
   position: absolute;
-  top: 17.5%;
+  top: 15%;
   left: 0;
   background-color: #a5a5a5;
   font-size: 38px;

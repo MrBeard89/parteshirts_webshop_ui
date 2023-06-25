@@ -6,18 +6,31 @@ import '../../styles/pagestyles/Cart/Cart-item/Cart-item.scss'
 import { BiEuro as Euro } from 'react-icons/bi'
 import { BsFillTrashFill as Trash } from 'react-icons/bs'
 import { ShopContext } from '../../context/shop-context'
+import { Link } from 'react-router-dom'
 
 export const CartItem = (props) => {
   const { id, title, img_path, genre, price } = props.data
-  const { updateCartItemCount, cartItems, addToCart, removeFromCart, removeAllFromCart } =
-    useContext(ShopContext)
+  const {
+    goToProduct,
+    updateCartItemCount,
+    cartItems,
+    addToCart,
+    removeFromCart,
+    removeAllFromCart,
+  } = useContext(ShopContext)
   return (
     <div className='card' key={id}>
-      <img
-        className='card-img'
-        src={require(`../../assets/designs/teeshirts/${img_path}.jpg`)}
-        alt='Card image'
-      />
+      <Link to='/actual-product'>
+        <img
+          className='card-img'
+          src={require(`../../assets/designs/teeshirts/${img_path}.jpg`)}
+          alt='Card image'
+          onClick={() => {
+            goToProduct(id)
+          }}
+        />
+      </Link>
+
       <div className='info-container'>
         <h3 className='card-title'>{title}</h3>
 

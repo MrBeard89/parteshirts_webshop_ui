@@ -66,14 +66,16 @@
       }
 
       .teeshirts-card-title {
-        position: absolute;
-        top: 0;
         font-size: v.$fs-xs;
         background-color: v.$main-black;
         color: v.$main-soft-yellow;
         height: 2.2rem;
         overflow: hidden;
         text-align: center;
+        width: 100%;
+      }
+      a {
+        text-decoration: none;
       }
 
       .teeshirts-card-img {
@@ -86,7 +88,7 @@
       .addcart-countainer {
         .addcart {
           position: absolute;
-          top: 17.5%;
+          top: 15%;
           left: 0;
           background-color: v.$main-gray;
           font-size: v.$fs-h1;

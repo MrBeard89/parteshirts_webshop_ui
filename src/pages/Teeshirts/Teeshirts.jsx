@@ -21,10 +21,11 @@ import React, { useState, useContext } from 'react'
 import { ShopContext } from '../../context/shop-context'
 
 import { BsCartPlus } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 export const Teeshirts = () => {
   const [selectedShirt, setSelectedShirt] = useState('')
-  const { addToCart, cartItems } = useContext(ShopContext)
+  const { addToCart, cartItems, goToProduct } = useContext(ShopContext)
 
   //Select input Options 📀
   const shirtsOptions = [
@@ -73,12 +74,27 @@ export const Teeshirts = () => {
 
       return (
         <div className='teeshirts-card' key={shirt.id}>
-          <h3 className='teeshirts-card-title'>{shirt.title}</h3>
-          <img
-            className='teeshirts-card-img'
-            src={require(`../../assets/designs/teeshirts/${shirt.img_path}.jpg`)}
-            alt='Card image'
-          />
+          <Link to='/actual-product'>
+            <h3
+              className='teeshirts-card-title'
+              onClick={() => {
+                goToProduct(shirt.id)
+              }}
+            >
+              {shirt.title}
+            </h3>
+          </Link>
+
+          <Link to='/actual-product'>
+            <img
+              className='teeshirts-card-img'
+              src={require(`../../assets/designs/teeshirts/${shirt.img_path}.jpg`)}
+              alt='Card image'
+              onClick={() => {
+                goToProduct(shirt.id)
+              }}
+            />
+          </Link>
           <div className='teeshirts-price-container'>
             <p className='teeshirts-lowered-price'></p>
             <p className='teeshirts-actual-price'>

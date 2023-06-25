@@ -8,7 +8,6 @@
   height: 150px;
 }
 .card:is(:hover, :focus-visible) {
-  cursor: pointer;
   border: 2px solid #f5de5d;
 }
 .card .card-img {

@@ -8,6 +8,7 @@ import { Hoodies } from './pages/Hoodies/Hoodies'
 import { Accessories } from './pages/Accessories/Accessories'
 import { ShopContextProvider } from './context/shop-context'
 import { Cart } from './pages/Cart/Cart'
+import { Product } from './pages/Product/Product'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path='/hoodies' element={<Hoodies />} />
             <Route path='/accessories' element={<Accessories />} />
             <Route path='/cart' element={<Cart />} />
+            <Route path='/actual-product' element={<Product />} />
           </Routes>
         </Router>
       </ShopContextProvider>
