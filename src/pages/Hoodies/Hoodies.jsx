@@ -15,10 +15,17 @@ import { Decor } from '../../components/Decor - Slogen/Decor'
 import Select from 'react-select'
 
 //Usestate
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+
+//ShopContext
+import { ShopContext } from '../../context/shop-context'
+
+import { BsCartPlus } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 export const Hoodies = () => {
   const [selectedHoodies, setSelectedHoodies] = useState('')
+  const { addToCart, cartItems, goToProduct } = useContext(ShopContext)
 
   //Select input Options 📀
   const hoodiesOptions = [
@@ -65,20 +72,46 @@ export const Hoodies = () => {
   //FilteredTeeshirts Component 🍕
   const FilteredHoodies = () =>
     filtered.map((hoodie) => {
+      const cartItemAmount = cartItems[hoodie.id]
       return (
         <div className='hoodies-card' key={hoodie.id}>
-          <h3 className='hoodies-card-title'>{hoodie.title}</h3>
-          <img
-            className='hoodies-card-img'
-            src={require(`../../assets/designs/hoodies/${hoodie.img_path}.jpg`)}
-            alt='Card image'
-          />
+          <Link to='/actual-product'>
+            <h3
+              className='hoodies-card-title'
+              onClick={() => {
+                goToProduct(hoodie.id)
+              }}
+            >
+              {hoodie.title}
+            </h3>
+          </Link>
+
+          <Link to='/actual-product'>
+            <img
+              className='hoodies-card-img'
+              src={require(`../../assets/designs/hoodies/${hoodie.img_path}.jpg`)}
+              alt='Card image'
+              onClick={() => {
+                goToProduct(hoodie.id)
+              }}
+            />
+          </Link>
+
           <div className='hoodies-price-container'>
             <p className='hoodies-lowered-price'></p>
             <p className='hoodies-actual-price'>
               {hoodie.price}
               <Euro />
             </p>
+          </div>
+
+          <div className='addcart-countainer'>
+            <BsCartPlus className='addcart' onClick={() => addToCart(hoodie.id)}></BsCartPlus>
+            {cartItemAmount > 0 ? (
+              <span className='addcart-counter'>{cartItemAmount > 0 && <>{cartItemAmount}</>}</span>
+            ) : (
+              ''
+            )}
           </div>
         </div>
       )

@@ -102,6 +102,7 @@ export const Teeshirts = () => {
               <Euro />
             </p>
           </div>
+
           <div className='addcart-countainer'>
             <BsCartPlus className='addcart' onClick={() => addToCart(shirt.id)}></BsCartPlus>
             {cartItemAmount > 0 ? (

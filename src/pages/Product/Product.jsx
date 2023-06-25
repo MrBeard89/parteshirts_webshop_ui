@@ -44,7 +44,7 @@ export const Product = () => {
               <img
                 style={productStyle.img}
                 className='product-card-img'
-                src={require(`../../assets/designs/teeshirts/${product.img_path}.jpg`)}
+                src={require(`../../assets/designs/${product.type}/${product.img_path}.jpg`)}
                 alt='Card image'
               />
               <h1 className='product-title' style={productStyle.title}>

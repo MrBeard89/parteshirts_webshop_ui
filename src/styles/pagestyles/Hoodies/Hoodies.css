@@ -57,8 +57,6 @@
   color: #000;
 }
 .hoodies-wrapper .hoodies-container .hoodies-card .hoodies-card-title {
-  position: absolute;
-  top: 0;
   font-size: 12px;
   background-color: #000;
   color: #f5de5d;
@@ -66,11 +64,40 @@
   overflow: hidden;
   text-align: center;
 }
+.hoodies-wrapper .hoodies-container .hoodies-card a {
+  text-decoration: none;
+}
 .hoodies-wrapper .hoodies-container .hoodies-card .hoodies-card-img {
   height: 120px;
   width: 100px;
   padding-top: 2.5rem;
   padding-bottom: 1rem;
+}
+.hoodies-wrapper .hoodies-container .hoodies-card .addcart-countainer .addcart {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  background-color: #a5a5a5;
+  font-size: 38px;
+}
+.hoodies-wrapper .hoodies-container .hoodies-card .addcart-countainer .addcart:is(:hover, :focus-visible) {
+  color: #fff;
+  cursor: pointer;
+}
+.hoodies-wrapper .hoodies-container .hoodies-card .addcart-countainer .addcart-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25px;
+  left: -5px;
+  color: #fff;
+  background-color: #fe5a0b;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  padding: 3px;
+  font-size: 12px;
 }
 .hoodies-wrapper .hoodies-container .hoodies-price-container .hoodies-actual-price {
   display: flex;

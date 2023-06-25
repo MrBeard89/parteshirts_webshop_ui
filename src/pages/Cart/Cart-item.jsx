@@ -9,7 +9,7 @@ import { ShopContext } from '../../context/shop-context'
 import { Link } from 'react-router-dom'
 
 export const CartItem = (props) => {
-  const { id, title, img_path, genre, price } = props.data
+  const { id, title, img_path, genre, price, type } = props.data
   const {
     goToProduct,
     updateCartItemCount,
@@ -23,7 +23,7 @@ export const CartItem = (props) => {
       <Link to='/actual-product'>
         <img
           className='card-img'
-          src={require(`../../assets/designs/teeshirts/${img_path}.jpg`)}
+          src={require(`../../assets/designs/${type}/${img_path}.jpg`)}
           alt='Card image'
           onClick={() => {
             goToProduct(id)
