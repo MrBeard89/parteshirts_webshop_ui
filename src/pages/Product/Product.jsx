@@ -8,16 +8,21 @@ export const Product = () => {
 
   const productStyle = {
     wrapper: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
       fontFamily: "'Noto Sans', sans-serif",
       width: '100%',
-      height: '100vh',
       backgroundColor: 'white',
-      paddingTop: '8rem',
+      paddingTop: '7rem',
     },
     card: {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
+      height: 'fit content',
+      width: '90%',
+      paddingBottom: '3rem',
     },
     img: {
       width: '100%',

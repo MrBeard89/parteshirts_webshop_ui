@@ -71,3 +71,18 @@
     opacity: 1;
   }
 }
+
+//Media Queries
+@media only screen and (min-width: 410px) {
+  .introduction-container {
+    width: v.$mobile-sm-width !important;
+
+    .down-arrow {
+      right: 15px !important;
+    }
+
+    .up-arrow {
+      right: 15px !important;
+    }
+  }
+}

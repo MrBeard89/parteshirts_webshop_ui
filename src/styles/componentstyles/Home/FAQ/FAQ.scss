@@ -77,3 +77,10 @@
     opacity: 1;
   }
 }
+
+//Media Queries
+@media only screen and (min-width: 410px) {
+  .faq-container {
+    width: v.$mobile-sm-width !important;
+  }
+}

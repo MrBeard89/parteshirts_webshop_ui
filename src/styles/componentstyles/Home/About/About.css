@@ -76,4 +76,15 @@
     transform: translateY(0px);
     opacity: 1;
   }
+}
+@media only screen and (min-width: 410px) {
+  .introduction-container {
+    width: 390px !important;
+  }
+  .introduction-container .down-arrow {
+    right: 15px !important;
+  }
+  .introduction-container .up-arrow {
+    right: 15px !important;
+  }
 }/*# sourceMappingURL=About.css.map */

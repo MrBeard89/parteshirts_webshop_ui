@@ -18,8 +18,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 5rem;
+  height: fit-content;
   width: 300px;
+  padding-bottom: 3rem;
 }
 .navbar-wrapper .navbar-container a {
   color: #000;
@@ -179,5 +180,15 @@
   100% {
     transform: translateY(0px);
     transition: 0.2s ease-in;
+  }
+}
+@media only screen and (min-width: 410px) {
+  .navbar-wrapper {
+    background-size: cover;
+    background-position-y: -30px;
+  }
+  .navbar-wrapper .navbar-container {
+    width: 390px;
+    padding-top: 0.2rem;
   }
 }/*# sourceMappingURL=Navbar.css.map */

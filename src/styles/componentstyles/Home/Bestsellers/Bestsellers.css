@@ -74,4 +74,10 @@
 }
 .bestsellers-wrapper .bestsellers-container .bestsellers-actual-wrapper .bestsellers-actual .price-container .actual-currency #currency {
   font-size: 22px;
+}
+
+@media only screen and (min-width: 410px) {
+  .bestsellers-container {
+    width: 390px !important;
+  }
 }/*# sourceMappingURL=Bestsellers.css.map */

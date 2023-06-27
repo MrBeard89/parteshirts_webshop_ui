@@ -97,4 +97,9 @@
     transform: translateY(0px);
     opacity: 1;
   }
+}
+@media only screen and (min-width: 410px) {
+  .faq-container {
+    width: 390px !important;
+  }
 }/*# sourceMappingURL=FAQ.css.map */
