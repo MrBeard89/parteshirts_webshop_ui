@@ -173,3 +173,10 @@
     }
   }
 }
+
+//Media Queries
+@media only screen and (min-width: 576px) {
+  .footer-container {
+    width: v.$mobile-m-width !important;
+  }
+}

@@ -127,3 +127,28 @@
     }
   }
 }
+
+//Media Queries
+@media only screen and (min-width: 576px) {
+  .filter-input-genre,
+  .hoodies-decor-line,
+  .hoodies-container {
+    width: v.$mobile-m-width !important;
+  }
+
+  .hoodies-card {
+    background-position: 100% 110% !important;
+  }
+
+  .hoodies-card-title {
+    width: 258px !important;
+    font-size: 12px !important;
+  }
+
+  .hoodies-card-img {
+    height: 140px !important;
+    width: 120px !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem;
+  }
+}

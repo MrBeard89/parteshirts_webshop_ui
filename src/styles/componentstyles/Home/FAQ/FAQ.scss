@@ -82,5 +82,15 @@
 @media only screen and (min-width: 410px) {
   .faq-container {
     width: v.$mobile-sm-width !important;
+    .faq-title-bar {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .faq-container {
+    width: v.$mobile-m-width !important;
   }
 }

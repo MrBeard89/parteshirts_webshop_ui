@@ -87,4 +87,15 @@
   .introduction-container .up-arrow {
     right: 15px !important;
   }
+}
+@media only screen and (min-width: 576px) {
+  .introduction-container {
+    width: 540px !important;
+  }
+  .introduction-container .down-arrow {
+    right: 25px !important;
+  }
+  .introduction-container .up-arrow {
+    right: 25px !important;
+  }
 }/*# sourceMappingURL=About.css.map */

@@ -80,4 +80,9 @@
   .bestsellers-container {
     width: 390px !important;
   }
+}
+@media only screen and (min-width: 576px) {
+  .bestsellers-container {
+    width: 540px !important;
+  }
 }/*# sourceMappingURL=Bestsellers.css.map */

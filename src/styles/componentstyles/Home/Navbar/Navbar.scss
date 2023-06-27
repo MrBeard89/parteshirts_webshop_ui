@@ -96,11 +96,15 @@
     //Mobile menu
 
     .navbar-mobile {
+      display: flex;
+      flex-direction: column;
+      padding-left: 3rem;
       z-index: 2;
       position: absolute;
       top: 0;
-      left: -1rem;
+      left: -3rem;
       height: 100vh;
+      width: 13rem;
       display: flex;
       flex-direction: column;
       gap: 4rem;
@@ -128,11 +132,13 @@
           color: v.$main-soft-yellow;
           height: 4rem;
           padding-left: 1rem;
+          margin-right: 0.5rem;
 
           .navlink {
             font-weight: v.$font-weight-700;
             font-size: v.$fs-l;
             list-style: none;
+            margin-right: 1rem;
           }
 
           .skull-back {
@@ -220,14 +226,54 @@
 }
 
 //Media Queries
-@media only screen and (min-width: 410px) {
+@media only screen and (min-width: 325px) {
+  .navbar-wrapper {
+    background-position-y: -25px;
+  }
+}
+@media only screen and (min-width: 390px) {
   .navbar-wrapper {
     background-size: cover;
-    background-position-y: -30px;
+    background-position-y: -38px;
 
     .navbar-container {
       width: v.$mobile-sm-width;
       padding-top: 0.2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 440px) {
+  .navbar-wrapper {
+    background-position-y: -45px;
+  }
+}
+
+@media only screen and (min-width: 460px) {
+  .navbar-wrapper {
+    background-position-y: -52px;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .navbar-wrapper {
+    background-position-y: -55px;
+    .navbar-container {
+      width: 460px;
+      padding-top: 0.2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .navbar-wrapper {
+    background-position-y: -61px;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .navbar-wrapper {
+    .navbar-container {
+      width: v.$mobile-m-width;
     }
   }
 }

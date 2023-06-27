@@ -21,14 +21,14 @@ export const Products = () => {
       </Link>
 
       <Link to='/hoodies'>
-        <div className='hoodies-container'>
+        <div className='hoodies_container'>
           <img className='hoodies-thumbnail' src={Hoodies} alt="Don't panic hoodies thumbnail" />
           <button>Hoodies</button>
         </div>
       </Link>
 
       <Link to='/accessories'>
-        <div className='accessories-container'>
+        <div className='accessories_container'>
           <div className='accessories-img-container'>
             <img className='accessories-thumbnail' src={Parteebag} alt='Parteebag thumbnail' />
             <img className='accessories-thumbnail' src={Parteefan} alt='Parteefan thumbnail' />

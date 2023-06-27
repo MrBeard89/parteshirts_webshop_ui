@@ -17,13 +17,13 @@ export const Navbar = () => {
   //Usestate for navbar open,close
   const [navbarOpen, setNavbarOpen] = useState(false)
 
-  var prevScrollpos = window.pageYOffset
+  var prevScrollpos = window.scrollY
   window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset
+    var currentScrollPos = window.scrollY
     if (prevScrollpos > currentScrollPos) {
       document.querySelector('.navbar-wrapper').style.top = '0'
     } else {
-      document.querySelector('.navbar-wrapper').style.top = '-80px'
+      document.querySelector('.navbar-wrapper').style.top = '-100px'
     }
     prevScrollpos = currentScrollPos
   }

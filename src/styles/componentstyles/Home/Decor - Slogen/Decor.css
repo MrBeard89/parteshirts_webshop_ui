@@ -19,4 +19,9 @@
   100% {
     transform: translateX(-550px);
   }
+}
+@media only screen and (min-width: 576px) {
+  .decor-container {
+    padding-top: 1rem;
+  }
 }/*# sourceMappingURL=Decor.css.map */

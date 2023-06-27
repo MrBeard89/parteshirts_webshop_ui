@@ -74,11 +74,15 @@
   animation: menuShake 0.4s infinite;
 }
 .navbar-wrapper .navbar-container .navbar-mobile {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
   z-index: 2;
   position: absolute;
   top: 0;
-  left: -1rem;
+  left: -3rem;
   height: 100vh;
+  width: 13rem;
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -105,11 +109,13 @@
   color: #f5de5d;
   height: 4rem;
   padding-left: 1rem;
+  margin-right: 0.5rem;
 }
 .navbar-wrapper .navbar-container .navbar-mobile .navlinks a .navlink {
   font-weight: 700;
   font-size: 20px;
   list-style: none;
+  margin-right: 1rem;
 }
 .navbar-wrapper .navbar-container .navbar-mobile .navlinks a .skull-back {
   position: absolute;
@@ -182,13 +188,47 @@
     transition: 0.2s ease-in;
   }
 }
-@media only screen and (min-width: 410px) {
+@media only screen and (min-width: 325px) {
+  .navbar-wrapper {
+    background-position-y: -25px;
+  }
+}
+@media only screen and (min-width: 390px) {
   .navbar-wrapper {
     background-size: cover;
-    background-position-y: -30px;
+    background-position-y: -38px;
   }
   .navbar-wrapper .navbar-container {
     width: 390px;
     padding-top: 0.2rem;
+  }
+}
+@media only screen and (min-width: 440px) {
+  .navbar-wrapper {
+    background-position-y: -45px;
+  }
+}
+@media only screen and (min-width: 460px) {
+  .navbar-wrapper {
+    background-position-y: -52px;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .navbar-wrapper {
+    background-position-y: -55px;
+  }
+  .navbar-wrapper .navbar-container {
+    width: 460px;
+    padding-top: 0.2rem;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .navbar-wrapper {
+    background-position-y: -61px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .navbar-wrapper .navbar-container {
+    width: 540px;
   }
 }/*# sourceMappingURL=Navbar.css.map */

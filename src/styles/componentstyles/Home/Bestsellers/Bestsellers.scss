@@ -90,3 +90,9 @@
     width: v.$mobile-sm-width !important;
   }
 }
+
+@media only screen and (min-width: 576px) {
+  .bestsellers-container {
+    width: v.$mobile-m-width !important;
+  }
+}

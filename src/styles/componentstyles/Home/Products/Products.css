@@ -1,4 +1,4 @@
-.products-wrapper .shirts-container button, .products-wrapper .hoodies-container button, .products-wrapper .accessories-container button, .products-wrapper .party-package-container button {
+.products-wrapper .shirts-container button, .products-wrapper .hoodies_container button, .products-wrapper .accessories_container button, .products-wrapper .party-package-container button {
   position: absolute;
   bottom: 0;
   font-family: "Noto Sans", sans-serif;
@@ -15,7 +15,7 @@
   border-bottom-right-radius: 4px;
   padding: 5px 25px 5px 25px;
   padding-top: 2rem;
-  width: 300px;
+  width: 100%;
 }
 
 .products-wrapper {
@@ -50,7 +50,7 @@
 .products-wrapper .shirts-container .shirts-thumbnail {
   width: 220px;
 }
-.products-wrapper .hoodies-container {
+.products-wrapper .hoodies_container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -61,18 +61,18 @@
   border-radius: 8px;
   background-color: #fff;
 }
-.products-wrapper .hoodies-container:is(:hover, :focus-visible) {
+.products-wrapper .hoodies_container:is(:hover, :focus-visible) {
   border: 2px solid #f5de5d;
 }
-.products-wrapper .hoodies-container:is(:hover, :focus-visible) button {
+.products-wrapper .hoodies_container:is(:hover, :focus-visible) button {
   background-image: url("../../../../assets/background-png/card-wave.png");
   color: #000;
   cursor: pointer;
 }
-.products-wrapper .hoodies-container .hoodies-thumbnail {
+.products-wrapper .hoodies_container .hoodies-thumbnail {
   width: 220px;
 }
-.products-wrapper .accessories-container {
+.products-wrapper .accessories_container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -83,21 +83,21 @@
   border-radius: 8px;
   background-color: #fff;
 }
-.products-wrapper .accessories-container:is(:hover, :focus-visible) {
+.products-wrapper .accessories_container:is(:hover, :focus-visible) {
   border: 2px solid #f5de5d;
 }
-.products-wrapper .accessories-container:is(:hover, :focus-visible) button {
+.products-wrapper .accessories_container:is(:hover, :focus-visible) button {
   background-image: url("../../../../assets/background-png/card-wave.png");
   color: #000;
   cursor: pointer;
 }
-.products-wrapper .accessories-container .accessories-img-container {
+.products-wrapper .accessories_container .accessories-img-container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 250px;
 }
-.products-wrapper .accessories-container .accessories-thumbnail {
+.products-wrapper .accessories_container .accessories-thumbnail {
   width: 140px;
 }
 .products-wrapper .party-package-container {
@@ -155,4 +155,19 @@
 }
 .products-wrapper .party-package-container .music-and-peace-thumbnail {
   width: 170px;
+}
+
+@media only screen and (min-width: 576px) {
+  .shirts-container,
+  .hoodies_container,
+  .accessories_container,
+  .party-package-container {
+    width: 390px !important;
+  }
+  .shirts-container button,
+  .hoodies_container button,
+  .accessories_container button,
+  .party-package-container button {
+    background-position: 100% 93% !important;
+  }
 }/*# sourceMappingURL=Products.css.map */
