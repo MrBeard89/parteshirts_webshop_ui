@@ -97,4 +97,14 @@
 .card .info-container .state-wrapper .countHandler .trash:is(:hover, :focus-visible) {
   color: #000;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 576px) {
+  .card {
+    width: 390px !important;
+  }
+  .card .card-img {
+    height: 140px !important;
+    width: 120px !important;
+  }
 }/*# sourceMappingURL=Cart-item.css.map */

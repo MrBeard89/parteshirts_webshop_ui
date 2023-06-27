@@ -119,4 +119,12 @@
 }
 
 @media only screen and (min-width: 576px) {
+  .card {
+    width: v.$mobile-sm-width !important;
+
+    .card-img {
+      height: 140px !important;
+      width: 120px !important;
+    }
+  }
 }
