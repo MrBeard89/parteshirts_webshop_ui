@@ -79,7 +79,7 @@
 }
 
 //Media Queries
-@media only screen and (min-width: 410px) {
+@media only screen and (min-width: v.$breakpoint-sm) {
   .faq-container {
     width: v.$mobile-sm-width !important;
     .faq-title-bar {
@@ -89,7 +89,7 @@
   }
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: v.$breakpoint-m) {
   .faq-container {
     width: v.$mobile-m-width !important;
   }

@@ -85,13 +85,13 @@
 }
 
 //Media Queries
-@media only screen and (min-width: 410px) {
+@media only screen and (min-width: v.$breakpoint-sm) {
   .bestsellers-container {
     width: v.$mobile-sm-width !important;
   }
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: v.$breakpoint-m) {
   .bestsellers-container {
     width: v.$mobile-m-width !important;
   }
