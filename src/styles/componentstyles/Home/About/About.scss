@@ -100,3 +100,16 @@
     }
   }
 }
+@media only screen and (min-width: v.$breakpoint-md) {
+  .introduction-container {
+    width: v.$tablet-width !important;
+
+    .down-arrow {
+      right: 35px !important;
+    }
+
+    .up-arrow {
+      right: 35px !important;
+    }
+  }
+}

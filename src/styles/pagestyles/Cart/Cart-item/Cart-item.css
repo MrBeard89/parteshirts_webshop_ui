@@ -107,4 +107,15 @@
     height: 140px !important;
     width: 120px !important;
   }
+}
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 540px !important;
+    height: fit-content !important;
+    gap: 5rem !important;
+  }
+  .card .card-img {
+    height: 160px !important;
+    width: 140px !important;
+  }
 }/*# sourceMappingURL=Cart-item.css.map */

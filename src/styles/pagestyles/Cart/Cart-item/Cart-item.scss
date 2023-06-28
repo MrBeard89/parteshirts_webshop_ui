@@ -117,6 +117,7 @@
   }
 }
 
+//Media Queries
 @media only screen and (min-width: v.$breakpoint-m) {
   .card {
     width: v.$mobile-sm-width !important;
@@ -124,6 +125,18 @@
     .card-img {
       height: 140px !important;
       width: 120px !important;
+    }
+  }
+}
+@media only screen and (min-width: v.$breakpoint-md) {
+  .card {
+    width: v.$mobile-m-width !important;
+    height: fit-content !important;
+    gap: 5rem !important;
+
+    .card-img {
+      height: 160px !important;
+      width: 140px !important;
     }
   }
 }

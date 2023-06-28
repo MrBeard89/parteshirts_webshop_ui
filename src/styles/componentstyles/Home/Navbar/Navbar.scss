@@ -277,3 +277,36 @@
     }
   }
 }
+
+@media only screen and (min-width: 590px) {
+  .navbar-wrapper {
+    background-position-y: -75px;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .navbar-wrapper {
+    background-position-y: -85px;
+  }
+}
+@media only screen and (min-width: 680px) {
+  .navbar-wrapper {
+    background-position-y: -95px;
+  }
+}
+@media only screen and (min-width: 715px) {
+  .navbar-wrapper {
+    background-position-y: -105px;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .navbar-wrapper {
+    background-position-y: -115px;
+  }
+}
+@media only screen and (min-width: v.$breakpoint-md) {
+  .navbar-wrapper {
+    .navbar-container {
+      width: v.$tablet-width;
+    }
+  }
+}
