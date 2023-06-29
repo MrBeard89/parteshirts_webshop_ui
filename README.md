@@ -13,38 +13,42 @@ Technologies, Features that i used to this project:
 
                  #Tech
 
-# React
+    # ********************************* #
+    # React
 
-# React Router
+    # React Router
 
-# React Context Api
+    # React Context Api
 
-# React UseState , UseEffect
+    # React UseState , UseEffect
 
-# React Select library
+    # React Select library
 
-# React Link , Hash Link
+    # React Link , Hash Link
 
-# React Icons
+    # React Icons
 
-# Scss
+    # Scss
 
-# Photoshop Cropping,Vectoring images
+    # Photoshop Cropping,Vectoring images
+
 
                 #Features
 
-# Getting all information from Json file
+    # ********************************* #
 
-# Cart function
+    # Getting all information from Json file
 
-# Can Filter products
+    # Cart function
 
-# Frontend Validation
+    # Can Filter products
 
-# Mobile menu
+    # Frontend Validation
 
-# Navbar hide when scrolling down , show when scrolling up
+    # Mobile menu
 
-# Different layout design at desktop screen
+    # Navbar hide when scrolling down , show when scrolling up
 
-# Responsive Design
+    # Different layout design at desktop screen
+
+    # Responsive Design
