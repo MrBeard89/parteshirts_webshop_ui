@@ -402,3 +402,41 @@
     }
   }
 }
+@media only screen and (min-width: 1040px) {
+  .navbar-wrapper {
+    background-position-y: 25%;
+
+    .navbar-container {
+      .logo-container {
+        position: relative;
+        top: 1rem;
+        right: 25px !important;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .navbar-wrapper {
+    background-position-y: 27%;
+
+    .navbar-container {
+      .logo-container {
+        right: 45px !important;
+      }
+
+      .cart-icon-container {
+        position: relative;
+        top: -15px !important;
+      }
+    }
+  }
+}
+@media only screen and (min-width: v.$breakpoint-xl) {
+  .navbar-wrapper {
+    .navbar-container {
+      .logo-container {
+        right: 95px !important;
+      }
+    }
+  }
+}

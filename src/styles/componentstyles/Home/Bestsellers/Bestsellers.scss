@@ -102,11 +102,24 @@
 @media only screen and (min-width: v.$breakpoint-md) {
   .bestsellers-container {
     width: v.$tablet-width !important;
+    padding-top: 5rem !important;
   }
 }
 @media only screen and (min-width: v.$breakpoint-lg) {
   .bestsellers-container {
     width: v.$desktop-m-width !important;
+  }
+
+  .bestsellers-actual {
+    width: v.$mobile-m-width !important;
+    .actual-img {
+      width: 350px !important;
+    }
+  }
+}
+@media only screen and (min-width: v.$breakpoint-xl) {
+  .bestsellers-container {
+    width: v.$desktop-l-width !important;
   }
 
   .bestsellers-actual {

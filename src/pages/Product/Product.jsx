@@ -14,7 +14,7 @@ export const Product = () => {
       fontFamily: "'Noto Sans', sans-serif",
       width: '100%',
       backgroundColor: 'white',
-      paddingTop: '7rem',
+      paddingTop: '11rem',
     },
     card: {
       display: 'flex',

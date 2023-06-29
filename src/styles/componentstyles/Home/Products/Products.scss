@@ -4,6 +4,7 @@
 .products-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 4rem;
   width: 100%;
@@ -194,5 +195,23 @@
         background-position: 100% 88% !important;
       }
     }
+  }
+}
+@media only screen and (min-width: 910px) {
+  .products-wrapper {
+    padding-top: 5rem;
+    background-position-y: 82% !important;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .products-wrapper {
+    padding-top: 11rem;
+  }
+}
+
+@media only screen and (min-width: v.$breakpoint-xl) {
+  .products-wrapper {
+    padding-top: 5rem;
+    background-position-y: -225px !important;
   }
 }

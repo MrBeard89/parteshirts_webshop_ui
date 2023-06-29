@@ -98,13 +98,6 @@
     .introduction-title {
       width: v.$mobile-m-width !important ;
     }
-    .down-arrow {
-      right: 15px !important;
-    }
-
-    .up-arrow {
-      right: 15px !important;
-    }
   }
 }
 @media only screen and (min-width: v.$breakpoint-md) {
@@ -112,13 +105,6 @@
     width: v.$tablet-width !important;
     .introduction-title {
       width: v.$tablet-width !important ;
-    }
-    .down-arrow {
-      right: 15px !important;
-    }
-
-    .up-arrow {
-      right: 15px !important;
     }
   }
 }
@@ -129,12 +115,14 @@
     .introduction-title {
       width: v.$desktop-m-width !important ;
     }
-    .down-arrow {
-      right: 15px !important;
-    }
+  }
+}
 
-    .up-arrow {
-      right: 15px !important;
+@media only screen and (min-width: v.$breakpoint-xl) {
+  .introduction-container {
+    width: v.$desktop-l-width !important;
+    .introduction-title {
+      width: v.$desktop-l-width !important ;
     }
   }
 }

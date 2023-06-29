@@ -21,6 +21,7 @@
 .products-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 4rem;
   width: 100%;
@@ -186,5 +187,22 @@
   .products-wrapper .accessories_container button,
   .products-wrapper .party-package-container button {
     background-position: 100% 88% !important;
+  }
+}
+@media only screen and (min-width: 910px) {
+  .products-wrapper {
+    padding-top: 5rem;
+    background-position-y: 82% !important;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .products-wrapper {
+    padding-top: 11rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .products-wrapper {
+    padding-top: 5rem;
+    background-position-y: -225px !important;
   }
 }/*# sourceMappingURL=Products.css.map */

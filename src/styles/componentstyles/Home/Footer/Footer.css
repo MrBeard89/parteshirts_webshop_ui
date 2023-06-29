@@ -159,4 +159,13 @@
   .footer-container {
     width: 540px !important;
   }
+}
+@media only screen and (min-width: 1200px) {
+  .footer-container {
+    width: 1150px !important;
+    flex-direction: row !important;
+  }
+  .footer-container .footer-links {
+    flex-direction: row !important;
+  }
 }/*# sourceMappingURL=Footer.css.map */

@@ -6,7 +6,7 @@
   padding: 5px 5px 5px 5px;
   margin-bottom: 1rem;
   font-size: 20px;
-  width: 95%;
+  width: 100%;
 }
 
 .show {
@@ -100,12 +100,6 @@
   .introduction-container .introduction-title {
     width: 540px !important;
   }
-  .introduction-container .down-arrow {
-    right: 15px !important;
-  }
-  .introduction-container .up-arrow {
-    right: 15px !important;
-  }
 }
 @media only screen and (min-width: 768px) {
   .introduction-container {
@@ -113,12 +107,6 @@
   }
   .introduction-container .introduction-title {
     width: 730px !important;
-  }
-  .introduction-container .down-arrow {
-    right: 15px !important;
-  }
-  .introduction-container .up-arrow {
-    right: 15px !important;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -128,10 +116,12 @@
   .introduction-container .introduction-title {
     width: 940px !important;
   }
-  .introduction-container .down-arrow {
-    right: 15px !important;
+}
+@media only screen and (min-width: 1200px) {
+  .introduction-container {
+    width: 1150px !important;
   }
-  .introduction-container .up-arrow {
-    right: 15px !important;
+  .introduction-container .introduction-title {
+    width: 1150px !important;
   }
 }/*# sourceMappingURL=About.css.map */
