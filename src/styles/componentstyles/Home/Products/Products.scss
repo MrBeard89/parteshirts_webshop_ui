@@ -181,3 +181,18 @@
     }
   }
 }
+@media only screen and (min-width: 850px) {
+  .products-wrapper {
+    padding-top: 5rem;
+
+    .shirts-container,
+    .hoodies_container,
+    .accessories_container,
+    .party-package-container {
+      width: v.$mobile-m-width !important;
+      button {
+        background-position: 100% 88% !important;
+      }
+    }
+  }
+}

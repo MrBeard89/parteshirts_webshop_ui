@@ -124,4 +124,34 @@
     padding-top: 1.5rem !important;
     padding-bottom: 1.5rem;
   }
+}
+@media only screen and (min-width: 768px) {
+  .hoodies-wrapper {
+    padding-top: 10rem !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hoodies-wrapper .filter-input-genre,
+  .hoodies-wrapper .hoodies-decor-line,
+  .hoodies-wrapper .hoodies-container {
+    width: 940px !important;
+  }
+  .hoodies-wrapper .hoodies-card {
+    background-position-y: 35px !important;
+    background-size: cover !important;
+  }
+  .hoodies-wrapper .hoodies-card .hoodies-actual-price {
+    font-size: 20px;
+  }
+  .hoodies-wrapper .hoodies-card-title {
+    width: 458px !important;
+    font-size: 15px !important;
+    padding-top: 0.8rem;
+  }
+  .hoodies-wrapper .hoodies-card-img {
+    height: 160px !important;
+    width: 140px !important;
+    padding-top: 1.5rem !important;
+    margin-bottom: 2.5rem !important;
+  }
 }/*# sourceMappingURL=Hoodies.css.map */

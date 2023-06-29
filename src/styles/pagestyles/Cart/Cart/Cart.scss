@@ -83,3 +83,10 @@
     }
   }
 }
+//Media Queries
+
+@media only screen and (min-width: v.$breakpoint-md) {
+  .cart-wrapper {
+    padding-top: 10rem !important;
+  }
+}

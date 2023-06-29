@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import '../../styles/pagestyles/Product/Product.scss'
+
 import { ShopContext } from '../../context/shop-context'
 import { Footer } from '../../components/Footer/Footer'
 
@@ -26,6 +26,7 @@ export const Product = () => {
     },
     img: {
       width: '100%',
+      maxWidth: '800px',
     },
     title: {
       lineHeight: '35px',

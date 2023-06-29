@@ -84,4 +84,10 @@
 }
 .cart-wrapper .cart-container .checkout-container .Btn-container .checkout-btn {
   font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+  .cart-wrapper {
+    padding-top: 10rem !important;
+  }
 }/*# sourceMappingURL=Cart.css.map */

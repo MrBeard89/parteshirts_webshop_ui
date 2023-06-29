@@ -125,4 +125,34 @@
     padding-top: 1.5rem !important;
     padding-bottom: 1.5rem;
   }
+}
+@media only screen and (min-width: 768px) {
+  .teeshirts-wrapper {
+    padding-top: 10rem !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .teeshirts-wrapper .filter-input-genre,
+  .teeshirts-wrapper .teeshirts-decor-line,
+  .teeshirts-wrapper .teeshirts-container {
+    width: 940px !important;
+  }
+  .teeshirts-wrapper .teeshirts-card {
+    background-position-y: 35px !important;
+    background-size: cover !important;
+  }
+  .teeshirts-wrapper .teeshirts-card .teeshirts-actual-price {
+    font-size: 20px;
+  }
+  .teeshirts-wrapper .teeshirts-card-title {
+    width: 458px !important;
+    font-size: 15px !important;
+    padding-top: 0.8rem;
+  }
+  .teeshirts-wrapper .teeshirts-card-img {
+    height: 160px !important;
+    width: 140px !important;
+    padding-top: 1.5rem !important;
+    margin-bottom: 2.5rem !important;
+  }
 }/*# sourceMappingURL=Teeshirts.css.map */

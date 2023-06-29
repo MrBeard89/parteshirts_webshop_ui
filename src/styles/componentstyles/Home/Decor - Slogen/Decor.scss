@@ -18,16 +18,35 @@
 
 @keyframes decor-slide {
   0% {
-    transform: translateX(350px);
+    transform: translateX(750px);
   }
 
   100% {
-    transform: translateX(-550px);
+    transform: translateX(-750px);
+  }
+}
+@keyframes decor-slide-desktop {
+  0% {
+    transform: translateX(1100px);
+  }
+
+  100% {
+    transform: translateX(-850px);
   }
 }
 
 @media only screen and (min-width: 576px) {
   .decor-container {
     padding-top: 1rem;
+  }
+}
+@media only screen and (min-width: 880px) {
+  .decor-container {
+    padding-top: 4rem;
+  }
+}
+@media only screen and (min-width: v.$breakpoint-lg) {
+  .decor-text {
+    animation: decor-slide-desktop 10s infinite cubic-bezier(0.35, 0.85, 0.85, 0.35) !important;
   }
 }

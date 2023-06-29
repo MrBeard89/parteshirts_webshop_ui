@@ -20,7 +20,11 @@
 .bestsellers-wrapper .bestsellers-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 300px;
+}
+.bestsellers-wrapper .bestsellers-container .bestsellers-title {
+  margin-bottom: 2rem;
 }
 .bestsellers-wrapper .bestsellers-container .bestsellers-actual-wrapper {
   display: flex;
@@ -89,5 +93,16 @@
 @media only screen and (min-width: 768px) {
   .bestsellers-container {
     width: 730px !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .bestsellers-container {
+    width: 940px !important;
+  }
+  .bestsellers-actual {
+    width: 540px !important;
+  }
+  .bestsellers-actual .actual-img {
+    width: 350px !important;
   }
 }/*# sourceMappingURL=Bestsellers.css.map */

@@ -314,6 +314,7 @@
   .contact-container .contact-form-container {
     width: 710px !important;
     transition: 1s ease-in-out;
+    border: 2px solid #fe4e8c;
   }
   .contact-container .contact-form-container .contact-form {
     width: 670px !important;

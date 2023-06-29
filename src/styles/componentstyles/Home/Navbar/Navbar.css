@@ -261,4 +261,79 @@
   .navbar-wrapper .navbar-container {
     width: 730px;
   }
+}
+@media only screen and (min-width: 790px) {
+  .navbar-wrapper {
+    background-position-y: 27%;
+    background-size: 100% !important;
+    background-repeat: repeat-x;
+  }
+}
+@media only screen and (min-width: 790px) {
+  .navbar-wrapper .navbar-container {
+    padding-bottom: 4rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .navbar-wrapper {
+    background-position-y: 27%;
+  }
+  .navbar-wrapper .navbar-container {
+    width: 940px;
+    padding-bottom: 5rem !important;
+  }
+  .navbar-wrapper .navbar-container .logo-container {
+    position: relative;
+    top: 1rem;
+  }
+  .navbar-wrapper .navbar-container .logo-container img {
+    width: 130px;
+  }
+  .navbar-wrapper .navbar-container .navbar-mobile {
+    display: none;
+  }
+  .navbar-wrapper .navbar-container .mobile-icon-container {
+    display: none;
+  }
+  .navbar-wrapper .navbar-container .navlinks-container {
+    margin-top: -2rem !important;
+    display: flex;
+  }
+  .navbar-wrapper .navbar-container .navlinks-container .img-container {
+    display: none !important;
+  }
+  .navbar-wrapper .navbar-container .navlinks-container .navlinks {
+    display: flex;
+  }
+  .navbar-wrapper .navbar-container .navlinks-container .navlinks a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #000;
+    height: 4rem;
+    padding-left: 1rem;
+    margin-right: 0.5rem;
+  }
+  .navbar-wrapper .navbar-container .navlinks-container .navlinks a .navlink {
+    font-weight: 700;
+    font-size: 16px;
+    list-style: none;
+    margin-right: 1rem;
+  }
+  .navbar-wrapper .navbar-container .navlinks-container .navlinks a .skull-back {
+    position: absolute;
+    top: 0;
+    right: 40%;
+    font-size: 22px;
+    display: none;
+  }
+  .navbar-wrapper .navbar-container .navlinks-container .navlinks a:is(:hover, :focus-visible, :active) {
+    color: #f5de5d;
+    cursor: pointer;
+  }
+  .navbar-wrapper .navbar-container .navlinks-container .navlinks a:is(:hover, :focus-visible, :active) .skull-back {
+    display: block;
+  }
 }/*# sourceMappingURL=Navbar.css.map */

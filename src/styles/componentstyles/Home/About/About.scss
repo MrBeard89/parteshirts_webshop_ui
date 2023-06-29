@@ -12,6 +12,8 @@
     width: v.$mobile-s-width;
 
     .title-bar {
+      display: flex;
+      justify-content: center;
       position: relative;
 
       .introduction-title {
@@ -76,6 +78,9 @@
 @media only screen and (min-width: v.$breakpoint-sm) {
   .introduction-container {
     width: v.$mobile-sm-width !important;
+    .introduction-title {
+      width: v.$mobile-sm-width !important ;
+    }
 
     .down-arrow {
       right: 15px !important;
@@ -90,26 +95,46 @@
 @media only screen and (min-width: v.$breakpoint-m) {
   .introduction-container {
     width: v.$mobile-m-width !important;
-
+    .introduction-title {
+      width: v.$mobile-m-width !important ;
+    }
     .down-arrow {
-      right: 25px !important;
+      right: 15px !important;
     }
 
     .up-arrow {
-      right: 25px !important;
+      right: 15px !important;
     }
   }
 }
 @media only screen and (min-width: v.$breakpoint-md) {
   .introduction-container {
     width: v.$tablet-width !important;
-
+    .introduction-title {
+      width: v.$tablet-width !important ;
+    }
     .down-arrow {
-      right: 35px !important;
+      right: 15px !important;
     }
 
     .up-arrow {
-      right: 35px !important;
+      right: 15px !important;
+    }
+  }
+}
+
+@media only screen and (min-width: v.$breakpoint-lg) {
+  .introduction-container {
+    width: v.$desktop-m-width !important;
+    .introduction-title {
+      width: v.$desktop-m-width !important ;
+    }
+    .down-arrow {
+      right: 15px !important;
+    }
+
+    .up-arrow {
+      right: 15px !important;
     }
   }
 }

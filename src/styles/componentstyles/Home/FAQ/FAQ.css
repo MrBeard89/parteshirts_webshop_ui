@@ -116,4 +116,9 @@
   .faq-container {
     width: 730px !important;
   }
+}
+@media only screen and (min-width: 992px) {
+  .faq-container {
+    width: 940px !important;
+  }
 }/*# sourceMappingURL=FAQ.css.map */

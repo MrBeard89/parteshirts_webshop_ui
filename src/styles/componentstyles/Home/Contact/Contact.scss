@@ -418,6 +418,7 @@
     .contact-form-container {
       width: v.$contact-form-md !important;
       transition: 1s ease-in-out;
+      border: 2px solid v.$main-light-pink;
 
       .contact-form {
         width: v.$contact-form-md-inner !important;

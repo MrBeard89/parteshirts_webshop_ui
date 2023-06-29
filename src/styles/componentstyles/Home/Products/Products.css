@@ -170,4 +170,21 @@
   .party-package-container button {
     background-position: 100% 93% !important;
   }
+}
+@media only screen and (min-width: 850px) {
+  .products-wrapper {
+    padding-top: 5rem;
+  }
+  .products-wrapper .shirts-container,
+  .products-wrapper .hoodies_container,
+  .products-wrapper .accessories_container,
+  .products-wrapper .party-package-container {
+    width: 540px !important;
+  }
+  .products-wrapper .shirts-container button,
+  .products-wrapper .hoodies_container button,
+  .products-wrapper .accessories_container button,
+  .products-wrapper .party-package-container button {
+    background-position: 100% 88% !important;
+  }
 }/*# sourceMappingURL=Products.css.map */
