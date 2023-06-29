@@ -124,4 +124,12 @@
   .introduction-container .introduction-title {
     width: 1150px !important;
   }
+}
+@media only screen and (min-width: 1400px) {
+  .introduction-container {
+    width: 1380px !important;
+  }
+  .introduction-container .introduction-title {
+    width: 1380px !important;
+  }
 }/*# sourceMappingURL=About.css.map */

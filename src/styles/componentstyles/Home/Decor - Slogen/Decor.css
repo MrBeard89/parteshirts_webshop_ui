@@ -22,10 +22,18 @@
 }
 @keyframes decor-slide-desktop {
   0% {
-    transform: translateX(1200px);
+    transform: translateX(1300px);
   }
   100% {
-    transform: translateX(-850px);
+    transform: translateX(-950px);
+  }
+}
+@keyframes decor-slide-xldesktop {
+  0% {
+    transform: translateX(2200px);
+  }
+  100% {
+    transform: translateX(-1100px);
   }
 }
 @media only screen and (min-width: 576px) {
@@ -44,5 +52,19 @@
   }
   .decor-container {
     padding-top: 5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .decor-container {
+    padding-top: 9rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .decor-text {
+    animation: decor-slide-xldesktop 10s infinite cubic-bezier(0.35, 0.85, 0.85, 0.35) !important;
+  }
+  .decor-container {
+    padding-top: 3.5rem !important;
+    padding-bottom: 1rem !important;
   }
 }/*# sourceMappingURL=Decor.css.map */

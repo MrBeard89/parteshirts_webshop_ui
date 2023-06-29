@@ -126,3 +126,11 @@
     }
   }
 }
+@media only screen and (min-width: v.$breakpoint-xxl) {
+  .introduction-container {
+    width: v.$desktop-xl-width !important;
+    .introduction-title {
+      width: v.$desktop-xl-width !important ;
+    }
+  }
+}

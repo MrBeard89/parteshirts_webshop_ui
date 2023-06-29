@@ -168,4 +168,9 @@
   .footer-container .footer-links {
     flex-direction: row !important;
   }
+}
+@media only screen and (min-width: 1400px) {
+  .footer-container {
+    width: 1380px !important;
+  }
 }/*# sourceMappingURL=Footer.css.map */

@@ -211,6 +211,9 @@
 
 @media only screen and (min-width: v.$breakpoint-xl) {
   .products-wrapper {
+    display: grid;
+
+    grid-template-columns: 0.2fr 0.2fr;
     padding-top: 5rem;
     background-position-y: -225px !important;
   }

@@ -109,3 +109,8 @@
     width: v.$desktop-l-width !important;
   }
 }
+@media only screen and (min-width: v.$breakpoint-xxl) {
+  .faq-container {
+    width: v.$desktop-xl-width !important;
+  }
+}

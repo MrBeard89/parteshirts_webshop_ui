@@ -37,7 +37,7 @@ export const Product = () => {
     },
     description: {
       width: '90%',
-      textAlign: 'left',
+      textAlign: 'center',
     },
   }
   return (
@@ -66,9 +66,11 @@ export const Product = () => {
                 {product.title}
               </h1>
               <p className='product-description' style={productStyle.description}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolor magni impedit
-                quidem aut, iusto laborum fugiat ipsum doloremque esse, aspernatur eum tenetur error
-                placeat.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam amet minus inventore
+                accusantium ad optio, esse autem pariatur suscipit, tempora similique eius fuga
+                doloremque dolores harum repellat dolore, porro voluptatum deleniti illum. Pariatur
+                illo repellat reiciendis obcaecati beatae delectus praesentium, asperiores tenetur
+                dolores doloribus. Suscipit ducimus reprehenderit quasi ab animi!
               </p>
             </div>
           </div>

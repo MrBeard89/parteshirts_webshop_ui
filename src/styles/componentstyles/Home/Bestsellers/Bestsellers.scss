@@ -41,7 +41,7 @@
         width: v.$mobile-s-width;
 
         &:is(:hover, :focus-visible) {
-          box-shadow: 0px 0px 45px 3px v.$main-light-pink;
+          box-shadow: 0px 0px 15px 3px v.$main-light-pink;
           cursor: pointer;
           border-radius: 1rem;
 
@@ -123,9 +123,35 @@
   }
 
   .bestsellers-actual {
+    width: 250px !important;
+    .actual-img {
+      width: 150px !important;
+    }
+
+    .actual-title {
+      width: 220px !important;
+    }
+  }
+  .bestsellers-actual-wrapper {
+    flex-direction: row !important;
+    gap: 2rem !important;
+  }
+}
+
+@media only screen and (min-width: v.$breakpoint-xxl) {
+  .bestsellers-container {
+    width: v.$desktop-xl-width !important;
+  }
+
+  .bestsellers-actual {
     width: v.$mobile-m-width !important;
     .actual-img {
-      width: 350px !important;
+      width: v.$mobile-s-width !important;
     }
+  }
+
+  .bestsellers-actual-wrapper {
+    flex-direction: row !important;
+    gap: 1rem !important;
   }
 }

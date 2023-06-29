@@ -202,6 +202,8 @@
 }
 @media only screen and (min-width: 1200px) {
   .products-wrapper {
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr;
     padding-top: 5rem;
     background-position-y: -225px !important;
   }

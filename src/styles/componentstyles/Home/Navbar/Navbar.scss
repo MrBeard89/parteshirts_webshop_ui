@@ -434,8 +434,79 @@
 @media only screen and (min-width: v.$breakpoint-xl) {
   .navbar-wrapper {
     .navbar-container {
+      width: v.$desktop-l-width;
       .logo-container {
-        right: 95px !important;
+        right: -15px !important;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .navbar-wrapper {
+    .navbar-container {
+      .logo-container {
+        right: 25px !important;
+      }
+    }
+  }
+}
+@media only screen and (min-width: v.$breakpoint-xxl) {
+  .navbar-wrapper {
+    background-position-y: 30%;
+
+    .navbar-container {
+      width: v.$desktop-xl-width;
+      .navlinks {
+        a {
+          .navlink {
+            font-size: v.$fs-l !important;
+          }
+        }
+      }
+      .logo-container {
+        right: -35px !important;
+      }
+
+      .cart-icon-container {
+        position: relative;
+        right: 155px !important;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .navbar-wrapper {
+    background: none !important;
+    background-color: v.$main-light-pink !important;
+
+    .navbar-container {
+      padding-bottom: 2rem !important;
+      width: v.$desktop-xl-width;
+      .navlinks {
+        padding-top: 3rem !important;
+        gap: 2rem !important;
+        a {
+          .navlink {
+            font-size: v.$fs-l !important;
+          }
+        }
+      }
+      .logo-container {
+        right: -5px !important;
+      }
+
+      .cart-icon-container {
+        position: relative;
+        top: 35px !important;
+        right: 55px !important;
+
+        .cart-icon {
+          font-size: v.$fs-h1 !important;
+        }
+        .totalcartcount {
+          top: -41px !important;
+          left: 8px !important;
+        }
       }
     }
   }

@@ -191,3 +191,8 @@
     }
   }
 }
+@media only screen and (min-width: v.$breakpoint-xxl) {
+  .footer-container {
+    width: v.$desktop-xl-width !important;
+  }
+}

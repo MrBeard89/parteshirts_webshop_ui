@@ -458,3 +458,30 @@
     }
   }
 }
+
+//******** Breakpoint - xl 1400px ********//
+
+@media only screen and (min-width: v.$breakpoint-xxl) {
+  .contact-container {
+    width: v.$desktop-xl-width !important;
+    transition: 1s ease-in-out;
+
+    .contact-text {
+      width: v.$tablet-width !important;
+    }
+
+    .contact-form-container {
+      width: v.$contact-form-xl !important;
+      transition: 1s ease-in-out;
+
+      .contact-form {
+        width: v.$contact-form-xl-inner !important;
+        transition: 1s ease-in-out;
+
+        .btn-submit {
+          width: v.$mobile-sm-width !important;
+        }
+      }
+    }
+  }
+}

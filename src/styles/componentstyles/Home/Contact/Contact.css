@@ -343,4 +343,24 @@
   .contact-container .contact-form-container .contact-form .btn-submit {
     width: 390px !important;
   }
+}
+@media only screen and (min-width: 1400px) {
+  .contact-container {
+    width: 1380px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-text {
+    width: 730px !important;
+  }
+  .contact-container .contact-form-container {
+    width: 1000px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-form-container .contact-form {
+    width: 950px !important;
+    transition: 1s ease-in-out;
+  }
+  .contact-container .contact-form-container .contact-form .btn-submit {
+    width: 390px !important;
+  }
 }/*# sourceMappingURL=Contact.css.map */
