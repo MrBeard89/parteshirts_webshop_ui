@@ -5,4 +5,27 @@
 
 body {
   background-color: #000;
+}
+
+/* Firefox */
+html {
+  scrollbar-color: yellow;
+  scrollbar-width: auto;
+  scrollbar-arrow-color: yellow;
+  scroll-behavior: smooth;
+  scrollbar-darkshadow-color: pink;
+}
+
+/* WebKit and Chromiums */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 8px;
+  background-color: pink;
+  color: yellow;
+}
+
+::-webkit-scrollbar-thumb {
+  background: pink;
+  color: yellow;
+  border-radius: 5px;
 }/*# sourceMappingURL=App.css.map */

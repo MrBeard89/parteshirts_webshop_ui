@@ -33,11 +33,17 @@ export const Product = () => {
       textAlign: 'center',
       width: '100%',
       fontSize: '34px',
+      color: '#696969',
       paddingBottom: '1rem',
     },
     description: {
-      width: '90%',
+      width: '70%',
+      maxWidth: '1200px',
       textAlign: 'center',
+      opacity: '0.8',
+      backgroundColor: '#dcdcdc',
+      borderRadius: '1rem',
+      padding: '1rem',
     },
   }
   return (
