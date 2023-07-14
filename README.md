@@ -1,4 +1,5 @@
 **Note: This Project is responsive on all screens.**
+**Note: This Repo Pages is not running on server and Mongo,its database is local,just to show you the design**
 
 Hello
 
