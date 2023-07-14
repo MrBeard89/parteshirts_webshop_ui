@@ -1,6 +1,3 @@
-//Import products js file 🎈
-import { PRODUCTS } from '../../utils/products'
-
 //Import Scss file
 import '../../styles/pagestyles/Teeshirts/Teeshirts.scss'
 
@@ -23,9 +20,9 @@ import { ShopContext } from '../../context/shop-context'
 import { BsCartPlus } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 
-export const Teeshirts = () => {
+export const Teeshirts = (props) => {
   const [selectedShirt, setSelectedShirt] = useState('')
-  const { addToCart, cartItems, goToProduct } = useContext(ShopContext)
+  const { addToCart, cartItems, goToProduct, PRODUCTS } = useContext(ShopContext)
 
   //Select input Options 📀
   const shirtsOptions = [
@@ -70,15 +67,15 @@ export const Teeshirts = () => {
   //FilteredTeeshirts Component 🍕
   const FilteredTeeshirts = () => {
     return filtered.map((shirt) => {
-      const cartItemAmount = cartItems[shirt.id]
+      const cartItemAmount = cartItems[shirt.product_id]
 
       return (
-        <div className='teeshirts-card' key={shirt.id}>
+        <div className='teeshirts-card' key={shirt.product_id}>
           <Link to='/actual-product'>
             <h3
               className='teeshirts-card-title'
               onClick={() => {
-                goToProduct(shirt.id)
+                goToProduct(shirt.product_id)
               }}
             >
               {shirt.title}
@@ -91,7 +88,7 @@ export const Teeshirts = () => {
               src={require(`../../assets/designs/teeshirts/${shirt.img_path}.jpg`)}
               alt='Card image'
               onClick={() => {
-                goToProduct(shirt.id)
+                goToProduct(shirt.product_id)
               }}
             />
           </Link>
@@ -104,7 +101,10 @@ export const Teeshirts = () => {
           </div>
 
           <div className='addcart-countainer'>
-            <BsCartPlus className='addcart' onClick={() => addToCart(shirt.id)}></BsCartPlus>
+            <BsCartPlus
+              className='addcart'
+              onClick={() => addToCart(shirt.product_id)}
+            ></BsCartPlus>
             {cartItemAmount > 0 ? (
               <span className='addcart-counter'>{cartItemAmount > 0 && <>{cartItemAmount}</>}</span>
             ) : (

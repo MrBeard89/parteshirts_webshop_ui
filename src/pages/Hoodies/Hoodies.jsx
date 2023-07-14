@@ -1,6 +1,3 @@
-//Import products js file 🎈
-import { PRODUCTS } from '../../utils/products'
-
 //Import Scss file
 import '../../styles/pagestyles/Hoodies/Hoodies.scss'
 
@@ -25,7 +22,7 @@ import { Link } from 'react-router-dom'
 
 export const Hoodies = () => {
   const [selectedHoodies, setSelectedHoodies] = useState('')
-  const { addToCart, cartItems, goToProduct } = useContext(ShopContext)
+  const { addToCart, cartItems, goToProduct, PRODUCTS } = useContext(ShopContext)
 
   //Select input Options 📀
   const hoodiesOptions = [
@@ -72,14 +69,14 @@ export const Hoodies = () => {
   //FilteredTeeshirts Component 🍕
   const FilteredHoodies = () =>
     filtered.map((hoodie) => {
-      const cartItemAmount = cartItems[hoodie.id]
+      const cartItemAmount = cartItems[hoodie.product_id]
       return (
-        <div className='hoodies-card' key={hoodie.id}>
+        <div className='hoodies-card' key={hoodie.product_id}>
           <Link to='/actual-product'>
             <h3
               className='hoodies-card-title'
               onClick={() => {
-                goToProduct(hoodie.id)
+                goToProduct(hoodie.product_id)
               }}
             >
               {hoodie.title}
@@ -92,7 +89,7 @@ export const Hoodies = () => {
               src={require(`../../assets/designs/hoodies/${hoodie.img_path}.jpg`)}
               alt='Card image'
               onClick={() => {
-                goToProduct(hoodie.id)
+                goToProduct(hoodie.product_id)
               }}
             />
           </Link>
@@ -106,7 +103,10 @@ export const Hoodies = () => {
           </div>
 
           <div className='addcart-countainer'>
-            <BsCartPlus className='addcart' onClick={() => addToCart(hoodie.id)}></BsCartPlus>
+            <BsCartPlus
+              className='addcart'
+              onClick={() => addToCart(hoodie.product_id)}
+            ></BsCartPlus>
             {cartItemAmount > 0 ? (
               <span className='addcart-counter'>{cartItemAmount > 0 && <>{cartItemAmount}</>}</span>
             ) : (

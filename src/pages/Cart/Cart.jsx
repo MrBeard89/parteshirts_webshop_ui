@@ -5,7 +5,6 @@ import '../../styles/pagestyles/Cart/Cart/Cart.scss'
 
 //ShopContext
 import { ShopContext } from '../../context/shop-context'
-import { PRODUCTS } from '../../utils/products'
 import { CartItem } from './Cart-item'
 import { Footer } from '../../components/Footer/Footer'
 import { Link } from 'react-router-dom'
@@ -14,7 +13,7 @@ import { Link } from 'react-router-dom'
 import { BiEuro as Euro } from 'react-icons/bi'
 
 export const Cart = () => {
-  const { cartItems, getTotalCartAmount } = useContext(ShopContext)
+  const { cartItems, getTotalCartAmount, PRODUCTS } = useContext(ShopContext)
   const totalAmount = getTotalCartAmount()
 
   return (
@@ -31,8 +30,8 @@ export const Cart = () => {
         ) : (
           <>
             {PRODUCTS.map((product) => {
-              if (cartItems[product.id] !== 0) {
-                return <CartItem key={product.id} data={product} />
+              if (cartItems[product.product_id] !== 0) {
+                return <CartItem key={product.product_id} data={product} />
               }
             })}
             <div className='checkout-container'>

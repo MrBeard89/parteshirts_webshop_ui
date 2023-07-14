@@ -10,10 +10,32 @@ import { ShopContextProvider } from './context/shop-context'
 import { Cart } from './pages/Cart/Cart'
 import { Product } from './pages/Product/Product'
 
+import Axios from 'axios'
+import { useEffect, useState } from 'react'
+
 function App() {
+  const [listOfProducts, setListOfProducts] = useState([])
+
+  const sendGetRequest = async () => {
+    try {
+      const response = await Axios.get('http://localhost:3001/getProducts')
+      const dataString = JSON.stringify(response.data)
+      const parsedData = JSON.parse(dataString)
+      setListOfProducts(parsedData)
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+  useEffect(() => {
+    sendGetRequest()
+  }, [])
+
+  const PRODUCTS = listOfProducts
+
   return (
     <div className='App'>
-      <ShopContextProvider>
+      <ShopContextProvider PRODUCTS={PRODUCTS}>
         <Router basename={process.env.PUBLIC_URL}>
           <Navbar />
           <Routes>

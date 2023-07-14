@@ -9,7 +9,7 @@ import { ShopContext } from '../../context/shop-context'
 import { Link } from 'react-router-dom'
 
 export const CartItem = (props) => {
-  const { id, title, img_path, genre, price, type } = props.data
+  const { product_id, title, img_path, genre, price, type } = props.data
   const {
     goToProduct,
     updateCartItemCount,
@@ -19,14 +19,14 @@ export const CartItem = (props) => {
     removeAllFromCart,
   } = useContext(ShopContext)
   return (
-    <div className='card' key={id}>
+    <div className='card' key={product_id}>
       <Link to='/actual-product'>
         <img
           className='card-img'
           src={require(`../../assets/designs/${type}/${img_path}.jpg`)}
           alt='Card image'
           onClick={() => {
-            goToProduct(id)
+            goToProduct(product_id)
           }}
         />
       </Link>
@@ -47,17 +47,17 @@ export const CartItem = (props) => {
           </div>
 
           <div className='countHandler'>
-            <button className='removeCount' onClick={() => removeFromCart(id)}>
+            <button className='removeCount' onClick={() => removeFromCart(product_id)}>
               -
             </button>
             <input
-              value={cartItems[id]}
-              onChange={(e) => updateCartItemCount(Number(e.target.value), id)}
+              value={cartItems[product_id]}
+              onChange={(e) => updateCartItemCount(Number(e.target.value), product_id)}
             />
-            <button className='addCount' onClick={() => addToCart(id)}>
+            <button className='addCount' onClick={() => addToCart(product_id)}>
               +
             </button>
-            <Trash className='trash' onClick={() => removeAllFromCart(id)} />
+            <Trash className='trash' onClick={() => removeAllFromCart(product_id)} />
           </div>
         </div>
       </div>

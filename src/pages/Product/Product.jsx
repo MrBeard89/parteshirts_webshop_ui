@@ -50,7 +50,7 @@ export const Product = () => {
     <>
       {actualProductState.map((product) => {
         return (
-          <div style={productStyle.wrapper} className='product-wrapper' key={product.id}>
+          <div style={productStyle.wrapper} className='product-wrapper' key={product.product_id}>
             <div className='product-card' style={productStyle.card}>
               {product.type === 'teeshirts' || 'hoodies' ? (
                 <img
