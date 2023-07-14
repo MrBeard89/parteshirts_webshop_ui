@@ -1,5 +1,4 @@
 **Note: This Project is responsive on all screens.**
-**Note: This Repo Pages is not running on server and Mongo,its database is local,just to show you the design**
 
 Hello
 
@@ -8,7 +7,9 @@ My name is Norbert Kovacs
 I wanted to have a webshop UI that has all the features. For the design it is very vivid and extravagant because the products it self are targeted young people.The Webshop at the beginning it was going to be live, but with collaboration with my sibling we changed our mind.
 
 MERN Stack:
-Fetching data from MongoDB with Axios and using NodeJs server with ExpressJs
+Fetching data from MongoDB with Axios and using NodeJs server with ExpressJs and Nodemon
+
+I'm using Heroku for Server, and NetLify for Frontend
 
 If you like my work , feel free to contact me !
 
