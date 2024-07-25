@@ -18,7 +18,7 @@ function App() {
 
   const sendGetRequest = async () => {
     try {
-      const response = await Axios.get('https://partyshirts-bb8cf92829e6.herokuapp.com/getProducts')
+      const response = await Axios.get('https://fullstack-partyshirts.ilx.hu/backend/getProducts')
       const dataString = JSON.stringify(response.data)
       const parsedData = JSON.parse(dataString)
       setListOfProducts(parsedData)
