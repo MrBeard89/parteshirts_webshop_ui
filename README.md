@@ -9,7 +9,7 @@ I wanted to have a webshop UI that has all the features. For the design it is ve
 MERN Stack:
 Fetching data from MongoDB with Axios and using NodeJs server with ExpressJs and Nodemon
 
-I'm using Heroku for Server, and NetLify for Frontend
+I'm using Google Cloud Run for Server, and NetLify for Frontend
 
 If you like my work , feel free to contact me !
 
