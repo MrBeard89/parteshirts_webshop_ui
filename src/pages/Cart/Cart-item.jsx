@@ -23,7 +23,7 @@ export const CartItem = (props) => {
       <Link to='/actual-product'>
         <img
           className='card-img'
-          src={require(`../../assets/designs/${type}/${img_path}.jpg`)}
+          src={require(`../../assets/designs/${type}/${img_path}.webp`)}
           alt='Card image'
           onClick={() => {
             goToProduct(product_id)
