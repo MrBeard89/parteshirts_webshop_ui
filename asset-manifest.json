@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.062d86bc.css",
-    "main.js": "/static/js/main.ac991468.js",
+    "main.js": "/static/js/main.0de8b415.js",
     "static/media/partee fan.webp": "/static/media/partee fan.11bc781c67e2bd856348.webp",
     "static/media/connection woman hoodie.webp": "/static/media/connection woman hoodie.c7fada9737ca94938edf.webp",
     "static/media/carousel-4.webp": "/static/media/carousel-4.8e491580953a510851e1.webp",
@@ -72,10 +72,10 @@
     "index.html": "/index.html",
     "static/media/bg-navbar.svg": "/static/media/bg-navbar.4f4f3ed42723263048ce.svg",
     "main.062d86bc.css.map": "/static/css/main.062d86bc.css.map",
-    "main.ac991468.js.map": "/static/js/main.ac991468.js.map"
+    "main.0de8b415.js.map": "/static/js/main.0de8b415.js.map"
   },
   "entrypoints": [
     "static/css/main.062d86bc.css",
-    "static/js/main.ac991468.js"
+    "static/js/main.0de8b415.js"
   ]
 }
