@@ -56,14 +56,14 @@ export const Product = () => {
                 <img
                   style={productStyle.img}
                   className='product-card-img'
-                  src={require(`../../assets/designs/${product.type}/${product.img_path}.jpg`)}
+                  src={require(`../../assets/designs/${product.type}/${product.img_path}.webp`)}
                   alt='Card image'
                 />
               ) : (
                 <img
                   style={productStyle.img}
                   className='product-card-img'
-                  src={require(`../../assets/designs/${product.img_path}.jpg`)}
+                  src={require(`../../assets/designs/${product.img_path}.webp`)}
                   alt='Card image'
                 />
               )}

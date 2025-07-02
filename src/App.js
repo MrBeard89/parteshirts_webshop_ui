@@ -18,7 +18,9 @@ function App() {
 
   const sendGetRequest = async () => {
     try {
-      const response = await Axios.get('https://fullstack-partyshirts.ilx.hu/backend/getProducts')
+      const response = await Axios.get(
+        'https://partyshirts-server-256546941425.europe-west1.run.app/getProducts'
+      )
       const dataString = JSON.stringify(response.data)
       const parsedData = JSON.parse(dataString)
       setListOfProducts(parsedData)
