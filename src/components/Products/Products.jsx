@@ -4,11 +4,11 @@ import '../../styles/componentstyles/Home/Products/Products.scss'
 import { Link } from 'react-router-dom'
 
 //Import images for Thumbnails
-import Teeshirts from '../../assets/designs/teeshirts/connection/connection main pic.jpg'
-import Hoodies from '../../assets/designs/hoodies/don_t panic it_s legal/don_t panic it_s legal man hoodie.jpg'
-import Parteebag from '../../assets/designs/accessories/partee bag/partee bag.jpg'
-import Parteefan from '../../assets/designs/accessories/partee fan/partee fan.jpg'
-import MusicPeace from '../../assets/designs/teeshirts/music and peace/music and peace main pic.jpg'
+import Teeshirts from '../../assets/designs/teeshirts/connection/connection main pic.webp'
+import Hoodies from '../../assets/designs/hoodies/don_t panic it_s legal/don_t panic it_s legal man hoodie.webp'
+import Parteebag from '../../assets/designs/accessories/partee bag/partee bag.webp'
+import Parteefan from '../../assets/designs/accessories/partee fan/partee fan.webp'
+import MusicPeace from '../../assets/designs/teeshirts/music and peace/music and peace main pic.webp'
 
 export const Products = () => {
   return (

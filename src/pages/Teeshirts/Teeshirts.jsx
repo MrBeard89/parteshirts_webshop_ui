@@ -85,7 +85,7 @@ export const Teeshirts = (props) => {
           <Link to='/actual-product'>
             <img
               className='teeshirts-card-img'
-              src={require(`../../assets/designs/teeshirts/${shirt.img_path}.jpg`)}
+              src={require(`../../assets/designs/teeshirts/${shirt.img_path}.webp`)}
               alt='Card image'
               onClick={() => {
                 goToProduct(shirt.product_id)

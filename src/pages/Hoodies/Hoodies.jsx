@@ -86,7 +86,7 @@ export const Hoodies = () => {
           <Link to='/actual-product'>
             <img
               className='hoodies-card-img'
-              src={require(`../../assets/designs/hoodies/${hoodie.img_path}.jpg`)}
+              src={require(`../../assets/designs/hoodies/${hoodie.img_path}.webp`)}
               alt='Card image'
               onClick={() => {
                 goToProduct(hoodie.product_id)
